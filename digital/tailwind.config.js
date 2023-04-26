@@ -8,12 +8,23 @@ module.exports = {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
     ],
+    content: [
+        "./resources/**/*.blade.php",
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
+      ],
 
     theme: {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            backgroundColor: {
+                'primary': '#ff0000',
+                'secondary': '#00ff00',
+                'darkalaa' :'#111828',
+                'buttonalaa':'#0B6189',
+              },
         },
     },
 
