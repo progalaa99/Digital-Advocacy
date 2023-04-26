@@ -18,25 +18,26 @@
     <body class="  antialiased ">
         <div class=" bg-darkalaa relative sm:flex sm:justify-center sm:items-center min-h-screen  bg-center  selection:bg-red-500 selection:text-white bg-111828">
             {{-- <div class="bg-darkalaa"> --}}
-                
-           
-            
               
-            <div class="text-3xl font-bold text-white text-center items-center justify-center ">
-            <h1 >
-                Welcome</h1>
-                <h2>You must log in first to access the site, if you do not have an account,<br> register a new account
-
-                </h2>
+            <div class=" font-bold text-white text-center items-center justify-center ">
+            <h1 class="text-3xl">Welcome</h1>
+            <h2 class="text-1xl text-center">You must log in first to access the site, if you do not have an account,<br> register a new account</h2>
                 {{-- <img class="w-64 h-64  transform -translate-x-1/9 -translate-y-1/11 " src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة"> --}}
             </div>
-            <div class="relative h-32 w-32">
+
+
+
+
+
+            <div class=" relative h-40 w-40 z-20">
                 @if (Route::has('login'))
-                <div class="absolute inset-x-6 ">
+                <div class="absolute inset-0 ">
                     @auth
                         <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
                     @else
-                    <div class="flex">
+
+
+                    <div class="fixed top-30 left-30 right-30">
                     <div class="flex-shrink-0 w-1/2 bg-buttonalaa   border-none  hover:border-solid rounded text-center" >
                         <a href="{{ route('login') }}" class=" font-semibold text-white hover:text-white-900 focus:outline focus:outline-2 focus:rounded-sm ">Log in</a>
                     </div>
