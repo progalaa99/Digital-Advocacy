@@ -19,28 +19,29 @@
         <div class=" flex flex-col bg-darkalaa relative sm:flex sm:justify-center sm:items-center min-h-screen  bg-center  selection:bg-red-500 selection:text-white bg-111828">
             {{-- <div class="bg-darkalaa"> --}}
               
-            <div class=" font-bold text-white text-center items-center justify-center ">
-            <h1 class="text-3xl">Welcome</h1>
-            <h2 class="text-1xl text-center">You must log in first to access the site, if you do not have an account,<br> register a new account</h2>
+            <div class=" font-bold text-white text-center items-center justify-center p-1 mr-2  ">
+                <h1 class="text-3xl">Welcome</h1>
+                <h2 class="text-1xl text-center">You must log in first to access the site, if you do not have an account,<br> register a new account</h2>
                 {{-- <img class="w-64 h-64  transform -translate-x-1/9 -translate-y-1/11 " src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة"> --}}
+            
             </div>
 
 
 
 
 
-            <div class=" relative  flex p-1 mr-9  flex items-center justify-center " > {{--    --}}
+            <div class=" relative  flex p-1  right-14  " > {{--    --}}
                 @if (Route::has('login'))
                 <div class="absolute inset-0 ">
                     @auth
-                    <div class="flex-shrink-0 w-1/2 p-1 mr-2 bg-buttonalaa   border-none  hover:border-solid rounded text-center" >
+                    <div class="flex-shrink-0 w-1/2 p-1 mr-2  bg-buttonalaa   border-none  hover:border-solid rounded text-center" >
 
                         <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
                     </div>
                     @else
 
 
-                <div class="flex fixed top-30 left-30 right-30 text-center">
+                <div class=" flex fixed top-30 left-30 right-30 text-center translate-x-15">
                     <div class="flex-shrink-0 w-1/2 p-1 mr-2 bg-buttonalaa   border-none  hover:border-solid rounded text-center" >
                         <a href="{{ route('login') }}" class=" font-semibold text-white hover:text-white-900 focus:outline focus:outline-2 focus:rounded-sm ">Log in</a>
                     </div>
@@ -54,11 +55,12 @@
                 </div>
             @endif
             </div>
+            <img class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 " src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة">
 
-            <div class=" relative  flex p-5 mr-2  flex items-center justify-center">
-                <img class="w-64 h-64  transform -translate-x-1/9 -translate-y-1/11 " src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة">
+            {{-- <div class=" relative  flex p-5 mr-2  flex items-center justify-center">
+                <img class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 " src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة">
 
-            </div>
+            </div> --}}
             
             {{-- <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <div class="flex justify-center">
