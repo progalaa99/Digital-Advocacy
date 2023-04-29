@@ -23,8 +23,8 @@
             {{-- <div class="bg-darkalaa"> --}}
               
             <div class=" font-bold text-white text-center items-center justify-center p-1 mr-2  ">
-                <h1 class="text-3xl">Welcome</h1>
-                <h2 class="text-1xl text-center">You must log in first to access the site, if you do not have an account,<br> register a new account</h2>
+                <h1 class="text-8xl">Welcome</h1>
+                <h2 class="text-3xl text-center">You must log in first to access the site, if you do not have an account,<br> register a new account</h2>
                 {{-- <img class="w-64 h-64  transform -translate-x-1/9 -translate-y-1/11 " src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة"> --}}
             
             </div>
@@ -39,18 +39,18 @@
                     @auth
                     <div class="flex-shrink-0 w-1/2 p-1 mr-2  bg-buttonalaa   border-none  hover:border-solid rounded text-center" >
 
-                        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm ">Dashboard</a>
                     </div>
                     @else
 
 
-                <div class=" flex fixed top-30 left-30 right-30 text-center translate-x-15">
-                    <div class="flex-shrink-0 w-1/2 p-1 mr-2 bg-buttonalaa   border-none  hover:border-solid rounded text-center" >
-                        <a href="{{ route('login') }}" class=" font-semibold text-white hover:text-white-900 focus:outline focus:outline-2 focus:rounded-sm ">Log in</a>
+                <div class=" flex  top-30 left-30 right-30 text-center translate-x-15">
+                    <div class="flex-shrink-0 w-1/2 p-1 mr-2 h-10 w-20 bg-buttonalaa   border-none   rounded text-center" >
+                        <a href="{{ route('login') }}" class=" font-semibold text-white   ">Log in</a>
                     </div>
                         @if (Route::has('register'))
-                    <div class="flex-shrink-0 w-1/2  p-1 mr-2 bg-buttonalaa   border-none  hover:border-solid rounded text-center">
-                            <a href="{{ route('register') }}" class=" font-semibold text-white hover:text-white-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
+                    <div class="flex-shrink-0 w-1/2  p-1 mr-2 h-10 w-20 bg-buttonalaa   border-none   rounded text-center">
+                            <a href="{{ route('register') }}" class=" font-semibold text-white   ">Register</a>
                     </div>
                             @endif
                 </div>
@@ -58,8 +58,9 @@
                 </div>
             @endif
             </div>
+            <div class="p-2">
             <img class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 " src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة">
-
+        </div>
             {{-- <div class=" relative  flex p-5 mr-2  flex items-center justify-center">
                 <img class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 " src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة">
 
