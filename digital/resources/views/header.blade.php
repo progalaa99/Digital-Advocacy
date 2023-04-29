@@ -33,7 +33,9 @@
         </div>
       </div>
     </header>
+    
 @yield('content')
+
    
 </body>
 </html>
