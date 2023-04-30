@@ -4,23 +4,23 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
-    
-    <div class="flex">
 
-        <div class="bg-darkalaa p-8 mr-4">
+    <div class="flex  ">
+
+        <div class="bg-darkalaa p-8 mr-8 ">
             <h1 class="text-8xl text-white">Welcome</h1>
             <h2 class="text-2xl text-white">We are here to support you and help you solve the problem of
-                electronic extortion, <br> with the availability of many services  that
+                electronic extortion, <br> with the availability of many services that
                 help you to use the Internet safely,<br> do not hesitate to browse
                 the entire site! what are you waiting for ? Lets start :) </h2>
         </div>
-        <div class="bg-gray-500 p-4 mr-4 absolute top-50  right-40">
-            <img class="w-128 h-128 pt-10 rounded-l-lg transform -translate-x-1/9 -translate-y-1/11 "
+        <div class="bg-darkalaa p-4 mr-4 absolute top-60  right-60">
+            <img class="w-128 h-128   rounded-tl-3xl rounded-bl-lg transform -translate-x-1/9 -translate-y-1/11 "
                 src="/photo/manusecomputer.jpg" alt="Man Using computer">
         </div>
     </div>{{--      --}}
-    <div>
-        <a href="">Technical Education</a>
+    <div class="flex-shrink-0 w-1/2 p-1 mr-2 h-10 w-40 bg-buttonalaa top-30 left-30 right-30  border-none   rounded text-center items-center ">
+        <a href="" class="font-semibold text-white py-12 ">Technical Education</a>
     </div>
     <div>
         Our services
