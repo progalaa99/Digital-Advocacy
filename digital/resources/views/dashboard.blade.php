@@ -19,13 +19,14 @@
                 src="/photo/manusecomputer.jpg" alt="Man Using computer">
         </div>
     </div>{{--      --}}
-    <div class="flex-shrink-0 w-1/2 p-1 mr-2 h-10 w-40 bg-buttonalaa top-30 left-30 right-30  border-none   rounded text-center items-center ">
+    <div class="flex-shrink-0 w-1/2 p-1 mr-2 h-10 w-40 bg-buttonalaa absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  border-none   rounded text-center items-center ">
         <a href="" class="font-semibold text-white py-12 ">Technical Education</a>
     </div>
-    <div>
-        Our services
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-2/3 -translate-y-1/2">
+        <h1 class="text-4xl text-white">Our services</h1>
+        
     </div>
-    <div class="flex">
+    {{-- <div class="flex">
         <div class="bg-gray-300 p-4 mr-4">
             <img class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 "
                 src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة">
@@ -47,7 +48,7 @@
                 Contact a specialist,
                 tips !</p>
         </div>
-    </div>
+    </div> --}}
 
 
     {{-- <div class="py-12">
