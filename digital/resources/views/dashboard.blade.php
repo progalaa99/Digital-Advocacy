@@ -28,21 +28,21 @@
     </div>
     <div class="flex    w-1/2 mx-auto absolute bottom-20 left-1/2 transform -translate-x-1/2 place-items-center">
         <div class="bg-gray-300 p-4 mr-4 rounded-md border-mainBorderDiv bg-maindiv shadow-md shadow-gray-600">
-            <img class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 "
-                src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة">
+            <svg class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 fill-svgfill "
+                src="/icon/head-idea-icon.svg" alt="head-idea-icon"></svg>
             <p>We teach you the safe
                 use of the Internet !</p>
         </div>
         <div class="bg-gray-300 p-4 mr-4 rounded-md border-mainBorderDiv bg-maindiv shadow-md shadow-gray-600 ">
             <img class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 "
-                src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة">
+                src="/icon/suggestion-box-icon.svg" alt="شعار الشركة">
             <p>File a complaint and
                 wait for the criminal
                 to be arrested !</p>
         </div>
         <div class="bg-gray-300 p-4 mr-4 rounded-md border-mainBorderDiv bg-maindiv shadow-md shadow-gray-600">
             <img class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 "
-                src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة">
+                src="/icon/negative-thoughts-icon.svg" alt="شعار الشركة">
             <p>emotional support
 
                 Contact a specialist,
