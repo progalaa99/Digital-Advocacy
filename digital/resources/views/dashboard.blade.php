@@ -26,21 +26,21 @@
         <h1 class="text-4xl text-white">Our services</h1>
         
     </div>
-    <div class="flex top-1/2 left-1/2 transform -translate-x-1/15 -translate-y-1/11">
-        <div class="bg-gray-300 p-4 mr-4">
+    <div class="flex    w-1/2 mx-auto absolute bottom-20 left-1/2 transform -translate-x-1/2 place-items-center">
+        <div class="bg-gray-300 p-4 mr-4 rounded-md border-mainBorderDiv bg-maindiv shadow-md shadow-gray-600">
             <img class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 "
                 src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة">
             <p>We teach you the safe
                 use of the Internet !</p>
         </div>
-        <div class="bg-gray-300 p-4 mr-4">
+        <div class="bg-gray-300 p-4 mr-4 rounded-md border-mainBorderDiv bg-maindiv shadow-md shadow-gray-600 ">
             <img class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 "
                 src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة">
             <p>File a complaint and
                 wait for the criminal
                 to be arrested !</p>
         </div>
-        <div class="bg-gray-300 p-4 mr-4">
+        <div class="bg-gray-300 p-4 mr-4 rounded-md border-mainBorderDiv bg-maindiv shadow-md shadow-gray-600">
             <img class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 "
                 src="/icon/privacy-svgrepo-com.svg" alt="شعار الشركة">
             <p>emotional support

@@ -24,6 +24,8 @@ module.exports = {
                 'secondary': '#00ff00',
                 'darkalaa' :'#111828',
                 'buttonalaa':'#0B6189',
+                'maindiv' : '#233249',
+                'mainBorderDiv' : '#0B6189'
               },
         },
     },
