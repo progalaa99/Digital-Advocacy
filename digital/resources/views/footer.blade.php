@@ -43,7 +43,11 @@
             </div>
           </div>
         <div class="flex w-1/2 mx-auto justify-center items-center text-white">
-            Copyright © 2023
+             <p class="text-1xl font-bold">Copyright © 2023
+                <span class="text-sm mr-1">( Made With Love ❤)</span>
+             </p>
+            
+             
         </div>
     </footer>
     
