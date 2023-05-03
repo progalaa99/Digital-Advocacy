@@ -25,4 +25,8 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+})->group(function () {
+    Route::get('/site-message', function () {
+        return view('advocacy.site-message');
+    })->name('site-message');
 });
