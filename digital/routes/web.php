@@ -29,4 +29,10 @@ Route::middleware([
     Route::get('/site-message', function () {
         return view('advocacy.site-message');
     })->name('site-message');
+})->group(function () {
+    Route::get('/complaint', function () {
+        return view('advocacy.complaint');
+    })->name('complaint');
 });
+
+
