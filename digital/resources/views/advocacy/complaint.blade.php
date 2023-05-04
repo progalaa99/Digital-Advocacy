@@ -1,6 +1,6 @@
 <x-app-layout>
-    <div class="flex flex-row space-x-4  absolute  top-3/2 pt-10 ">
-        <div class="bg-darkalaa p-4 w-1/2">
+    <div class="flex items-center flex-row items-center   absolute  top-3/2 left-60 pt-10  ">
+        <div class="bg-darkalaa p-4 w-3/2  ">
 
             <form class="flex flex-col items-center ">
               
@@ -22,11 +22,11 @@
                   </span>
                   <textarea type="email" name="email" class="mt-1 px-10 py-2 h-20 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" ></textarea>
                 </label>
-                <label class="block p-2 ">
+                <label class="block  ">
                   
-                  <span class="sr-only">Choose profile photo</span> 
-                   <input type="file" class="block w-full text-sm text-slate-500
-                    file:mr-4 file:py-2 file:px-4
+                  {{-- <span class="sr-only">Choose profile photo</span>  --}}
+                   <input type="file" class="  block w-full text-sm text-slate-500 pl-20
+                    file:mr-4 file:py-2 file:px-3
                     file:rounded-full file:border-0
                     file:text-sm file:font-semibold
                     file:bg-violet-50 file:text-violet-700
