@@ -8,21 +8,21 @@
                 </div> --}}
                 <label class="block p-2">
                   <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
-                    Email
+                    Your Name
                   </span>
-                  <input type="email" name="email" class="mt-1 px-8 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                  <input type="email" name="email" class="mt-1 px-10 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
                 </label>
                 <label class="block p-2">
                   <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
-                    Email
+                    Name of blackmailer
                   </span>
-                  <input type="email" name="email" class="mt-1 px-8 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                  <input type="email" name="email" class="mt-1 px-10 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
                 </label>
                 <label class="block p-2">
                   <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
-                    Email
+                    Blackmailer information
                   </span>
-                  <input type="email" name="email" class="mt-1 px-8 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                  <textarea type="email" name="email" class="mt-1 px-10 py-2 h-20 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" ></textarea>
                 </label>
                 <label class="block p-2 ">
                   {{-- <span class="sr-only">Choose profile photo</span> --}}
@@ -36,10 +36,18 @@
                 </label>
                 <label class="block p-2">
                   <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
-                    Email
+                    Detailed information
                   </span>
-                  <input type="email" name="email" class="mt-1 px-8 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com" />
+                  <textarea  type="email" name="email" class="mt-1 px-10 py-2 h-40 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" placeholder="you@example.com"></textarea> 
                 </label>
+                
+                <div class="bg-buttonalaa border-none   rounded ">
+                  {{-- <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-white bg-buttonalaa"> --}}
+
+                  <button type="submit" class="font-semibold text-white py-2 px-5 text-1xl bg-buttonalaa ">Send</button>
+                
+                  </div>
+              
               </form>
         </div>
         <div class="bg-red-500 p-4 w-1/2">
