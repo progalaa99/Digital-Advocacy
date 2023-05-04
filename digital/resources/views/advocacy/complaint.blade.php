@@ -58,7 +58,7 @@
                 correct and real information, 
                 otherwise you will bear legal 
                 penalties!</p> <br>
-                <div class="border border-double border-4  border-sky-500   rounded p-3">
+                <div class="border border-dashed border-4  border-sky-500   rounded p-3">
                   <h1 class="text-3xl text-white text-sky-500 font-bold ">Tip !</h1>
                   <p class="text-white   text-1xl p-1 m-1">You should pay attention to the method of uploading the
                    evidence, by placing them all inside the pdf file and then attaching it.</p>
