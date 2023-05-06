@@ -33,6 +33,10 @@ Route::middleware([
     Route::get('/complaint', function () {
         return view('advocacy.complaint');
     })->name('complaint');
+})->group(function () {
+    Route::get('/support', function () {
+        return view('advocacy.support');
+    })->name('support');
 });
 
 
