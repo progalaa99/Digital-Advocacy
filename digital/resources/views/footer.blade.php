@@ -29,17 +29,11 @@
                <a href="" class="text-1xl text-white font-bold">complaint</a>
                <a href="" class="text-1xl text-white font-bold">support</a>
                <a href="" class="text-1xl text-white font-bold">Technical Education</a>
-               <a href="" class="text-1xl text-white font-bold"> Report</a>
-
-               
-                
-               
+               <a href="" class="text-1xl text-white font-bold"> Report</a>  
             </div>
             <div class="w-1/3 bg-darkalaa p-4 m-1 rounded-md  ">
                 <span class="text-3xl text-white font-bold ">Contact Us</span>  
                 <span class="text-1xl text-white font-bold">We@gmail.com</span>  
-
-
             </div>
           </div>
         <div class="flex w-1/2 mx-auto justify-center items-center text-white">
