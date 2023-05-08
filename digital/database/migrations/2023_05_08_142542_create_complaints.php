@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('complaints', function (Blueprint $table) {
             $table->id();
-            $table->string('userid');
+            $table->string('user_id')->default();
             $table->string('name');
             $table->string('nameblackmailer');
             $table->string('Blackmailerinfo');
-            $table->string('file');
+            $table->string('file')->default();
             $table->string('Detailedinfo');
             $table->timestamps();
         });

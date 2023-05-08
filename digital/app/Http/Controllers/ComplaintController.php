@@ -34,8 +34,9 @@ class ComplaintController extends Controller
      */
     public function store(Request $request,$user_id)
     {
-        
+        $id = $user_id;
         $request->validate([
+            'user_id'=> $id,
             'name'=>'required',
             'nameblackmailer'=>'required',
             'Blackmailerinfo'=>'required',
@@ -44,7 +45,7 @@ class ComplaintController extends Controller
         ]);
         $complaint = Complaint::create($request->all());
         
-        return redirect()->with('success','تم اضافة الطالب بنجاح ');
+        return redirect()->route('site-message');
     }
 
     /**
