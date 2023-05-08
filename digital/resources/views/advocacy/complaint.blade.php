@@ -8,24 +8,24 @@
                   <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
                     Your Name
                   </span>
-                  <input type="email" name="email" class="mt-1 px-10 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"  />
+                  <input type="text" name="name" class="mt-1 px-10 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"  />
                 </label>
                 <label class="block p-2">
                   <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
                     Name of blackmailer
                   </span>
-                  <input type="email" name="email" class="mt-1 px-10 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"  />
+                  <input type="text" name="nameblackmailer" class="mt-1 px-10 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"  />
                 </label>
                 <label class="block p-2">
                   <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
                     Blackmailer information
                   </span>
-                  <textarea type="email" name="email" class="mt-1 px-10 py-2 h-20 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"  ></textarea>
+                  <textarea type="text" name="Blackmailerinfo" class="mt-1 px-10 py-2 h-20 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"  ></textarea>
                 </label>
                 <label class="block  ">
                   
                   {{-- <span class="sr-only">Choose profile photo</span>  --}}
-                   <input type="file" class="  block w-full text-sm text-slate-500 pl-20
+                   <input type="file" name="file" class="  block w-full text-sm text-slate-500 pl-20
                     file:mr-4 file:py-2 file:px-3
                     file:rounded-full file:border-0
                     file:text-sm file:font-semibold
@@ -37,7 +37,7 @@
                   <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
                     Detailed information
                   </span>
-                  <textarea  type="email" name="email" class="mt-1 px-10 py-2 h-40 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" ></textarea> 
+                  <textarea  type="text" name="Detailedinfo" class="mt-1 px-10 py-2 h-40 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" ></textarea> 
                 </label>
                 
                 <div class="bg-buttonalaa border-none   rounded ">
@@ -58,7 +58,7 @@
                 correct and real information, 
                 otherwise you will bear legal 
                 penalties!</p> <br>
-                <div class="border border-dashed border-4  border-sky-500   rounded p-3">
+                <div class="border border-dashed border-3  border-sky-500   rounded p-3">
                   <h1 class="text-3xl text-white text-sky-500 font-bold ">Tip !</h1>
                   <p class="text-white   text-1xl p-1 m-1">You should pay attention to the method of uploading the
                    evidence, by placing them all inside the pdf file and then attaching it.</p>
