@@ -42,7 +42,7 @@ Route::middleware([
         return view('advocacy.technical-edu');
     })->name('technical-edu');
 })->group(function () {
-    Route::get('/complaint.store/{user_id}', [App\Http\Controllers\ComplaintController::class, 'store'])->name('complaint.store');
+    Route::post('/complaint.store/{user_id}', [App\Http\Controllers\ComplaintController::class, 'store'])->name('complaint.store');
 });
 
 

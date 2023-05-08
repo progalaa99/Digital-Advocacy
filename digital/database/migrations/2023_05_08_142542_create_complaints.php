@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('nameblackmailer');
             $table->string('Blackmailerinfo');
-            $table->string('file')->default();
+            $table->string('file');
             $table->string('Detailedinfo');
             $table->timestamps();
         });

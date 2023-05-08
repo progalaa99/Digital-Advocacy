@@ -13,7 +13,7 @@ class Complaint extends Model
         'name',
         'nameblackmailer',
         'Blackmailerinfo', 
-        // 'file', 
+        'file', 
         'Detailedinfo'
     ];
 }

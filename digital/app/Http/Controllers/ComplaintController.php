@@ -33,17 +33,31 @@ class ComplaintController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request,$user_id)
-    {
+    { 
         $id = $user_id;
         $request->validate([
             'user_id'=> $id,
             'name'=>'required',
             'nameblackmailer'=>'required',
             'Blackmailerinfo'=>'required',
-            // 'file'=>'required',
+            'file'=>'required|file|mimes:pdf|max:500000',
             'Detailedinfo'=>'required',
         ]);
-        $complaint = Complaint::create($request->all());
+       
+        $file = $request->file('file');
+        $path = $file->move('uploads/archive');
+
+        $complaint = Complaint::create([
+            'user_id'=>$user_id,
+            'name'=>$request->name,
+            'nameblackmailer'=>$request->nameblackmailer,
+            'Blackmailerinfo'=>$request->Blackmailerinfo,
+            'file'=>$path,
+            'Detailedinfo'=>$request->Detailedinfo,
+            
+           
+        ]);
+        // $complaint = Complaint::create($request->all());
         
         return redirect()->route('site-message');
     }
