@@ -37,6 +37,10 @@ Route::middleware([
     Route::get('/support', function () {
         return view('advocacy.support');
     })->name('support');
+})->group(function () {
+    Route::get('/technical-edu', function () {
+        return view('advocacy.technical-edu');
+    })->name('technical-edu');
 });
 
 
