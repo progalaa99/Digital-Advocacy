@@ -10,9 +10,15 @@ class ComplaintController extends Controller
     /**
      * Display a listing of the resource.
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
-        //
+      //
+
     }
 
     /**
@@ -26,9 +32,19 @@ class ComplaintController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request,$user_id)
     {
-        //
+        
+        $request->validate([
+            'name'=>'required',
+            'nameblackmailer'=>'required',
+            'Blackmailerinfo'=>'required',
+            // 'file'=>'required',
+            'Detailedinfo'=>'required',
+        ]);
+        $complaint = Complaint::create($request->all());
+        
+        return redirect()->with('success','تم اضافة الطالب بنجاح ');
     }
 
     /**

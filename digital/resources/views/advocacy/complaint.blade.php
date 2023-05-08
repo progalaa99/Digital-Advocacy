@@ -1,8 +1,8 @@
 <x-app-layout>
+  {{$user_id = Auth::id(); }}
     <div class="flex items-center flex-row items-center   absolute  top-3/2 left-60 pt-10  ">
         <div class="bg-darkalaa p-4 w-3/2  ">
-
-            <form class="flex flex-col items-center ">
+            <form class="flex flex-col items-center " action="{{route('complaint.store',['user_id'=>$user_id])}}" method="GET">
               
                 <label class="block p-2">
                   <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-white">
