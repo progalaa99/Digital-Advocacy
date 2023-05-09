@@ -20,7 +20,7 @@ class BlogeduController extends Controller
      */
     public function create()
     {
-        //
+        return view('blogedu.create');
     }
 
     /**
