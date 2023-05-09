@@ -45,7 +45,9 @@ Route::middleware([
     Route::post('/complaint.store/{user_id}', [App\Http\Controllers\ComplaintController::class, 'store'])->name('complaint.store');
 })->group(function () {
     Route::get('/blogedu.create', [App\Http\Controllers\BlogeduController::class, 'create'])->name('blogedu.create');
-    });
+})->group(function () {
+        Route::get('/blogedu.store/{user_id}', [App\Http\Controllers\BlogeduController::class, 'store'])->name('blogedu.store');
+        });
 
 
 
