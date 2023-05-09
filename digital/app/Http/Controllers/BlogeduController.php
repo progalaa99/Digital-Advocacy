@@ -28,29 +28,21 @@ class BlogeduController extends Controller
      */
     public function store(Request $request,$user_id)
     {
-        
-        
         $id = $user_id;
         $request->validate([
-            'user_id' => 'required',
             'title' => 'required',
             'body' => 'required',
-            'cover' => 'required|file|mimes:png,jpeg|max:500000',
-
+            'cover' => 'required|file|mimes:jpg|max:500000',
         ]);
-        dd('no');
         $file = $request->file('cover');
         $path = $file->move('uploads/blogedu');
-
         $blogedu = blogedu::create([
             'user_id' => $id,
             'title' => $request->title,
             'body' => $request->body,
             'cover' => $path,
-            
         ]);
         return redirect()->route('site-message');
-
     }
 
     /**
