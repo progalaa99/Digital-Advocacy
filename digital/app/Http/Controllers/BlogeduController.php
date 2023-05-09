@@ -12,7 +12,10 @@ class BlogeduController extends Controller
      */
     public function index()
     {
-        //
+        
+        // $blogedus = blogedu::latest()->with('blogedu')->paginate(3);
+        $blogedus = blogedu::get();
+        return view('technical-edu',['blogedus'=>$blogedus]);
     }
 
     /**
