@@ -32,7 +32,7 @@ class BlogeduController extends Controller
         $request->validate([
             'title' => 'required',
             'body' => 'required',
-            'cover' => 'required|file|mimes:jpg|max:500000',
+            'cover' => 'required|file|mimes:jpg,png,jpeg|max:500000',
         ]);
         $file = $request->file('cover');
         $path = $file->move('uploads/blogedu');
@@ -42,7 +42,7 @@ class BlogeduController extends Controller
             'body' => $request->body,
             'cover' => $path,
         ]);
-        return redirect()->route('site-message');
+        return redirect()->route('technical-edu');
     }
 
     /**
