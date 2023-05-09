@@ -46,7 +46,7 @@ Route::middleware([
 })->group(function () {
     Route::get('/blogedu.create', [App\Http\Controllers\BlogeduController::class, 'create'])->name('blogedu.create');
 })->group(function () {
-        Route::get('/blogedu.store/{user_id}', [App\Http\Controllers\BlogeduController::class, 'store'])->name('blogedu.store');
+        Route::post('/blogedu.store/{user_id}', [App\Http\Controllers\BlogeduController::class, 'store'])->name('blogedu.store');
         });
 
 

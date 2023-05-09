@@ -1,9 +1,9 @@
 <x-app-layout>
-  {{$user_id = Auth::id(); }}
+    {{ $user_id = Auth::id(); }}
 
     <div class="bg-darkalaa p-4 w-3/2   flex justify-center items-center h-screen">
-        <form class="flex flex-col items-center left-1/2 top-1/2  w-1/2 pt-10 " action="{{route('blogedu.store',['user_id'=>$user_id])}}" method="POST"
-            enctype="multipart/form-data">
+        <form class="flex flex-col items-center left-1/2 top-1/2  w-1/2 pt-10 "
+            action="{{ route('blogedu.store', ['user_id' => $user_id]) }}" method="POST" enctype="multipart/form-data">
             @csrf
             <label class="block  text-gray-700 font-bold mb-2   w-full h-128">
                 <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block   text-white text-2xl">
@@ -25,7 +25,7 @@
                 <span
                     class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-white text-2xl text-white text-center">
                     Choose Blog Cover</span>
-                <input type="file" name="file"
+                <input type="file" name="cover"
                     class="  block w-full text-sm text-slate-500 pl-20
                 file:mr-4 file:py-2 file:px-3
                 file:rounded-full file:border-0
