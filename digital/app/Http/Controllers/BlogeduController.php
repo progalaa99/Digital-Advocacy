@@ -15,7 +15,7 @@ class BlogeduController extends Controller
         
         // $blogedus = blogedu::latest()->with('blogedu')->paginate(3);
         $blogedus = blogedu::get();
-        return view('technical-edu',['blogedus'=>$blogedus]);
+        return view('blogedu.technical-edu',['blogedus'=>$blogedus]);
     }
 
     /**
@@ -45,7 +45,7 @@ class BlogeduController extends Controller
             'body' => $request->body,
             'cover' => $path,
         ]);
-        return redirect()->route('technical-edu');
+        return redirect()->route('blogedu.technical-edu');
     }
 
     /**

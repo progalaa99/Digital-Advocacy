@@ -37,17 +37,19 @@ Route::middleware([
     Route::get('/support', function () {
         return view('advocacy.support');
     })->name('support');
-})->group(function () {
-    Route::get('/technical-edu', function () {
-        return view('advocacy.technical-edu');
-    })->name('technical-edu');
-})->group(function () {
+})
+// ->group(function () {
+//     Route::get('/technical-edu', function () {
+//         return view('advocacy.technical-edu');
+//     })->name('technical-edu');
+->group(function () {
     Route::post('/complaint.store/{user_id}', [App\Http\Controllers\ComplaintController::class, 'store'])->name('complaint.store');
 })->group(function () {
     Route::get('/blogedu.create', [App\Http\Controllers\BlogeduController::class, 'create'])->name('blogedu.create');
 })->group(function () {
         Route::post('/blogedu.store/{user_id}', [App\Http\Controllers\BlogeduController::class, 'store'])->name('blogedu.store');
-        });
-
+})->group(function () {
+    Route::get('/blogedu.technical-edu', [App\Http\Controllers\BlogeduController::class, 'index'])->name('blogedu.technical-edu');;
+});
 
 
