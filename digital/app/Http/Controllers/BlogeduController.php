@@ -53,7 +53,7 @@ class BlogeduController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(blogedu $blogedu)
+    public function show(blogedu $blogedu , $id)
     {
         //
     }

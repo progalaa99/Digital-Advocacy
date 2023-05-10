@@ -14,7 +14,7 @@
             </div>
 
         <div >
-          <a href="" class="bg-buttonalaa w-6 p-1 mr-2  w-20 h-30 border-none   rounded">View</a>
+          <a href="{{route('blogedu.show',['id'=>$blogedu->id])}}" class="bg-buttonalaa w-6 p-1 mr-2  w-20 h-30 border-none   rounded">View</a>
         </div>
         </div>
        
