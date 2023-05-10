@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('user_id')->default();
             $table->string('title');
-            $table->string('body');
+            $table->longtext('body');
             $table->string('cover');
             $table->timestamps();
         });

@@ -5,6 +5,7 @@
     
     <div class="w-full flex justify-center flex-col  text-white">
       <div class="flex w-1/2 mx-auto justify-center items-center">
+        
         @foreach ($blogedus as $blogedu)
         <div class="w-1/3 bg-darkalaa p-4 m-2 rounded-md border-b-2 ">
             <img class="w-64 h-64 pt-10  transform -translate-x-1/9 -translate-y-1/11 fill-svgfill " fill="svgfill"
