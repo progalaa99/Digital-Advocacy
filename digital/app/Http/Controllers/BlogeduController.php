@@ -55,7 +55,9 @@ class BlogeduController extends Controller
      */
     public function show(blogedu $blogedu , $id)
     {
-        //
+        $blogedu = blogedu::findOrFail($id);
+        
+        return view('blogedu.show',['blogedu'=>$blogedu]);
     }
 
     /**
