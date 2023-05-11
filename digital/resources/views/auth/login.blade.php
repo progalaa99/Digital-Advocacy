@@ -3,11 +3,16 @@
 @section('content')
 
 <x-guest-layout >
+    
     <x-authentication-card>
         <x-slot name="logo">
             <x-authentication-card-logo />
+            <div class=" flex items-center">
+                <img class="fill-current h-64 w-64 mr-2" src="/icon/mainicon.svg" alt="شعار الموقع">
+          
+                      </div>
         </x-slot>
-
+        
         <x-validation-errors class="mb-4" />
 
         @if (session('status'))
@@ -15,7 +20,7 @@
                 {{ session('status') }}
             </div>
         @endif
-
+            
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
@@ -45,7 +50,9 @@
 
                 <x-button class="ml-4">
                     {{ __('Log in') }}
+                   
                 </x-button>
+                
             </div>
         </form>
     </x-authentication-card>
