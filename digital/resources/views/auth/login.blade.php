@@ -9,8 +9,7 @@
             <x-authentication-card-logo />
             <div class=" flex items-center">
                 <img class="fill-current h-64 w-64 mr-2" src="/icon/mainicon.svg" alt="شعار الموقع">
-          
-                      </div>
+            </div>
         </x-slot>
         
         <x-validation-errors class="mb-4" />
