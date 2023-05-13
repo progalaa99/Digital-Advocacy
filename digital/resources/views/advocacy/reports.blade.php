@@ -4,7 +4,7 @@
         <div class="w-full flex justify-center flex-col  text-white">
             <div class="flex w-1/2 mx-auto justify-center items-center">
                 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                <script type="text/javascript">
+                {{-- <script type="text/javascript">
                     google.charts.load("current", {
                         packages: ['corechart']
                     });
@@ -70,8 +70,17 @@
                         var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
                         chart.draw(view, options);
                     }
-                </script>
+                </script> --}}
                 <div id="columnchart_values" style="width: 900px; height: 300px;" class="bg-darkalaa"></div>
+
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-red p-4 w-50">Box 1</div>
+                    <div class="bg-yallow p-4">Box 2</div>
+                    <div class="bg-gray-200 p-4">Box 3</div>
+                    <div class="bg-gray-200 p-4">Box 4</div>
+                  </div>
+
                 @extends('footer')
 
 
