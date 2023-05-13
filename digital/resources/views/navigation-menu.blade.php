@@ -16,7 +16,7 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                    <x-nav-link href="{{ route('reports') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Report') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('blogedu.technical-edu') }}" :active="request()->routeIs('dashboard')">
