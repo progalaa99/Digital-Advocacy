@@ -1,7 +1,13 @@
+@extends('header')
+
+@section('content')
+
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
             <x-authentication-card-logo />
+            <img class="fill-current h-32 w-32 mr-2" src="/icon/mainicon.svg" alt="شعار الموقع">
+
         </x-slot>
 
         <x-validation-errors class="mb-4" />
@@ -17,6 +23,26 @@
             <div class="mt-4">
                 <x-label for="email" value="{{ __('Email') }}" />
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
+            </div>
+
+            <div class="mt-4">
+                <x-label for="phon" value="{{ __('phon') }}" />
+                <x-input id="email" class="block mt-1 w-full" type="text" name="phon" :value="old('phon')" required  />
+            </div>
+
+            <div class="mt-4">
+                <x-label for="email" value="{{ __('age') }}" />
+                <x-input id="age" class="block mt-1 w-full" type="text" name="age" :value="old('age')" required />
+            </div>
+
+            <div class="mt-4">
+                <x-label for="email" value="{{ __('gender') }}" />
+                <x-input id="gender" class="block mt-1 w-full" type="text" name="gender" :value="old('gender')" required  />
+            </div>
+
+            <div class="mt-4">
+                <x-label for="email" value="{{ __('region') }}" />
+                <x-input id="region" class="block mt-1 w-full" type="text" name="region" :value="old('region')" required />
             </div>
 
             <div class="mt-4">
@@ -58,3 +84,4 @@
         </form>
     </x-authentication-card>
 </x-guest-layout>
+@endsection
