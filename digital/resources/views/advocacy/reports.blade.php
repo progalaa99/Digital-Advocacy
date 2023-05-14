@@ -1,34 +1,32 @@
 <x-app-layout>
-    <div class="flex top-1/2 left-1/2 text-white">
+    <div class="flex top-1/2 left-1/2 text-white flex justify-center flex-raw ">
+        <div id="columnchart_values" style="width: 900px; height: 300px;" class="bg-darkalaa"></div>
 
         <div class="w-full flex justify-center flex-col  text-white">
+
             <div class="flex flex-col w-1/2 mx-auto justify-center items-center">
                 
 
-                <div id="columnchart_values" style="width: 900px; height: 300px;" class="bg-darkalaa"></div>
+                {{-- <div id="columnchart_values" style="width: 900px; height: 300px;" class="bg-darkalaa"></div> --}}
 
 
-                <div class="grid grid-cols-2 gap-8 bg-red pt-10 top-1/2 left-0">
-                    <div class="bg-red p-4 w-50">
+                <div class="grid grid-cols-2 gap-8 bg-red pt-10 top-1/2 left-0 ">
+                    <div class="bg-darkalaa p-4 w-60 h-50 text-white border border-yellow-400 ">
                         <h1>The most exposed province</h1>
-                        <h2>Baghdda</h2>
+                        <h2 class="font-bold">Baghdda</h2>
                     </div>
-                    <div class="bg-yallow p-4">
+                    <div class="bg-darkalaa p-4 w-60 h-50 text-white border border-yellow-400">
                         <h1>Target age groups</h1>
-                        <h2>14 , 16 , 20 ,55</h2>
+                        <h2  class="font-bold">14 , 16 , 20 ,55</h2>
                     </div>
-                    <div class="bg-gray-200 p-4">
-                        <h1>Male exposure rate: 40%
-
-                            Female exposure rate: 70%
-                        </h1>
-                        <h2>Baghdda</h2>
+                    <div class="bg-darkalaa p-4 w-60 h-50 text-white border border-yellow-400">
+                        <h1>Male exposure rate: <span class="font-bold"> 40% </span></h1>
+                        <h2>Female exposure rate: <span class="font-bold">70%</span> </h2>
                     </div>
-                    <div class="bg-gray-200 p-4">
-                        <h1>The category most vulnerable to
-
+                    <div class="bg-darkalaa p-4 w-60 h-50 text-white border border-yellow-400">
+                        <h1>The category most vulnerable to extortion: 
                         </h1>
-                        <h2>extortion: females</h2>
+                       <h2  class="font-bold">females</h2>
                     </div>
                 </div>
 
