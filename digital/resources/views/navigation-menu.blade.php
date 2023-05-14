@@ -9,8 +9,8 @@
                         <x-application-mark class="block h-9 w-auto" />
                     </a> --}}
       <img class="fill-current h-16 w-16 mr-2" src="/icon/mainicon.svg" alt="شعار الموقع">
-      <a href="#"
-      class="inline-block text-sm px-4 py-2 leading-none border rounded-full  text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0">En</a>
+      {{-- <a href="#"
+      class="inline-block text-sm px-4 py-2 leading-none border rounded-full  text-white border-white hover:border-transparent hover:text-gray-800 hover:bg-white mt-4 lg:mt-0">En</a> --}}
                 </div>
 
 
