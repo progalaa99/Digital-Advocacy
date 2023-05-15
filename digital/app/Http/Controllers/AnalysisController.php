@@ -25,7 +25,16 @@ class AnalysisController extends Controller
                         ->limit(1)
                         ->get();
 
-        return view('advocacy.reports',['regions'=>$regions,'ageCounts'=>$ageCounts,'genderCounts'=>$genderCounts]);
+                       
+        $maleCount = DB::table('users')->where('gender', 'Male')->count();
+        $femaleCount = DB::table('users')->where('gender', 'Female')->count();
+        $totalCount = $maleCount + $femaleCount;
+        $malePercentage = round(($maleCount / $totalCount) * 100);
+        $femalePercentage =round(($femaleCount / $totalCount) * 100);
+        return view('advocacy.reports',['regions'=>$regions,'ageCounts'=>$ageCounts,
+                                        'genderCounts'=>$genderCounts,
+                                        'malePercentage'=>$malePercentage,
+                                        'femalePercentage'=>$femalePercentage]);
 
 
     }

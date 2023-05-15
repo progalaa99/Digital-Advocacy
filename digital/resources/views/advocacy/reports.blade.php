@@ -15,8 +15,8 @@
                         @endforeach</h2>
                     </div>
                     <div class="bg-darkalaa p-4 w-60 h-50 text-white border border-yellow-400">
-                        <h1>Male exposure rate: <span class="font-bold"> 40% </span></h1>
-                        <h2>Female exposure rate: <span class="font-bold">70%</span> </h2>
+                        <h1>Male exposure rate: <span class="font-bold"> {{$malePercentage}}% </span></h1>
+                        <h2>Female exposure rate: <span class="font-bold">{{$femalePercentage}}%</span> </h2>
                     </div>
                     <div class="bg-darkalaa p-4 w-60 h-50 text-white border border-yellow-400">
                         <h1>The category most vulnerable to extortion:
