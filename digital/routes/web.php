@@ -57,7 +57,9 @@ Route::middleware([
 })->group(function () {
     Route::get('/blogedu.show/{id}', [App\Http\Controllers\BlogeduController::class, 'show'])->name('blogedu.show');;
 })->group(function () {
-    Route::get('/advocacy.reports', [App\Http\Controllers\AnalysisController::class, 'region'])->name('advocacy.reports');;
+    Route::get('/advocacy.reports', [App\Http\Controllers\AnalysisController::class, 'region'])->name('advocacy.reports');
+})->group(function () {
+    Route::get('/age.reports', [App\Http\Controllers\AnalysisController::class, 'age'])->name('age.reports');
 });
 
 

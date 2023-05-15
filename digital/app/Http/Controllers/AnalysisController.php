@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\UserAnalysis;
 use App\Models\User;
+use Illuminate\Support\Facades\DB;
 class AnalysisController extends Controller
 {
     public function region(){
@@ -13,8 +14,14 @@ class AnalysisController extends Controller
     }
 
     public function age(){
-        $regions = UserAnalysis::pluck('age');
-        return view('advocacy.reports',['regions'=>$regions]);
+
+        $ageCounts = DB::table('users')
+                        ->select('age', DB::raw('count(*) as count'))
+                        ->groupBy('age')
+                        ->orderByDesc('count')
+                        ->limit(2)
+                        ->get();
+        return view('advocacy.reports',['ageCounts'=>$ageCounts]);
     }
 
 

@@ -1,5 +1,5 @@
 <x-app-layout>
-{{-- {{dd($regions);}} --}}
+{{dd($ageCounts);}}
     <div class="flex top-1/2 left-1/2 text-white flex justify-center flex-raw ">
         <div id="columnchart_values" style="width: 900px; height: 300px;" class="bg-darkalaa"></div>
         <div class="w-full flex justify-center flex-col  text-white">
