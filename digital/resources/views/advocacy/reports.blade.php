@@ -6,7 +6,9 @@
                 <div class="grid grid-cols-2 gap-8 bg-red pt-10 top-1/2 left-0 ">
                     <div class="bg-darkalaa p-4 w-60 h-50 text-white border border-yellow-400 ">
                         <h1>The most exposed province</h1>
-                        <h2 class="font-bold">Baghdda</h2>
+                        <h2 class="font-bold">@foreach ($regions as $region)
+                            {{$region->region}}
+                        @endforeach</h2>
                     </div>
                     <div class="bg-darkalaa p-4 w-60 h-50 text-white border border-yellow-400">
                         <h1>Target age groups</h1>
@@ -25,6 +27,12 @@
                             {{$genderCount->gender}}
                         @endforeach</h2>
                     </div>
+                    <div class="bg-darkalaa p-4 w-60 h-50 text-white border border-yellow-400">
+                        <h1>Total Number Of Registrants
+                        
+                        <h2 class="font-bold">{{$totalCount}} Users</h2> 
+                    </h1>
+                    </div>
                 </div>
                 @extends('footer')
             </div>
@@ -40,28 +48,29 @@
     google.charts.setOnLoadCallback(drawChart);
 
     function drawChart() {
+        var allregions = @json($allregions);
         var data = google.visualization.arrayToDataTable([
             ["Element", "Density", {
                 role: "style",
             }],
-            ["Baghdad", 8.94, "#b87333"],
-            ["Basra", 10.49, "silver"],
-            ["Mosul", 19.30, "gold"],
-            ["Erbil", 8.94, "#b87333"],
-            ["Sulaymaniyah", 10.49, "silver"],
-            ["Kirkuk", 19.30, "gold"],
-            ["Najaf", 8.94, "#b87333"],
-            ["Karbala", 10.49, "silver"],
-            ["Maysan", 30, "gold"],
-            ["Wasit", 21.45, "color: #e5e4e2"],
-            ["Diwaniyah", 40, "gold"],
-            ["Babil", 8.94, "#b87333"],
-            ["Salahaddin", 10.49, "silver"],
-            ["Diyala", 100, "gold"],
-            ["Anbar", 21.45, "color: #e5e4e2"],
-            ["Thi Qar", 19.30, "gold"],
-            ["Samawah", 10.49, "silver"],
-            ["Qadisiyah", 19.30, "gold"],
+            [console.log(allregions[0]), 8.94, "#b87333"],
+            // ["Basra", 10.49, "silver"],
+            // ["Mosul", 19.30, "gold"],
+            // ["Erbil", 8.94, "#b87333"],
+            // ["Sulaymaniyah", 10.49, "silver"],
+            // ["Kirkuk", 19.30, "gold"],
+            // ["Najaf", 8.94, "#b87333"],
+            // ["Karbala", 10.49, "silver"],
+            // ["Maysan", 30, "gold"],
+            // ["Wasit", 21.45, "color: #e5e4e2"],
+            // ["Diwaniyah", 40, "gold"],
+            // ["Babil", 8.94, "#b87333"],
+            // ["Salahaddin", 10.49, "silver"],
+            // ["Diyala", 100, "gold"],
+            // ["Anbar", 21.45, "color: #e5e4e2"],
+            // ["Thi Qar", 19.30, "gold"],
+            // ["Samawah", 10.49, "silver"],
+            // ["Qadisiyah", 19.30, "gold"],
 
 
         ]);

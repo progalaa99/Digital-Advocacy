@@ -9,7 +9,13 @@ use Illuminate\Support\Facades\DB;
 class AnalysisController extends Controller
 {
     public function analysis(){
-        $regions = UserAnalysis::pluck('region');
+        $allregions = UserAnalysis::pluck('region');
+        $regions = DB::table('users')
+                        ->select('region', DB::raw('count(*) as count'))
+                        ->groupBy('region')
+                        ->orderByDesc('count')
+                        ->limit(1)
+                        ->get();
 
         $ageCounts = DB::table('users')
                         ->select('age', DB::raw('count(*) as count'))
@@ -34,32 +40,16 @@ class AnalysisController extends Controller
         return view('advocacy.reports',['regions'=>$regions,'ageCounts'=>$ageCounts,
                                         'genderCounts'=>$genderCounts,
                                         'malePercentage'=>$malePercentage,
-                                        'femalePercentage'=>$femalePercentage]);
+                                        'femalePercentage'=>$femalePercentage,
+                                        'totalCount'=>$totalCount,
+                                        'allregions'=>$allregions]);
 
 
     }
 
-    public function age(){
-
-        $ageCounts = DB::table('users')
-                        ->select('age', DB::raw('count(*) as count'))
-                        ->groupBy('age')
-                        ->orderByDesc('count')
-                        ->limit(2)
-                        ->get();
-        return view('advocacy.reports',['ageCounts'=>$ageCounts]);
-    }
+   
 
 
-    public function gender(){ 
-        
-        $genderCounts = DB::table('users')
-                            ->select('gender', DB::raw('count(*) as count'))
-                            ->groupBy('gender')
-                            ->orderByDesc('count')
-                            ->limit(1)
-                            ->get();
-        return view('advocacy.reports',['genderCounts'=>$genderCounts]);
-    }
+    
     
 }
