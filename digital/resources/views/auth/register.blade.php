@@ -37,12 +37,40 @@
 
             <div class="mt-4">
                 <x-label for="email" value="{{ __('gender') }}" />
-                <x-input id="gender" class="block mt-1 w-full" type="text" name="gender" :value="old('gender')" required  />
+                {{-- <x-input id="gender" class="block mt-1 w-full" type="text" name="gender" :value="old('gender')" required  /> --}}
+                <select name="gender" id="gender" class="block mt-1 w-full" id="inputGroupSelect01">
+                    <option selected>Select ... </option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  
+                  </select>
             </div>
 
             <div class="mt-4">
                 <x-label for="email" value="{{ __('region') }}" />
-                <x-input id="region" class="block mt-1 w-full" type="text" name="region" :value="old('region')" required />
+                {{-- <x-input id="region" class="block mt-1 w-full" type="text" name="region" :value="old('region')" required /> --}}
+                <select name="region" id="gender" class="block mt-1 w-full" id="inputGroupSelect01">
+                    <option selected>Select ... </option>
+                    <option value="Baghdad">Baghdad</option>
+                    <option value="Basra">Basra</option>
+                    <option value="Mosul">Mosul</option>
+                    <option value="Erbil">Erbil</option>
+                    <option value="Sulaymaniyah">Sulaymaniyah</option>
+                    <option value="Kirkuk">Kirkuk</option>
+                    <option value="Najaf">Najaf</option>
+                    <option value="Karbala">Karbala</option>
+                    <option value="Maysan">Maysan</option>
+                    <option value="Wasit">Wasit</option>
+                    <option value="Diwaniyah">Diwaniyah</option>
+                    <option value="Babil">Babil</option>
+                    <option value="Salahaddin">Salahaddin</option>
+                    <option value="Diyala">Diyala</option>
+                    <option value="Anbar">Anbar</option>
+                    <option value="Thi Qar">Thi Qar</option>
+                    <option value="Samawah">Samawah</option>
+                    <option value="Qadisiyah">Qadisiyah</option>
+                  
+                  </select>
             </div>
 
             <div class="mt-4">
