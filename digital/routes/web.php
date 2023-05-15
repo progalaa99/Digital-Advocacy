@@ -56,6 +56,8 @@ Route::middleware([
     Route::get('/blogedu.technical-edu', [App\Http\Controllers\BlogeduController::class, 'index'])->name('blogedu.technical-edu');;
 })->group(function () {
     Route::get('/blogedu.show/{id}', [App\Http\Controllers\BlogeduController::class, 'show'])->name('blogedu.show');;
+})->group(function () {
+    Route::get('/advocacy.reports', [App\Http\Controllers\AnalysisController::class, 'region'])->name('advocacy.reports');;
 });
 
 
