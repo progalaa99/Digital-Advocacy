@@ -37,11 +37,12 @@ Route::middleware([
     Route::get('/support', function () {
         return view('advocacy.support');
     })->name('support');
-})->group(function () {
-    Route::get('/reports', function () {
-        return view('advocacy.reports');
-    })->name('reports');
 })
+// ->group(function () {
+//     Route::get('/reports', function () {
+//         return view('advocacy.reports');
+//     })->name('reports');
+// })
 // ->group(function () {
 //     Route::get('/technical-edu', function () {
 //         return view('advocacy.technical-edu');
@@ -57,9 +58,37 @@ Route::middleware([
 })->group(function () {
     Route::get('/blogedu.show/{id}', [App\Http\Controllers\BlogeduController::class, 'show'])->name('blogedu.show');;
 })->group(function () {
-    Route::get('/advocacy.reports', [App\Http\Controllers\AnalysisController::class, 'region'])->name('advocacy.reports');
+    // Route::get('/region.reports', [App\Http\Controllers\AnalysisController::class, 'region'])->name('region.reports');
 })->group(function () {
-    Route::get('/age.reports', [App\Http\Controllers\AnalysisController::class, 'age'])->name('age.reports');
-});
+    // Route::get('/age.reports', [App\Http\Controllers\AnalysisController::class, 'age'])->name('age.reports');
+})->group(function () {
+    // Route::get('/gender.reports', [App\Http\Controllers\AnalysisController::class, 'gender'])->name('gender.reports');
+    Route::get('/region.reports', [App\Http\Controllers\AnalysisController::class, 'analysis'])->name('reports');
+    // Route::get('/age.reports', [App\Http\Controllers\AnalysisController::class, 'age'])->name('age.reports');
+
+
+})->name('reports');
+
+// Route::group(['prefix' => 'reports'], function () {
+//     // راوتر 1
+//     Route::get('/gender.reports', [App\Http\Controllers\AnalysisController::class, 'gender'])->name('gender.reports');
+//     Route::get('/region.reports', [App\Http\Controllers\AnalysisController::class, 'region'])->name('region.reports');
+
+//     Route::get('/age.reports', [App\Http\Controllers\AnalysisController::class, 'age'])->name('age.reports');
+//     })->name('reports');
+//.///////
+// Route::resource('reports', [App\Http\Controllers\AnalysisController::class]);
+
+
+    
+     
+   
+    
+
+ 
+   
+
+
+
 
 

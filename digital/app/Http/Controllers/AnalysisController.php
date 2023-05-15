@@ -8,9 +8,26 @@ use App\Models\User;
 use Illuminate\Support\Facades\DB;
 class AnalysisController extends Controller
 {
-    public function region(){
+    public function analysis(){
         $regions = UserAnalysis::pluck('region');
-        return view('advocacy.reports',['regions'=>$regions]);
+
+        $ageCounts = DB::table('users')
+                        ->select('age', DB::raw('count(*) as count'))
+                        ->groupBy('age')
+                        ->orderByDesc('count')
+                        ->limit(2)
+                        ->get();
+
+        $genderCounts = DB::table('users')
+                        ->select('gender', DB::raw('count(*) as count'))
+                        ->groupBy('gender')
+                        ->orderByDesc('count')
+                        ->limit(1)
+                        ->get();
+
+        return view('advocacy.reports',['regions'=>$regions,'ageCounts'=>$ageCounts,'genderCounts'=>$genderCounts]);
+
+
     }
 
     public function age(){
@@ -26,8 +43,14 @@ class AnalysisController extends Controller
 
 
     public function gender(){ 
-        $regions = UserAnalysis::pluck('gender');
-        return view('advocacy.reports',['regions'=>$regions]);
+        
+        $genderCounts = DB::table('users')
+                            ->select('gender', DB::raw('count(*) as count'))
+                            ->groupBy('gender')
+                            ->orderByDesc('count')
+                            ->limit(1)
+                            ->get();
+        return view('advocacy.reports',['genderCounts'=>$genderCounts]);
     }
     
 }
