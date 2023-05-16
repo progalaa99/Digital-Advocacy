@@ -10,9 +10,10 @@
                             {{$region->region}}
                         @endforeach</h2>
                     </div>
+                    
                     <div class="bg-darkalaa p-4 w-60 h-50 text-white border border-yellow-400">
                         <h1>Target age groups</h1>
-                        <h2 class="font-bold">@foreach ($ageCounts as $ageCount)
+                        <h2 class="font-bold">@foreach ($ageCounts as $ageCount) 
                            ( {{$ageCount->age}} ) 
                         @endforeach</h2>
                     </div>
