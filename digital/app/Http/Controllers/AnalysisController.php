@@ -11,10 +11,14 @@ class AnalysisController extends Controller
 {
     public function analysis(){
         // $allregions = UserAnalysis::pluck('region');
-         return $allregions = DB::table('users')
+          $allregions = DB::table('users')
                 ->select('region', DB::raw('COUNT(*) as count'))
                 ->groupBy('region')
                 ->get();
+                // return $allregions->keys();
+                  $allregion = $allregions->pluck('region');
+                 $allcount = $allregions->pluck('count');
+              
 
 
         $regions = DB::table('users')
@@ -48,8 +52,8 @@ class AnalysisController extends Controller
 
 
         $chart = new analysisusers;
-        $chart->labels(['One', 'Two', 'Three', 'Four']);
-        $chart->dataset('My dataset', 'line', [1, 2, 3, 4]);
+        $chart->labels($allregion);
+        $chart->dataset('My dataset', 'line', $allcount);
 
 
 
