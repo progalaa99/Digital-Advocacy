@@ -6,10 +6,17 @@ use Illuminate\Http\Request;
 use App\Models\UserAnalysis;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
+use App\Charts\analysisusers;
 class AnalysisController extends Controller
 {
     public function analysis(){
-        $allregions = UserAnalysis::pluck('region');
+        // $allregions = UserAnalysis::pluck('region');
+         return $allregions = DB::table('users')
+                ->select('region', DB::raw('COUNT(*) as count'))
+                ->groupBy('region')
+                ->get();
+
+
         $regions = DB::table('users')
                         ->select('region', DB::raw('count(*) as count'))
                         ->groupBy('region')
@@ -37,12 +44,22 @@ class AnalysisController extends Controller
         $totalCount = $maleCount + $femaleCount;
         $malePercentage = round(($maleCount / $totalCount) * 100);
         $femalePercentage =round(($femaleCount / $totalCount) * 100);
+
+
+
+        $chart = new analysisusers;
+        $chart->labels(['One', 'Two', 'Three', 'Four']);
+        $chart->dataset('My dataset', 'line', [1, 2, 3, 4]);
+
+
+
         return view('advocacy.reports',['regions'=>$regions,'ageCounts'=>$ageCounts,
                                         'genderCounts'=>$genderCounts,
                                         'malePercentage'=>$malePercentage,
                                         'femalePercentage'=>$femalePercentage,
                                         'totalCount'=>$totalCount,
-                                        'allregions'=>$allregions]);
+                                        'allregions'=>$allregions,
+                                        'chart' => $chart]);
 
 
     }
