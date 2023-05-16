@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class=" top-1/2 left-1/2 text-white flex justify-center flex-raw ">
         {{-- <div id="columnchart_values" style="width: 900px; height: 300px;" class="bg-darkalaa"></div> --}}
-        <div>{!! $chart->container() !!}</div>
+        <div class="w-500 h-500 text-white">{!! $chart->container() !!}</div>
         <div class="w-full flex justify-center flex-col  text-white">
             <div class="flex flex-col w-1/2 mx-auto justify-center items-center">
                 <div class="grid grid-cols-2 gap-8 bg-red pt-10 top-1/2 left-0 ">

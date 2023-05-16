@@ -53,7 +53,9 @@ class AnalysisController extends Controller
 
         $chart = new analysisusers;
         $chart->labels($allregion);
-        $chart->dataset('My dataset', 'line', $allcount);
+        $chart->dataset('My dataset', 'line', $allcount)->options([
+            'backgroundColor' => 'white',
+        ]);;
 
 
 
