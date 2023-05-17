@@ -38,15 +38,7 @@ Route::middleware([
         return view('advocacy.support');
     })->name('support');
 })
-// ->group(function () {
-//     Route::get('/reports', function () {
-//         return view('advocacy.reports');
-//     })->name('reports');
-// })
-// ->group(function () {
-//     Route::get('/technical-edu', function () {
-//         return view('advocacy.technical-edu');
-//     })->name('technical-edu');
+
 ->group(function () {
     Route::post('/complaint.store/{user_id}', [App\Http\Controllers\ComplaintController::class, 'store'])->name('complaint.store');
 })->group(function () {
@@ -58,28 +50,19 @@ Route::middleware([
 })->group(function () {
     Route::get('/blogedu.show/{id}', [App\Http\Controllers\BlogeduController::class, 'show'])->name('blogedu.show');;
 })->group(function () {
-    // Route::get('/region.reports', [App\Http\Controllers\AnalysisController::class, 'region'])->name('region.reports');
-})->group(function () {
-    // Route::get('/age.reports', [App\Http\Controllers\AnalysisController::class, 'age'])->name('age.reports');
-})->group(function () {
-    // Route::get('/gender.reports', [App\Http\Controllers\AnalysisController::class, 'gender'])->name('gender.reports');
     Route::get('/region.reports', [App\Http\Controllers\AnalysisController::class, 'analysis'])->name('reports');
-    // Route::get('/age.reports', [App\Http\Controllers\AnalysisController::class, 'age'])->name('age.reports');
 
 
-})->name('reports');
-
-// Route::group(['prefix' => 'reports'], function () {
-//     // راوتر 1
-//     Route::get('/gender.reports', [App\Http\Controllers\AnalysisController::class, 'gender'])->name('gender.reports');
-//     Route::get('/region.reports', [App\Http\Controllers\AnalysisController::class, 'region'])->name('region.reports');
-
-//     Route::get('/age.reports', [App\Http\Controllers\AnalysisController::class, 'age'])->name('age.reports');
-//     })->name('reports');
-//.///////
-// Route::resource('reports', [App\Http\Controllers\AnalysisController::class]);
-
-
+//blog Support Routes
+})->group(function () {
+    Route::get('/blogsupport.create', [App\Http\Controllers\BlogeduController::class, 'create'])->name('blogsupport.create');
+})->group(function () {
+        Route::post('/blogsupport.store/{user_id}', [App\Http\Controllers\BlogeduController::class, 'store'])->name('blogsupport.store');
+})->group(function () {
+    Route::get('/blogsupport.technical-edu', [App\Http\Controllers\BlogeduController::class, 'index'])->name('blogsupport.technical-edu');;
+})->group(function () {
+    Route::get('/blogsupport.show/{id}', [App\Http\Controllers\BlogeduController::class, 'show'])->name('blogsupport.show');;
+});
     
      
    
