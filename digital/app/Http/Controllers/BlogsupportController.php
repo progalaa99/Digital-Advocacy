@@ -12,7 +12,10 @@ class BlogsupportController extends Controller
      */
     public function index()
     {
-        //
+        $blogsupports = Blogsupport::get();
+        $blogsupports = Blogsupport::paginate(3);
+       
+        return view('blogsupport.support',['blogsupport'=>$blogsupports]);
     }
 
     /**
@@ -20,7 +23,8 @@ class BlogsupportController extends Controller
      */
     public function create()
     {
-        //
+        return view('blogsupport.create');
+
     }
 
     /**
@@ -28,7 +32,21 @@ class BlogsupportController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $id = $user_id;
+        $request->validate([
+            'title' => 'required',
+            'body' => 'required',
+            'cover' => 'required|file|mimes:jpg,png,jpeg|max:500000',
+        ]);
+        $file = $request->file('cover');
+        $path = $file->move('uploads/blogsupport');
+        $blogedu = Blogsupport::create([
+            'user_id' => $id,
+            'title' => $request->title,
+            'body' => $request->body,
+            'cover' => $path,
+        ]);
+        return redirect()->route('blogsupport.support');
     }
 
     /**
@@ -36,7 +54,9 @@ class BlogsupportController extends Controller
      */
     public function show(Blogsupport $blogsupport)
     {
-        //
+        $blogedu = Blogsupport::findOrFail($id);
+        
+        return view('blogsupport.show',['blogsupport'=>$Blogsupport]);
     }
 
     /**
