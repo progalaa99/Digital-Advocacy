@@ -10,7 +10,7 @@
                     <img class="w-256 h-256 pt-10  transform -translate-x-1/9 -translate-y-1/11 fill-svgfill "
                         fill="svgfill" src="/{{ $blogedu->cover }}" alt="head-idea-icon">
                 </div>
-                <div class="text-2xl text-white fond-bold text-justify text-lg">{{ $blogedu->body }}</div>
+                <div class="text-2xl text-white fond-bold text-justify ">{{ $blogedu->body }}</div>
             </div>
         </div>
     </div>

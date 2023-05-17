@@ -15,7 +15,7 @@ class BlogsupportController extends Controller
         $blogsupports = Blogsupport::get();
         $blogsupports = Blogsupport::paginate(3);
        
-        return view('blogsupport.support',['blogsupport'=>$blogsupports]);
+        return view('blogsupport.support',['blogsupports'=>$blogsupports]);
     }
 
     /**
@@ -30,7 +30,7 @@ class BlogsupportController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request,$user_id)
     {
         $id = $user_id;
         $request->validate([
@@ -40,7 +40,7 @@ class BlogsupportController extends Controller
         ]);
         $file = $request->file('cover');
         $path = $file->move('uploads/blogsupport');
-        $blogedu = Blogsupport::create([
+        $blogsupports = Blogsupport::create([
             'user_id' => $id,
             'title' => $request->title,
             'body' => $request->body,
@@ -52,11 +52,11 @@ class BlogsupportController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Blogsupport $blogsupport)
+    public function show(Blogsupport $blogsupport,$id)
     {
-        $blogedu = Blogsupport::findOrFail($id);
+        $blogsupports = Blogsupport::findOrFail($id);
         
-        return view('blogsupport.show',['blogsupport'=>$Blogsupport]);
+        return view('blogsupport.show',['blogsupports'=>$blogsupports]);
     }
 
     /**

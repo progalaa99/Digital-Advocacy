@@ -33,10 +33,10 @@ Route::middleware([
     Route::get('/complaint', function () {
         return view('advocacy.complaint');
     })->name('complaint');
-})->group(function () {
-    Route::get('/support', function () {
-        return view('blogsupport.support');
-    })->name('support');
+// })->group(function () {
+//     Route::get('/support', function () {
+//         return view('blogsupport.support');
+//     })->name('support');
 })
 
 ->group(function () {
@@ -46,7 +46,7 @@ Route::middleware([
 })->group(function () {
         Route::post('/blogedu.store/{user_id}', [App\Http\Controllers\BlogeduController::class, 'store'])->name('blogedu.store');
 })->group(function () {
-    Route::get('/blogedu.technical-edu', [App\Http\Controllers\BlogeduController::class, 'index'])->name('blogedu.technical-edu');;
+    Route::get('/blogedu.technical-edu', [App\Http\Controllers\BlogeduController::class, 'index'])->name('blogedu.technical-edu');
 })->group(function () {
     Route::get('/blogedu.show/{id}', [App\Http\Controllers\BlogeduController::class, 'show'])->name('blogedu.show');;
 })->group(function () {
@@ -61,9 +61,10 @@ Route::middleware([
 })->group(function () {
     Route::get('/blogsupport.technical-edu', [App\Http\Controllers\BlogsupportController::class, 'index'])->name('blogsupport.technical-edu');;
 })->group(function () {
-    Route::get('/blogsupport.show/{id}', [App\Http\Controllers\BlogsupportController::class, 'show'])->name('blogsupport.show');;
-});
-    
+    Route::get('/blogsupport.show/{id}', [App\Http\Controllers\BlogsupportController::class, 'show'])->name('blogsupport.show');
+})->group(function () {
+    Route::get('/blogsupport.support', [App\Http\Controllers\BlogsupportController::class, 'index'])->name('blogsupport.support');
+}) ;
      
    
     
