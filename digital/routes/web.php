@@ -50,9 +50,11 @@ Route::middleware([
 })->group(function () {
     Route::get('/blogedu.show/{id}', [App\Http\Controllers\BlogeduController::class, 'show'])->name('blogedu.show');
 })->group(function () {
-    Route::get('/blogedu.update/{blogeduid}', [App\Http\Controllers\BlogeduController::class, 'update'])->name('blogedu.update');
+    Route::post('/blogedu.update/{blogeduid}', [App\Http\Controllers\BlogeduController::class, 'update'])->name('blogedu.update');
 })->group(function () {
     Route::get('/blogedu.edit/{id}', [App\Http\Controllers\BlogeduController::class, 'edit'])->name('blogedu.edit');
+})->group(function () {
+    Route::get('/blogedu.destroy/{id}', [App\Http\Controllers\BlogeduController::class, 'destroy'])->name('blogedu.destroy');
 })
 ->group(function () {
     Route::get('/region.reports', [App\Http\Controllers\AnalysisController::class, 'analysis'])->name('reports');

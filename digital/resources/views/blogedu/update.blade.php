@@ -17,7 +17,7 @@
                 <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-white text-2xl">
                     body
                 </span>
-                <textarea type="text" name="body" value="{{$blogedu->body}}" class="border-gray-400 border rounded py-2 px-3 w-full h-64"></textarea>
+                <textarea type="text" name="body" value="{{$blogedu->body}}" class="border-gray-400 border rounded py-2 px-3 w-full h-64">{{$blogedu->body}}</textarea>
 
             </label><br>
             <label class="block p-2 flex-col items-center ">
@@ -25,7 +25,7 @@
                 <span
                     class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-white text-2xl  text-center">
                     Choose Blog Cover</span>
-                <input type="file" name="cover"
+                <input type="file" name="cover" value="{{$blogedu->cover}}"
                     class="  block w-full text-sm text-slate-500 pl-20
                 file:mr-4 file:py-2 file:px-3
                 file:rounded-full file:border-0

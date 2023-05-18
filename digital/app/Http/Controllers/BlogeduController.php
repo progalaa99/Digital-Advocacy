@@ -75,20 +75,24 @@ class BlogeduController extends Controller
      */
     public function update(Request $request, blogedu $blogedu ,$blogeduid)
     {
-        $data=blogedu::find($req->id);
-        $data->title = $req->title;
-        $data->body = $req->body;
+        // $blogedu =blogedu::find($blogeduid);
+         $data=blogedu::find($blogeduid);
+        $data->title = $request->title;
+        $data->body = $request->body;
         
         
         $data->update();      
-        return redirect()->route('blogedu.technical-edu')->with('success','post Updated information Successfully');
+        return redirect()->route('blogedu.technical-edu');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(blogedu $blogedu)
+    public function destroy(blogedu $blogedu,$id)
     {
-        //
+        $blogedu =blogedu::find($id);
+
+        $blogedu->delete();
+        return redirect()->route('blogedu.technical-edu');
     }
 }
