@@ -62,7 +62,7 @@ class BlogsupportController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Blogsupport $blogsupport)
+    public function edit(Blogsupport $blogsupport,$id)
     {
         $blogsupport =Blogsupport::find($id);
         // return view('product.edit',compact('product'));
@@ -72,9 +72,9 @@ class BlogsupportController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Blogsupport $blogsupport,$blogeduid)
+    public function update(Request $request, Blogsupport $blogsupport,$blogsupportid)
     {
-        $blogsupport=Blogsupport::find($blogeduid);
+        $blogsupport=Blogsupport::find($blogsupportid);
         $blogsupport->title = $request->title;
         $blogsupport->body = $request->body;
         
@@ -86,7 +86,7 @@ class BlogsupportController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Blogsupport $blogsupport)
+    public function destroy(Blogsupport $blogsupport,$id)
     {
         $blogsupport =Blogsupport::find($id);
 

@@ -64,8 +64,8 @@
           @if (auth()->user()->roleId === 1)
           <div >
             <br>
-            <a href="{{route('blogedu.edit',['id'=>$blogsupport->id])}}" class="bg-buttonalaa w-6 p-1 mr-2  w-20 h-30 border-none   rounded">Edit</a>
-            <a href="{{route('blogedu.destroy',['id'=>$blogsupport->id])}}" class="bg-red-900 w-6 p-1 mr-2  w-20 h-30 border-none   rounded">Delete</a>
+            <a href="{{route('blogsupport.edit',['id'=>$blogsupport->id])}}" class="bg-buttonalaa w-6 p-1 mr-2  w-20 h-30 border-none   rounded">Edit</a>
+            <a href="{{route('blogsupport.destroy',['id'=>$blogsupport->id])}}" class="bg-red-900 w-6 p-1 mr-2  w-20 h-30 border-none   rounded">Delete</a>
           </div> 
            @endif 
         </div>
