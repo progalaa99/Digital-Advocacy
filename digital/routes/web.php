@@ -21,62 +21,36 @@ Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
+// Nav Route
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-})->group(function () {
-    Route::get('/site-message', function () {
-        return view('advocacy.site-message');
-    })->name('site-message');
-})->group(function () {
-    Route::get('/complaint', function () {
-        return view('advocacy.complaint');
-    })->name('complaint');
-// })->group(function () {
-//     Route::get('/support', function () {
-//         return view('blogsupport.support');
-//     })->name('support');
-})
+    Route::get('/dashboard', function () { return view('dashboard');})->name('dashboard');
+    Route::get('/site-message', function () { return view('advocacy.site-message');})->name('site-message');
+    Route::get('/complaint', function () {return view('advocacy.complaint');})->name('complaint');
 
+})
+// BlogeduController
 ->group(function () {
     Route::post('/complaint.store/{user_id}', [App\Http\Controllers\ComplaintController::class, 'store'])->name('complaint.store');
-})->group(function () {
     Route::get('/blogedu.create', [App\Http\Controllers\BlogeduController::class, 'create'])->name('blogedu.create');
-})->group(function () {
-        Route::post('/blogedu.store/{user_id}', [App\Http\Controllers\BlogeduController::class, 'store'])->name('blogedu.store');
-})->group(function () {
+    Route::post('/blogedu.store/{user_id}', [App\Http\Controllers\BlogeduController::class, 'store'])->name('blogedu.store');
     Route::get('/blogedu.technical-edu', [App\Http\Controllers\BlogeduController::class, 'index'])->name('blogedu.technical-edu');
-})->group(function () {
     Route::get('/blogedu.show/{id}', [App\Http\Controllers\BlogeduController::class, 'show'])->name('blogedu.show');
-})->group(function () {
     Route::post('/blogedu.update/{blogeduid}', [App\Http\Controllers\BlogeduController::class, 'update'])->name('blogedu.update');
-})->group(function () {
     Route::get('/blogedu.edit/{id}', [App\Http\Controllers\BlogeduController::class, 'edit'])->name('blogedu.edit');
-})->group(function () {
     Route::get('/blogedu.destroy/{id}', [App\Http\Controllers\BlogeduController::class, 'destroy'])->name('blogedu.destroy');
-})
-->group(function () {
     Route::get('/region.reports', [App\Http\Controllers\AnalysisController::class, 'analysis'])->name('reports');
-
-
 //blog Support Routes
 })->group(function () {
     Route::get('/blogsupport.create', [App\Http\Controllers\BlogsupportController::class, 'create'])->name('blogsupport.create');
-})->group(function () {
-        Route::post('/blogsupport.store/{user_id}', [App\Http\Controllers\BlogsupportController::class, 'store'])->name('blogsupport.store');
-})->group(function () {
+    Route::post('/blogsupport.store/{user_id}', [App\Http\Controllers\BlogsupportController::class, 'store'])->name('blogsupport.store');
     Route::get('/blogsupport.technical-edu', [App\Http\Controllers\BlogsupportController::class, 'index'])->name('blogsupport.technical-edu');;
-})->group(function () {
     Route::get('/blogsupport.show/{id}', [App\Http\Controllers\BlogsupportController::class, 'show'])->name('blogsupport.show');
-})->group(function () {
+
     Route::get('/blogsupport.support', [App\Http\Controllers\BlogsupportController::class, 'index'])->name('blogsupport.support');
-}) ->group(function () {
     Route::post('/blogsupport.update/{blogsupportid}', [App\Http\Controllers\BlogsupportController::class, 'update'])->name('blogsupport.update');
-})->group(function () {
     Route::get('/blogsupport.edit/{id}', [App\Http\Controllers\BlogsupportController::class, 'edit'])->name('blogsupport.edit');
-})->group(function () {
     Route::get('/blogsupport.destroy/{id}', [App\Http\Controllers\BlogsupportController::class, 'destroy'])->name('blogsupport.destroy');
+
 });
      
    

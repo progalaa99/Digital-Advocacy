@@ -1,6 +1,6 @@
 <x-app-layout>
   {{$user_id = Auth::id(); }}
-    <div class="flex items-center flex-row items-center   absolute  top-3/2 left-60 pt-10  ">
+    <div class="flex items-center flex-row    absolute  top-3/2 left-60 pt-10  ">
         <div class="bg-darkalaa p-4 w-3/2  ">
             <form class="flex flex-col items-center " action="{{route('complaint.store',['user_id'=>$user_id])}}" method="POST" enctype="multipart/form-data">
               @csrf
@@ -60,7 +60,7 @@
                 otherwise you will bear legal 
                 penalties!</p> <br>
                 <div class="border border-dashed border-3  border-sky-500   rounded p-3">
-                  <h1 class="text-3xl text-white text-sky-500 font-bold ">Tip !</h1>
+                  <h1 class="text-3xl text-white  font-bold ">Tip !</h1>
                   <p class="text-white   text-1xl p-1 m-1">You should pay attention to the method of uploading the
                    evidence, by placing them all inside the pdf file and then attaching it.</p>
                 </div>
