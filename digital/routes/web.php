@@ -48,8 +48,11 @@ Route::middleware([
 })->group(function () {
     Route::get('/blogedu.technical-edu', [App\Http\Controllers\BlogeduController::class, 'index'])->name('blogedu.technical-edu');
 })->group(function () {
-    Route::get('/blogedu.show/{id}', [App\Http\Controllers\BlogeduController::class, 'show'])->name('blogedu.show');;
+    Route::get('/blogedu.show/{id}', [App\Http\Controllers\BlogeduController::class, 'show'])->name('blogedu.show');
 })->group(function () {
+    Route::get('/blogedu.edit/{id}', [App\Http\Controllers\BlogeduController::class, 'edit'])->name('blogedu.edit');
+})
+->group(function () {
     Route::get('/region.reports', [App\Http\Controllers\AnalysisController::class, 'analysis'])->name('reports');
 
 

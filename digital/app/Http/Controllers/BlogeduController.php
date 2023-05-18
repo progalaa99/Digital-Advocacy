@@ -65,7 +65,7 @@ class BlogeduController extends Controller
      */
     public function edit(blogedu $blogedu)
     {
-        //
+        return view('blogedu.update');
     }
 
     /**

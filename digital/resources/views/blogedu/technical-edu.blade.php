@@ -5,8 +5,8 @@
     
     <div class="w-full flex justify-center flex-col  text-white">
       @if (auth()->user()->roleId === 1)
-    <div >
-      <a href="{{route('blogedu.create')}}" class="bg-buttonalaa w-6 p-1 mr-2  w-20 h-30 border-none   rounded">Add Blog</a>
+    <div class="flex justify-center items-center" >
+      <a href="{{route('blogedu.create')}}" class="bg-buttonalaa  p-1 mr-2  w-20 h-30 border-none   rounded ">Add Blog</a>
     </div> 
      @endif  
      
@@ -27,7 +27,7 @@
         @if (auth()->user()->roleId === 1)
     <div >
       <br>
-      <a href="{{route('blogedu.create')}}" class="bg-buttonalaa w-6 p-1 mr-2  w-20 h-30 border-none   rounded">Edit</a>
+      <a href="{{route('blogedu.edit',['id'=>$blogedu->id])}}" class="bg-buttonalaa w-6 p-1 mr-2  w-20 h-30 border-none   rounded">Edit</a>
       <a href="{{route('blogedu.create')}}" class="bg-red-900 w-6 p-1 mr-2  w-20 h-30 border-none   rounded">Delete</a>
     </div> 
      @endif 
