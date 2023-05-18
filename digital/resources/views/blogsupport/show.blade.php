@@ -1,8 +1,5 @@
 <x-app-layout>
     <div class="flex top-1/2 left-1/2 text-white">
-
-
-
         <div class="w-full flex justify-center flex-col  text-white">
             <div class="flex flex-col w-1/2 mx-auto justify-center items-center pt-10">
                 <div class="text-6xl font-bold text-yellow-400"> * {{ $blogsupports->title }} *</div>
