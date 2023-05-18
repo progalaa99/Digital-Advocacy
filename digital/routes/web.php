@@ -71,7 +71,13 @@ Route::middleware([
     Route::get('/blogsupport.show/{id}', [App\Http\Controllers\BlogsupportController::class, 'show'])->name('blogsupport.show');
 })->group(function () {
     Route::get('/blogsupport.support', [App\Http\Controllers\BlogsupportController::class, 'index'])->name('blogsupport.support');
-}) ;
+}) ->group(function () {
+    Route::post('/blogsupport.update/{blogsupportid}', [App\Http\Controllers\BlogsupportController::class, 'update'])->name('blogsupport.update');
+})->group(function () {
+    Route::get('/blogsupport.edit/{id}', [App\Http\Controllers\BlogsupportController::class, 'edit'])->name('blogsupport.edit');
+})->group(function () {
+    Route::get('/blogsupport.destroy/{id}', [App\Http\Controllers\BlogsupportController::class, 'destroy'])->name('blogsupport.destroy');
+});
      
    
     
