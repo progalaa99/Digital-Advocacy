@@ -41,9 +41,14 @@
   <h1 class="text-6xl font-bold">Article</h1>
 </div>
 {{--   2 div     --}}
-<div class="w-full flex justify-center flex-col  text-white">
-
+<div class="w-full flex justify-center flex-col  text-white"><br><br>
+  @if (auth()->user()->roleId === 1)
+  <div class="flex justify-center items-center" ><br>
+    <a href="{{route('blogsupport.create')}}" class="bg-buttonalaa  p-1 mr-2  w-20 h-30 border-none   rounded ">Add Blog</a>
+  </div> 
+   @endif
       <div class="flex w-1/2 mx-auto justify-center items-center">
+       
        @foreach ($blogsupports as $blogsupport)
            
        
@@ -56,6 +61,13 @@
           <div >
             <a href="{{route('blogsupport.show',['id'=>$blogsupport->id])}}" class="bg-buttonalaa w-6 p-1 mr-2  w-20 h-30 border-none   rounded">View</a>
           </div>
+          @if (auth()->user()->roleId === 1)
+          <div >
+            <br>
+            <a href="{{route('blogedu.edit',['id'=>$blogsupport->id])}}" class="bg-buttonalaa w-6 p-1 mr-2  w-20 h-30 border-none   rounded">Edit</a>
+            <a href="{{route('blogedu.destroy',['id'=>$blogsupport->id])}}" class="bg-red-900 w-6 p-1 mr-2  w-20 h-30 border-none   rounded">Delete</a>
+          </div> 
+           @endif 
         </div>
         @endforeach
       </div>
