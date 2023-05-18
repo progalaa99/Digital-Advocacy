@@ -64,15 +64,23 @@ class BlogsupportController extends Controller
      */
     public function edit(Blogsupport $blogsupport)
     {
-        //
+        $blogsupport =Blogsupport::find($id);
+        // return view('product.edit',compact('product'));
+        return view('blogsupport.update',compact('blogsupport'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Blogsupport $blogsupport)
+    public function update(Request $request, Blogsupport $blogsupport,$blogeduid)
     {
-        //
+        $blogsupport=Blogsupport::find($blogeduid);
+        $blogsupport->title = $request->title;
+        $blogsupport->body = $request->body;
+        
+        
+        $blogsupport->update();      
+        return redirect()->route('blogsupport.support');
     }
 
     /**
@@ -80,6 +88,9 @@ class BlogsupportController extends Controller
      */
     public function destroy(Blogsupport $blogsupport)
     {
-        //
+        $blogsupport =Blogsupport::find($id);
+
+        $blogsupport->delete();
+        return redirect()->route('blogsupport.support');
     }
 }
