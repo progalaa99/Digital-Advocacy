@@ -50,6 +50,8 @@ Route::middleware([
 })->group(function () {
     Route::get('/blogedu.show/{id}', [App\Http\Controllers\BlogeduController::class, 'show'])->name('blogedu.show');
 })->group(function () {
+    Route::get('/blogedu.update/{blogeduid}', [App\Http\Controllers\BlogeduController::class, 'update'])->name('blogedu.update');
+})->group(function () {
     Route::get('/blogedu.edit/{id}', [App\Http\Controllers\BlogeduController::class, 'edit'])->name('blogedu.edit');
 })
 ->group(function () {

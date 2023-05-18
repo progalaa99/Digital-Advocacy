@@ -63,17 +63,25 @@ class BlogeduController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(blogedu $blogedu)
+    public function edit(blogedu $blogedu,$id)
     {
-        return view('blogedu.update');
+        $blogedu =blogedu::find($id);
+        // return view('product.edit',compact('product'));
+        return view('blogedu.update',compact('blogedu'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, blogedu $blogedu)
+    public function update(Request $request, blogedu $blogedu ,$blogeduid)
     {
-        //
+        $data=blogedu::find($req->id);
+        $data->title = $req->title;
+        $data->body = $req->body;
+        
+        
+        $data->update();      
+        return redirect()->route('blogedu.technical-edu')->with('success','post Updated information Successfully');
     }
 
     /**

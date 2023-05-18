@@ -1,15 +1,15 @@
 <x-app-layout>
-    {{ $user_id = Auth::id(); }}
+    {{-- {{ $user_id = Auth::id(); }} --}}
 
     <div class="bg-darkalaa p-4 w-3/2   flex justify-center items-center h-screen">
         <form class="flex flex-col items-center left-1/2 top-1/2  w-1/2 pt-10 "
-            action="{{ route('blogedu.store', ['user_id' => $user_id]) }}" method="POST" enctype="multipart/form-data">
+            action="{{ route('blogedu.update', ['blogeduid' => $blogedu->id]) }}" method="POST" enctype="multipart/form-data">
             @csrf
             <label class="block  text-gray-700 font-bold mb-2   w-full h-128">
                 <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block   text-white text-2xl">
                     Title
                 </span>
-                <input type="text" name="title"
+                <input type="text" name="title" value="{{$blogedu->title}}"
                     class="mt-1 px-10 py-3 h-16 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" />
             </label> <br>
 
@@ -17,7 +17,7 @@
                 <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-white text-2xl">
                     body
                 </span>
-                <textarea type="text" name="body" class="border-gray-400 border rounded py-2 px-3 w-full h-64"></textarea>
+                <textarea type="text" name="body" value="{{$blogedu->body}}" class="border-gray-400 border rounded py-2 px-3 w-full h-64"></textarea>
 
             </label><br>
             <label class="block p-2 flex-col items-center ">
