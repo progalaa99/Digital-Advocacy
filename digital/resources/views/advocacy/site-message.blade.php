@@ -1,13 +1,6 @@
 <x-app-layout>
-    {{-- <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot> --}}
-
     <div class="flex antialiased top-1/2 left-1/2">
         <div class="bg-darkalaa p-48 mr-48 top-1/2 left-1/2">
-            {{-- <h1 class="text-8xl text-white font-bold ">Welcome</h1> --}}
             <h2 class="text-2xl text-white  text-center">We are really sorry for the problem you encountered! Don't worry dear, we are all exposed to 
                 different problems and so is life, but the most important thing is to learn from mistakes.
                 There is a saying by Andre Gide that I would like to mention to you

@@ -24,7 +24,6 @@
                 </label>
                 <label class="block  ">
                   
-                  {{-- <span class="sr-only">Choose profile photo</span>  --}}
                    <input type="file" name="file" class="  block w-full text-sm text-slate-500 pl-20
                     file:mr-4 file:py-2 file:px-3
                     file:rounded-full file:border-0
@@ -41,7 +40,6 @@
                 </label>
                 
                 <div class="bg-buttonalaa border-none   rounded ">
-                  {{-- <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-white bg-buttonalaa"> --}}
 
                   <button type="submit" class="font-semibold text-white py-2 px-5 text-1xl bg-buttonalaa ">Send</button>
                 
