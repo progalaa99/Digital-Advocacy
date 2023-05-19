@@ -49,7 +49,7 @@ class AnalysisController extends Controller
         $chart->labels($allregion);
         $chart->dataset('Provincial exposure rates', 'line', $allcount)->options([
             'backgroundColor' => '#F5DA81', 
-        ]);;
+        ]);
 
         return view('advocacy.reports',['regions'=>$regions,'ageCounts'=>$ageCounts,
                                         'genderCounts'=>$genderCounts,
