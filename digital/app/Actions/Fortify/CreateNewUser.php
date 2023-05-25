@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
 use Laravel\Jetstream\Jetstream;
+use Illuminate\Auth\Events\Registered;
 
 class CreateNewUser implements CreatesNewUsers
 {
@@ -30,7 +31,7 @@ class CreateNewUser implements CreatesNewUsers
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['accepted', 'required'] : '',
         ])->validate();
        
-        return User::create([
+        $user = User::create([
             'name' => $input['name'],
             'email' => $input['email'],
             'phon' => $input['phon'],
@@ -39,5 +40,7 @@ class CreateNewUser implements CreatesNewUsers
             'region' => $input['region'],
             'password' => Hash::make($input['password']),
         ]);
+        event(new Registered($user));
+        return $user;
     }
 }
