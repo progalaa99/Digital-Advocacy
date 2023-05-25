@@ -21,9 +21,9 @@ Route::get('/email/verify', function () {
 })->middleware(['auth'])->name('verification.notice');
 
 Route::middleware([
-    'auth:sanctum',
+    'auth:sanctum', 'verified',
     config('jetstream.auth_session'),
-    'verified'
+    
 // Nav Route
 ])->group(function () {
     Route::get('/dashboard', function () { return view('dashboard');})->name('dashboard');

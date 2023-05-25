@@ -20,7 +20,10 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // $google2fa = new Google2FA();
+        // $secretKey = $google2fa->generateSecretKey();
+        // $user->two_factor_secret = $secretKey;
+        // $user->save();
     }
 
     /**
