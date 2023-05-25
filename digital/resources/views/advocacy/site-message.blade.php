@@ -10,7 +10,7 @@
         </div>
     </div>{{--      --}}
     <div class="flex-shrink-0 w-1/2 p-1 mr-2 h-10 w-60 bg-buttonalaa absolute top-1/2 left-1/2 transform -translate-x-2/3 -translate-y-1/2  border-none   rounded text-center items-center ">
-        <a href="{{route('support')}}" class="font-semibold text-white py-12 text-2xl ">View Support Page</a>
+        <a href="{{route('blogsupport.support')}}" class="font-semibold text-white py-12 text-2xl ">View Support Page</a>
     </div>
     @extends('footer')
    

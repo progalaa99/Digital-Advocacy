@@ -14,7 +14,7 @@
         </div>
     </div>{{--      --}}
     <div class="flex-shrink-0 w-1/2 p-1 mr-2 h-10 w-60 bg-buttonalaa absolute top-1/2 left-1/2 transform -translate-x-2/3 -translate-y-1/2  border-none   rounded text-center items-center ">
-        <a href="" class="font-semibold text-white py-12 text-2xl ">Technical Education</a>
+        <a href="{{route('blogedu.technical-edu')}}" class="font-semibold text-white py-12 text-2xl ">Technical Education</a>
     </div>
     <div class="absolute pt-20 top-1/2 left-1/2 transform -translate-x-2/3 -translate-y-9/3">
         <h1 class="text-4xl text-white font-bold">Our services</h1>
