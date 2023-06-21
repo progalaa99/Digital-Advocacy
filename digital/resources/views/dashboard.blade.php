@@ -507,16 +507,15 @@
                         <div class="col section-heading">
                             <div class="section-heading--title">
                                 <h2 class="title--show-title">
-                                    About us
+                                     نبذة عنا
                                 </h2>
                                 <h2 class="title--back-title">
-                                    About us
+                                    نبذة عنا
                                 </h2>
                                 <p class="title--subtitle">
-                                    نحن هنا لدعمك ومساعدتك في حل مشكلة
-                                    الابتزاز الإلكتروني  مع توفر العديد من الخدمات التي
-                                    تساعدك على استخدام الإنترنت بأمان  فلا تتردد في التصفح
-                                    الموقع بأكمله! ماذا تنتظر ؟ لنبدأ :)
+                                    نحن هنا لدعمك ومساعدتك في حل مشكلة  الابتزاز الإلكتروني  مع توفر العديد من الخدمات التي تساعدك على استخدام الإنترنت بأمان  فلا تتردد في تصفح
+                                     الموقع بأكمله! ماذا تنتظر ؟
+                                      لنبدأ 
                                 </p>
                             </div>
                         </div>
@@ -535,7 +534,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row about-us--inner-wrapper pt-0">
+                    {{-- <div class="row about-us--inner-wrapper pt-0">
                         <div class="col-lg-4 inner-wrapper--column-wrapper">
                             <p class="primary-color">Original ideas</p>
                             <h5>Testing for Perfection</h5>
@@ -554,7 +553,7 @@
                             <p>Lorem ipsum dolor sit amet, consectet adipisicing. Adipisci aliquid beat commodi
                                 consectetur corporis cumque, deleniti doloribus facere fugiat</p>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </section>
 
