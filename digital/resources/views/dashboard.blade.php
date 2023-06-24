@@ -10,7 +10,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent">
     <meta name="format-detection" content="telephone=no">
-    <title>Keito</title>
+    <title>المناصرة الرقمية</title>
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -112,38 +112,29 @@
                 <div class="navigation-menu-panel--menu-wrapper">
                     <ul class="menu-wrapper--menu-list active-window">
                         <li class="menu-item ">
-                            <a href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                                {{ __('Home') }}</a>
-                                <a href="{{ route('complaint') }}" :active="request()->routeIs('dashboard')">
-                                    {{ __('Complaint') }}</a>
+                            <a href="{{ route('dashboard') }}" :active="request() - > routeIs('dashboard')">
+                                {{ __('الصفحة الرئيسية ') }}</a>
+                            <a href="{{ route('complaint') }}" :active="request() - > routeIs('dashboard')">
+                                {{ __('تقديم مشكلة') }}</a>
 
-                        <a class="menu-item menu-item-has-children" href="{{ route('reports') }}"
-                            :active="request() - > routeIs('dashboard')"> 
-                            {{ __('Report') }}
-                        </a>
-                       
-                            
-                                
-                        
+                            <a class="menu-item menu-item-has-children" href="{{ route('reports') }}"
+                                :active="request() - > routeIs('dashboard')">
+                                {{ __('تقرير') }}
+                            </a>
                         </li>
-                        
                         <li class="menu-item menu-item-has-children">
-                            <a href="#">Blog</a>
+                            <a href="#">مقالات</a>
                             <ul class="sub-menu">
-                                {{-- <a  href="{{ route('blogedu.technical-edu') }}" :active="request()->routeIs('dashboard')">
-                                    {{ __('Technical education') }}</a>
-                                    <a href="{{ route('blogsupport.support') }}" :active="request()->routeIs('dashboard')">
-                                        {{ __('Support') }}</a>  --}}
-                                 <li class="menu-item"><a  href="{{ route('blogedu.technical-edu') }}" :active="request()->routeIs('dashboard')">
-                                    {{ __('Technical education') }}</a>
-                                    <a href="{{ route('blogsupport.support') }}" :active="request()->routeIs('dashboard')">
-                                        {{ __('Support') }}</a></li>
                                
-                                
-                                   
+                                <li class="menu-item"><a href="{{ route('blogedu.technical-edu') }}"
+                                        :active="request() - > routeIs('dashboard')">
+                                        {{ __('التعلم التكنلوجي') }}</a>
+                                    <a href="{{ route('blogsupport.support') }}"
+                                        :active="request() - > routeIs('dashboard')">
+                                        {{ __('الدعم النفسي') }}</a>
+                                </li>
                             </ul>
                         </li>
-                        
                     </ul>
                 </div>
             </div>
@@ -182,1287 +173,867 @@
             <div class="mobile-menu--inner-wrapper">
                 <div class="inner-wrapper--menu-wrapper">
                     <ul class="menu-wrapper--menu-list active-window">
+                        <li class="menu-item ">
+                            <a href="{{ route('dashboard') }}" :active="request() - > routeIs('dashboard')">
+                                {{ __('الصفحة الرئيسية ') }}</a>
+                            <a href="{{ route('complaint') }}" :active="request() - > routeIs('dashboard')">
+                                {{ __('تقديم مشكلة') }}</a>
+
+                            <a class="menu-item menu-item-has-children" href="{{ route('reports') }}"
+                                :active="request() - > routeIs('dashboard')">
+                                {{ __('تقرير') }}
+                            </a>
+                        </li>
                         <li class="menu-item menu-item-has-children">
-                            <a href="#">Homepages</a>
+                            <a href="#">مقالات</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="index.html">Home Classic</a></li>
-                                <li class="menu-item"><a href="home-digital.html">Home Digital</a></li>
-                                <li class="menu-item"><a href="home-creative.html">Home Creative</a></li>
-                                <li class="menu-item"><a href="home-presentation.html">Home Presentation</a></li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Home Single</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="single-glitch-links.html">Glitch Links</a></li>
-                                        <li class="menu-item"><a href="single-slideshow.html">SlideshowMin</a></li>
-                                        <li class="menu-item"><a href="single-hover-grid.html">Hover Grid</a></li>
-                                        <li class="menu-item"><a href="single-html-video.html">HTML Video</a></li>
-                                        <li class="menu-item"><a href="single-vimeo-video.html">Vimeo Video</a></li>
-                                        <li class="menu-item"><a href="single-youtube-video.html">Youtube Video</a>
-                                        </li>
-                                    </ul>
+                               
+                                <li class="menu-item"><a href="{{ route('blogedu.technical-edu') }}"
+                                        :active="request() - > routeIs('dashboard')">
+                                        {{ __('التعلم التكنلوجي') }}</a>
+                                    <a href="{{ route('blogsupport.support') }}"
+                                        :active="request() - > routeIs('dashboard')">
+                                        {{ __('الدعم النفسي') }}</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Portfolio</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Porfolio Scale</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="porfolio-scale-two-columns.html">Porfolio Scale
-                                                2
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-scale-three-columns.html">Porfolio
-                                                Scale 3
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-scale-four-columns.html">Porfolio
-                                                Scale 4
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-scale-metro.html">Porfolio Scale
-                                                Metro</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Porfolio Fade</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="porfolio-fade-two-columns.html">Porfolio Fade 2
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-fade-three-columns.html">Porfolio Fade
-                                                3
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-fade-four-columns.html">Porfolio Fade
-                                                4
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-fade-metro.html">Porfolio Fade
-                                                Metro</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Porfolio Slide</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="porfolio-slide-two-columns.html">Porfolio Slide
-                                                2
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-slide-three-columns.html">Porfolio
-                                                Slide 3
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-slide-four-columns.html">Porfolio
-                                                Slide 4
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-slide-metro.html">Porfolio Slide
-                                                Metro</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Single Project</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="single-project-1.html">Single Project 1</a>
-                                        </li>
-                                        <li class="menu-item"><a href="single-project-2.html">Single Project 2</a>
-                                        </li>
-                                        <li class="menu-item"><a href="single-project-3.html">Single Project 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Gallery</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="gallery-two-columns.html">Gallery 2 Columns</a>
-                                        </li>
-                                        <li class="menu-item"><a href="gallery-three-columns.html">Gallery 3
-                                                Columns</a>
-                                        </li>
-                                        <li class="menu-item"><a href="gallery-four-columns.html">Gallery 4
-                                                Columns</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="error-page.html">Error Page</a></li>
-                                <li class="menu-item"><a href="about-us.html">About Us</a></li>
-                                <li class="menu-item"><a href="services.html">Services</a></li>
-                                <li class="menu-item"><a href="contact.html">Contact</a></li>
-                                <li class="menu-item"><a href="pricing.html">Pricing</a></li>
-                                <li class="menu-item"><a href="clients.html">Clients</a></li>
-                                <li class="menu-item"><a href="team.html">Team</a></li>
-                                <li class="menu-item"><a href="faq.html">FAQ</a></li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Coming Soon</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="coming-soon-creative.html">Coming Soon
-                                                Creative</a>
-                                        </li>
-                                        <li class="menu-item"><a href="coming-soon-simple.html">Coming Soon Simple</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Blog</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="blog-list.html">Blog List</a></li>
-                                <li class="menu-item"><a href="blog-blocks.html">Blog Blocks</a></li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Blog Grid</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="blog-grid-full-width.html">Full Width</a></li>
-                                        <li class="menu-item"><a href="blog-grid-sidebar-layout.html">Sidebar
-                                                Layout</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Blog Boxed</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="blog-boxed-full-width.html">Full Width</a></li>
-                                        <li class="menu-item"><a href="blog-boxed-sidebar-layout.html">Sidebar
-                                                Layout</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Blog Images</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="blog-images-full-width.html">Full Width</a>
-                                        </li>
-                                        <li class="menu-item"><a href="blog-images-sidebar-layout.html">Sidebar
-                                                Layout</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Blog Only Text</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="blog-only-text-full-width.html">Full Width</a>
-                                        </li>
-                                        <li class="menu-item"><a href="blog-only-text-sidebar-layout.html">Sidebar
-                                                Layout</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Blog Post Layout 1</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="blog-post-layout-1-full-width.html">Full
-                                                Width</a>
-                                        </li>
-                                        <li class="menu-item"><a href="blog-post-layout-1-sidebar-layout.html">Sidebar
-                                                Layout</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Blog Post Layout 2</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="blog-post-layout-2-full-width.html">Full
-                                                Width</a>
-                                        </li>
-                                        <li class="menu-item"><a href="blog-post-layout-2-sidebar-layout.html">Sidebar
-                                                Layout</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Shortcodes</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Interactive Elements</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="elements-testimonials-slider.html"><i
-                                                    class="fas fa-sliders-h"></i>Testimonials Slider</a></li>
-                                        <li class="menu-item"><a href="elements-background-slider.html"><i
-                                                    class="fas fa-images"></i>Background Slider</a></li>
-                                        <li class="menu-item"><a href="elements-video-toggles.html"><i
-                                                    class="fas fa-video"></i>Video Toggles</a></li>
-                                        <li class="menu-item"><a href="elements-contact-form.html"><i
-                                                    class="fas fa-envelope"></i>Contact Form</a></li>
-                                        <li class="menu-item"><a href="elements-recent-posts.html"><i
-                                                    class="fas fa-comment-alt"></i>Recent Posts</a></li>
-                                        <li class="menu-item"><a href="elements-hover-boxes.html"><i
-                                                    class="fas fa-image"></i>Hover Boxes</a></li>
-                                        <li class="menu-item"><a href="elements-google-maps.html"><i
-                                                    class="fas fa-map"></i>Google
-                                                Map</a></li>
-                                        <li class="menu-item"><a href="elements-services.html"><i
-                                                    class="fas fa-users"></i>Services</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">General Elements</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="elements-accordion-gallery.html"><i
-                                                    class="fas fa-images"></i>Accordion Gallery</a></li>
-                                        <li class="menu-item"><a href="elements-call-to-action.html"><i
-                                                    class="fas fa-exclamation-triangle"></i>Call To Action</a></li>
-                                        <li class="menu-item"><a href="elements-clients-slider.html"><i
-                                                    class="fas fa-sliders-h"></i>Clients Slider</a></li>
-                                        <li class="menu-item"><a href="elements-team-slider.html"><i
-                                                    class="fas fa-sliders-h"></i>Team Slider</a></li>
-                                        <li class="menu-item"><a href="elements-accordions.html"><i
-                                                    class="fas fa-list-alt"></i>Accordions</a></li>
-                                        <li class="menu-item"><a href="elements-subscribe.html"><i
-                                                    class="fas fa-at"></i>Subscribe</a>
-                                        </li>
-                                        <li class="menu-item"><a href="elements-buttons.html"><i
-                                                    class="fas fa-toggle-on"></i>Buttons</a></li>
-                                        <li class="menu-item"><a href="elements-clients.html"><i
-                                                    class="fas fa-address-card"></i>Clients</a></li>
-                                        <li class="menu-item"><a href="elements-team.html"><i
-                                                    class="fas fa-user-plus"></i>Team</a>
-                                        </li>
-                                        <li class="menu-item"><a href="elements-tabs.html"><i
-                                                    class="fas fa-columns"></i>Tabs</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Text & Containers</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="elements-pricing-tables.html"><i
-                                                    class="fas fa-money-bill-alt"></i>Pricing Tables</a></li>
-                                        <li class="menu-item"><a href="elements-info-banners.html"><i
-                                                    class="fas fa-info-circle"></i>Info Banners</a></li>
-                                        <li class="menu-item"><a href="elements-social-icons.html"><i
-                                                    class="fab fa-facebook"></i>Social Icons</a></li>
-                                        <li class="menu-item"><a href="elements-blockquote.html"><i
-                                                    class="fas fa-quote-right"></i>Blockquote</a></li>
-                                        <li class="menu-item"><a href="elements-lists.html"><i
-                                                    class="fas fa-list-ul"></i>Lists</a>
-                                        </li>
-                                        <li class="menu-item"><a href="elements-headings.html"><i
-                                                    class="fas fa-heading"></i>Headings</a>
-                                        </li>
-                                        <li class="menu-item"><a href="elements-columns.html"><i
-                                                    class="fas fa-columns"></i>Columns</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Infographics</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="elements-services-slider.html"><i
-                                                    class="fas fa-sliders-h"></i>Services Slider</a></li>
-                                        <li class="menu-item"><a href="elements-progress-bars.html"><i
-                                                    class="fas fa-stopwatch"></i>Progress bars</a></li>
-                                        <li class="menu-item"><a href="elements-steps-slider.html"><i
-                                                    class="fas fa-sliders-h"></i>Steps Slider</a></li>
-                                        <li class="menu-item"><a href="elements-countdown.html"><i
-                                                    class="fas fa-hourglass"></i>Countdown</a></li>
-                                        <li class="menu-item"><a href="elements-counters.html"><i
-                                                    class="fas fa-clock"></i>Counters</a>
-                                        </li>
-                                        <li class="menu-item"><a href="elements-process-steps.html"><i
-                                                    class="fas fa-sort-numeric-down"></i>Steps</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="content-page-wrapper content-page-wrapper--side-menu">
 
-            <section class="hero-header bg-position-center bg-size-cover"
-                style="background-image: url('img/home/hero-classic.jpg')">
-                <div class="hero-header--hero-content">
-                    <div class="container">
-                        <div class="hero-content--hero-wrapper">
-                            <div class="hero-wrapper--content">
-                                {{-- <h1 class="hero-heading white-color mb-15">مرحبا بك </h1> --}}
-                                {{-- <p class="hero-subtitle white-color">نحن هنا لدعمك ومساعدتك في حل مشكلة
-                                    الابتزاز الإلكتروني <br> مع توفر العديد من الخدمات التي
-                                    تساعدك على استخدام الإنترنت بأمان <br> فلا تتردد في التصفح
-                                    الموقع بأكمله! ماذا تنتظر ؟ لنبدأ :)</p> --}}
-                            </div>
-                            <div class="hero-content--video-wrapper">
-                                <div class="video-toggle-type-1">
-                                    <a class="video-play-button video-popup" href="#video-post-1">
-                                        <i class="fas fa-play"></i>
-                                    </a>
-                                    <div id="video-post-1" class="white-popup-block mfp-hide mfp-fade">
-                                        <div class="modal-video-box">
-                                            <iframe src="https://www.youtube.com/embed/iGpuQ0ioPrM"
-                                                allowfullscreen></iframe>
-                                            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <header class="hero-header-parallax">
+                <div class="parallax-scene hero-header--inner-wrapper">
+                    <div class="inner-wrapper--image-wrapper" data-depth="0.1">
+                        <div class="image-wrapper--image" style="background-image: url(img/home/coworking-2.jpg)">
                         </div>
                     </div>
+                    <div class="inner-wrapper--content-wrapper" data-depth="0.35">
+                        <div class="content-wrapper--content">
+                            <div class="hero-content--video-wrapper">
+                            </div>
+                            <p class="hero-subtitle white-color text-center mb-10"> مرحبا بك في</p>
+                            <h1 class="hero-heading text-center white-color">موقع المناصرة الرقمية </h1>
+                        </div>
+                    </div>
+                    <div class="canvas-wrapper-particles" id="particles-wrapper" data-depth="0.1">
+                    </div>
                 </div>
-            </section>
+            </header>
 
             <section class="about-us large-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col section-heading">
-                            <div class="section-heading--title">
-                                <h2 class="title--show-title">
-                                     نبذة عنا
-                                </h2>
-                                <h2 class="title--back-title">
-                                    نبذة عنا
-                                </h2>
-                                <p class="title--subtitle">
-                                    نحن هنا لدعمك ومساعدتك في حل مشكلة  الابتزاز الإلكتروني  مع توفر العديد من الخدمات التي تساعدك على استخدام الإنترنت بأمان  فلا تتردد في تصفح
-                                     الموقع بأكمله! ماذا تنتظر ؟
-                                      لنبدأ 
-                                </p>
-                            </div>
+                        <div class="col section-heading-type-3">
+                            <h2 class="section-heading--main-title">
+                               نبذة عنا 
+                            </h2>
+                            <ul class="section-heading--angles">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="row about-us--images">
-                        <div class="col-lg-6">
-                            <div class="images--img-wrapper">
-                                <img src="img/home/teamwork.jpg" alt="" class="img-fluid">
-                            </div>
+                        <div class="col-lg-7">
+                            {{-- <div class="images--img-wrapper bg-position-center bg-size-cover image"
+                                style="background-image: url('img/home/team-3.jpg')">
+                            </div> --}}
                         </div>
-                        <div class="col-lg-6">
-                            <div class="images--img-wrapper m-0">
-                                <img src="img/home/coworking-2.jpg" alt="" class="img-fluid">
-                            </div>
+                        <div class="col-lg-5">
+                            {{-- <div class="images--img-wrapper m-0 bg-position-center bg-size-cover image"
+                                style="background-image: url('img/home/people-2.jpg')">
+                            </div> --}}
                         </div>
                     </div>
-                    {{-- <div class="row about-us--inner-wrapper pt-0">
+                    <div class="row about-us--inner-wrapper border-top-simple">
                         <div class="col-lg-4 inner-wrapper--column-wrapper">
-                            <p class="primary-color">Original ideas</p>
-                            <h5>Testing for Perfection</h5>
-                            <p>Lorem ipsum dolor sit amet, consectet adipisicing. Adipisci aliquid beat commodi
-                                consectetur corporis cumque, deleniti doloribus facere fugiat</p>
+                            <h5 class="mb-10">المقالات والموارد التعليمية</h5>
+                            <p class="pr-50">يحتوي الموقع على مجموعة من المقالات والموارد التعليمية التي توفر معلومات ونصائح حول الأمان السيبراني وكيفية حماية البيانات الشخصية على الإنترنت. تتناول هذه الموارد مواضيع مثل كلمات المرور القوية، والتحقق بخطوتين، والتعرف على البريد الإلكتروني المزيف، والتصيد الاحتيالي، والتشفير، وغيرها من المفاهيم الأساسية في مجال الأمن السيبراني.</p>
                         </div>
                         <div class="col-lg-4 inner-wrapper--column-wrapper">
-                            <p class="primary-color">Graphic designs</p>
-                            <h5>Handcrafted Templates</h5>
-                            <p>Lorem ipsum dolor sit amet, consectet adipisicing. Adipisci aliquid beat commodi
-                                consectetur corporis cumque, deleniti doloribus facere fugiat</p>
+                            <h5 class="mb-10">المجتمع والمنتدى</h5>
+                            <p class="pr-50">
+                                يوفر الموقع مجتمعًا نشطًا للمستخدمين يمكنهم مناقشة وتبادل المعلومات والأفكار حول الأمن السيبراني. يمكن للمستخدمين طرح الأسئلة ومشاركة التحديات وتقديم النصائح والحلول لبعضهم البعض. يعمل المجتمع على تعزيز التوعية والتفاعل وتعزيز الثقافة الأمنية في العالم الرقمي.</p>
                         </div>
                         <div class="col-lg-4 inner-wrapper--column-wrapper">
-                            <p class="primary-color">SEO marketing</p>
-                            <h5>Discussion of the Idea</h5>
-                            <p>Lorem ipsum dolor sit amet, consectet adipisicing. Adipisci aliquid beat commodi
-                                consectetur corporis cumque, deleniti doloribus facere fugiat</p>
-                        </div>
-                    </div> --}}
-                </div>
-            </section>
-
-            <section class="services bg-position-center bg-size-cover"
-                style="background-image: url(img/home/services.jpg)">
-                <div class="gradient-background" style="opacity: 0.9;">
-                </div>
-                <div class="services-type-1 small-section">
-                    <div class="container">
-                        <div class="row z-index-100">
-                            <div class="col-xl-4 col-md-6 col-xs-12" data-aos="fade-up" data-aos-delay="100"
-                                data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out"
-                                data-aos-duration="700">
-                                <div class="services-inner">
-                                    <div class="services-inner--icon-wrapper">
-                                        <i class="fas fa-chart-bar"></i>
-                                    </div>
-                                    <div class="services-inner--content-wrapper">
-                                        <h5 class="content-wrapper--services-heading white-color">Unique
-                                            Design</h5>
-                                        <p class="white-color">Lorem ipsum dolor sit amet, consectet adipisicing elit.
-                                            Aspernatur ea esse et eveniet fugiat inventore nihil nobis</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6 col-xs-12" data-aos="fade-up" data-aos-delay="150"
-                                data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out"
-                                data-aos-duration="700">
-                                <div class="services-inner">
-                                    <div class="services-inner--icon-wrapper">
-                                        <i class="fas fa-chart-pie"></i>
-                                    </div>
-                                    <div class="services-inner--content-wrapper">
-                                        <h5 class="content-wrapper--services-heading white-color">Keito Advantages</h5>
-                                        <p class="white-color">Lorem ipsum dolor sit amet, consectet adipisicing elit.
-                                            Aspernatur ea esse et eveniet fugiat inventore nihil nobis</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6 col-xs-12" data-aos="fade-up" data-aos-delay="200"
-                                data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out"
-                                data-aos-duration="700">
-                                <div class="services-inner">
-                                    <div class="services-inner--icon-wrapper">
-                                        <i class="fas fa-globe"></i>
-                                    </div>
-                                    <div class="services-inner--content-wrapper">
-                                        <h5 class="content-wrapper--services-heading white-color">Smooth Animations
-                                        </h5>
-                                        <p class="white-color">Lorem ipsum dolor sit amet, consectet adipisicing elit.
-                                            Aspernatur ea esse et eveniet fugiat inventore nihil nobis</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6 col-xs-12" data-aos="fade-up" data-aos-delay="350"
-                                data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out"
-                                data-aos-duration="700">
-                                <div class="services-inner">
-                                    <div class="services-inner--icon-wrapper">
-                                        <i class="far fa-gem"></i>
-                                    </div>
-                                    <div class="services-inner--content-wrapper">
-                                        <h5 class="content-wrapper--services-heading white-color">Premium Plugins</h5>
-                                        <p class="white-color">Lorem ipsum dolor sit amet, consectet adipisicing elit.
-                                            Aspernatur ea esse et eveniet fugiat inventore nihil nobis</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6 col-xs-12" data-aos="fade-up" data-aos-delay="400"
-                                data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out"
-                                data-aos-duration="700">
-                                <div class="services-inner">
-                                    <div class="services-inner--icon-wrapper">
-                                        <i class="fas fa-sitemap"></i>
-                                    </div>
-                                    <div class="services-inner--content-wrapper">
-                                        <h5 class="content-wrapper--services-heading white-color">Live Support</h5>
-                                        <p class="white-color">Lorem ipsum dolor sit amet, consectet adipisicing elit.
-                                            Aspernatur ea esse et eveniet fugiat inventore nihil nobis</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6 col-xs-12" data-aos="fade-up" data-aos-delay="450"
-                                data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out"
-                                data-aos-duration="700">
-                                <div class="services-inner">
-                                    <div class="services-inner--icon-wrapper">
-                                        <i class="fas fa-code"></i>
-                                    </div>
-                                    <div class="services-inner--content-wrapper">
-                                        <h5 class="content-wrapper--services-heading white-color">Exclusive Elements
-                                        </h5>
-                                        <p class="white-color">Lorem ipsum dolor sit amet, consectet adipisicing elit.
-                                            Aspernatur ea esse et eveniet fugiat inventore nihil nobis</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <h5 class="inner-wrapper--column-wrapper--title">باختصار، يهدف موقع المناصرة الرقمية إلى تمكين الأفراد وتوفير المعلومات والأدوات اللازمة للحفاظ على الأمان السيبراني وحماية المعلومات الشخصية على الإنترنت. يسعى الموقع لتعزيز التوعية وبناء مجتمع قوي من المهتمين بالأمن السيبراني.</h5>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section class="offers-section large-section border-bottom-simple">
-                <div class="container">
-                    <div class="row offers-section--inner-wrapper">
-                        <div class="col-lg-6">
-                            <div class="inner-wrappper-img-wrapper">
-                                <img src="img/home/offer.jpg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 responsive-padding">
-                            <div class="inner-wrapper--title-wrapper">
-                                <h4>
-                                    Present your services with flexible, convenient and multipurpose
-                                </h4>
-                            </div>
-                            <div class="inner-wrapper--text-wrapper">
-                                <p>
-                                    Sed ut perspiciatis unde omnis natus error accusantium laudant, totam
-                                    aper, eaque ipsa quae illo inventore veritatis quasi beatae vitae dicta sunt
-                                    explicabo. Nemo enim ipsam voluptatem voluptas perspiciatis
-                                    sit.
-                                </p>
-                            </div>
-                            <div class="inner-wrapper--list-wrapper">
-                                <ul class="list-type-1">
-                                    <li>
-                                        <p>Find more creative ideas for your projects</p>
-                                    </li>
-                                    <li>
-                                        <p>Unlimited power and customization possibilities</p>
-                                    </li>
-                                    <li>
-                                        <p>Keito advantages are pixel perfect design delivered</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="inner-wrapper--button-wrapper">
-                                <div class="button-wrapper-type-1">
-                                    <a href="index.html">
-                                        <div class="btn-type-1">
-                                            <i class="fa fa-angle-left"></i>Explore Features
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section
-                class="about-company large-section overlay black-overlay parallax-window bg-size-cover bg-position-center"
-                data-speed="0.4" data-src="img/home/coworking-3.jpg">
-                <div class="container">
-                    <div class="about-company--wrapper">
-                        <h4 class="wrapper--title mb-25 white-color">
-                            Beautiful and easy to use UI, professional animations and drag & drop feature
-                        </h4>
-                        <div class="button-wrapper-type-2">
-                            <a href="blog-post-layout-1-full-width.html" class="btn-type-2">About Company</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="team-section large-section border-bottom-simple">
-                <div class="container">
-                    <div class="row">
-                        <div class="col section-heading">
-                            <div class="section-heading--title">
-                                <h2 class="title--show-title">
-                                    Our Team
-                                </h2>
-                                <h2 class="title--back-title">
-                                    Our Team
-                                </h2>
-                                <p class="title--subtitle">
-                                    Ex mei reformidans ancillae delicata, est amet dolor lobortis id, per no sadipscing
-                                    persequeris sea ludus eirmod usu sint dicunt
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="swiper-container swiper-team-type-1 team-slider-type-1">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="member-wrapper">
-                                    <div class="member-wrapper--img-wrapper">
-                                        <img src="img/team/home-team-1.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="member-wrapper--member-description">
-                                        <div class="member-description--content-wrapper">
-                                            <div class="content-wrapper--content">
-                                                <h6 class="content--name white-color">Anastasia Doe</h6>
-                                                <p class="content--position">Lead Developer</p>
-                                                <div class="content--social-wrapper">
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-facebook-f"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-twitter"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-google-plus-g"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-linkedin-in"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide ">
-                                <div class="member-wrapper">
-                                    <div class="img-wrapper">
-                                        <img src="img/team/home-team-2.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="member-wrapper--member-description">
-                                        <div class="member-description--content-wrapper">
-                                            <div class="content-wrapper--content">
-                                                <h6 class="content--name white-color">Michael May</h6>
-                                                <p class="content--position">Developer</p>
-                                                <div class="content--social-wrapper">
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-facebook-f"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-twitter"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-google-plus-g"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-linkedin-in"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide ">
-                                <div class="member-wrapper">
-                                    <div class="img-wrapper">
-                                        <img src="img/team/home-team-3.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="member-wrapper--member-description">
-                                        <div class="member-description--content-wrapper">
-                                            <div class="content-wrapper--content">
-                                                <h6 class="content--name white-color">John Mark</h6>
-                                                <p class="content--position">Lead Developer</p>
-                                                <div class="content--social-wrapper">
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-facebook-f"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-twitter"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-google-plus-g"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-linkedin-in"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide ">
-                                <div class="member-wrapper">
-                                    <div class="img-wrapper">
-                                        <img src="img/team/home-team-4.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="member-wrapper--member-description">
-                                        <div class="member-description--content-wrapper">
-                                            <div class="content-wrapper--content">
-                                                <h6 class="content--name white-color">Kate Li</h6>
-                                                <p class="content--position">Lead Developer</p>
-                                                <div class="content--social-wrapper">
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-facebook-f"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-twitter"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-google-plus-g"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-linkedin-in"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide ">
-                                <div class="member-wrapper">
-                                    <div class="img-wrapper">
-                                        <img src="img/team/home-team-5.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="member-wrapper--member-description">
-                                        <div class="member-description--content-wrapper">
-                                            <div class="content-wrapper--content">
-                                                <h6 class="content--name white-color">Cory Tailor</h6>
-                                                <p class="content--position">Lead Developer</p>
-                                                <div class="content--social-wrapper">
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-facebook-f"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-twitter"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-google-plus-g"></i></a>
-                                                    <a class="social-wrapper--social-box" href="blog-blocks.html"><i
-                                                            class="fab fa-linkedin-in"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination-bullets-common"></div>
-                    </div>
-                </div>
-            </section>
-
-            <section
-                class="about-company large-section overlay dark-overlay parallax-window bg-size-cover bg-position-center"
-                data-speed="0.5" data-src="img/home/coworking.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 img-wrapper">
-                            <div class="image bg-size-cover bg-position-center"
-                                style="background-image: url('img/home/worker-4.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 img-wrapper">
-                            <div class="image bg-size-cover bg-position-center"
-                                style="background-image: url('img/home/worker-5.jpg')">
-                                <div class="video-wrapper-type-2 z-index-100">
-                                    <a class="video-toggle-type-2 video-popup" href="#video-post-2">
-                                        <div class="play-btn-scale">
-                                            <i class="fa fa-play"></i>
-                                        </div>
-                                    </a>
-                                    <div id="video-post-2" class="white-popup-block mfp-hide mfp-fade">
-                                        <div class="modal-video-box">
-                                            <iframe src="https://www.youtube.com/embed/iGpuQ0ioPrM"
-                                                allowfullscreen></iframe>
-                                            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12 responsive-padding">
-                            <div class="content-full-height">
-                                <h4 class="white-color mb-10">
-                                    Keito advantages are pixel perfect design
-                                </h4>
-                                <p class="mb-25">
-                                    Sed ut perspiciatis unde omnis natus error accusantium laudantium, totam
-                                    aperiam, eaque ipsa quae illo inventore veritatis quasi
-                                </p>
-                                <div class="button-wrapper-type-2">
-                                    <a href="team.html" class="btn-type-2">Meet Our Team</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="portfolio-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col section-heading">
-                            <div class="section-heading--title">
-                                <h2 class="title--show-title">
-                                    Recent Projects
-                                </h2>
-                                <h2 class="title--back-title">
-                                    Recent Projects
-                                </h2>
-                                <p class="title--subtitle">
-                                    Ex mei reformidans ancillae delicata, est amet dolor lobortis id, per no sadipscing
-                                    persequeris sea ludus eirmod usu sint dicunt
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="buttons-sort buttons-sort--button-type-1">
-                    <button class="buttons-sort--button active-button" data-filter="*">All</button>
-                    <button class="buttons-sort--button" data-filter=".web">Web</button>
-                    <button class="buttons-sort--button" data-filter=".heath">Heath</button>
-                    <button class="buttons-sort--button" data-filter=".nature">Nature</button>
-                    <button class="buttons-sort--button" data-filter=".design">Design</button>
-                </div>
-                <div class="four-column-container">
-                    <div class="grid" data-grid-layout-mode="masonry" data-grid-transition="0.7"
-                        data-grid-stagger="140">
-                        <div class="grid--grid-item grid--grid-item-25 web design nature">
-                            <div class="grid-item--grid-inner slide-animation">
-                                <img src="img/portfolio/mockup-1.jpg" class="img-fluid" alt="">
-                                <a class="grid-inner--description-wrapper" href="blog-blocks.html">
-                                    <div class="description-wrapper--content">
-                                        <h5 class="content--title">Plant Mockup</h5>
-                                        <div class="content--info-wrapper">
-                                            <p class="info-wrapper--category">
-                                                Nature
-                                            </p>
-                                            <span class="info-wrapper--separator">/</span>
-                                            <p class="info-wrapper--category">
-                                                Heath
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="grid--grid-item grid--grid-item-25 design heath">
-                            <div class="grid-item--grid-inner slide-animation">
-                                <img src="img/portfolio/mockup-2.jpg" class="img-fluid" alt="">
-                                <a class="grid-inner--description-wrapper" href="blog-blocks.html">
-                                    <div class="description-wrapper--content">
-                                        <h5 class="content--title">Lamp Mockup</h5>
-                                        <div class="content--info-wrapper">
-                                            <p class="info-wrapper--category">
-                                                Web
-                                            </p>
-                                            <span class="info-wrapper--separator">/</span>
-                                            <p class="info-wrapper--category">
-                                                Design
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="grid--grid-item grid--grid-item-25 web heath">
-                            <div class="grid-item--grid-inner slide-animation">
-                                <img src="img/portfolio/mockup-3.jpg" class="img-fluid" alt="">
-                                <a class="grid-inner--description-wrapper" href="blog-blocks.html">
-                                    <div class="description-wrapper--content">
-                                        <h5 class="content--title">Bottles Mockup</h5>
-                                        <div class="content--info-wrapper">
-                                            <p class="info-wrapper--category">
-                                                Tech
-                                            </p>
-                                            <span class="info-wrapper--separator">/</span>
-                                            <p class="info-wrapper--category">
-                                                Branding
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="grid--grid-item grid--grid-item-25 nature">
-                            <div class="grid-item--grid-inner slide-animation">
-                                <img src="img/portfolio/mockup-4.jpg" class="img-fluid" alt="">
-                                <a class="grid-inner--description-wrapper" href="blog-blocks.html">
-                                    <div class="description-wrapper--content">
-                                        <h5 class="content--title">Fruits Mockup</h5>
-                                        <div class="content--info-wrapper">
-                                            <p class="info-wrapper--category">
-                                                Lifestyle
-                                            </p>
-                                            <span class="info-wrapper--separator">/</span>
-                                            <p class="info-wrapper--category">
-                                                Sun
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="grid--grid-item grid--grid-item-25 design web">
-                            <div class="grid-item--grid-inner slide-animation">
-                                <img src="img/portfolio/mockup-5.jpg" class="img-fluid" alt="">
-                                <a class="grid-inner--description-wrapper" href="blog-blocks.html">
-                                    <div class="description-wrapper--content">
-                                        <h5 class="content--title">Cup Mockup</h5>
-                                        <div class="content--info-wrapper">
-                                            <p class="info-wrapper--category">
-                                                Art
-                                            </p>
-                                            <span class="info-wrapper--separator">/</span>
-                                            <p class="info-wrapper--category">
-                                                Design
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="grid--grid-item grid--grid-item-25 web nature">
-                            <div class="grid-item--grid-inner slide-animation">
-                                <img src="img/portfolio/mockup-6.jpg" class="img-fluid" alt="">
-                                <a class="grid-inner--description-wrapper" href="blog-blocks.html">
-                                    <div class="description-wrapper--content">
-                                        <h5 class="content--title">Plant Mockup</h5>
-                                        <div class="content--info-wrapper">
-                                            <p class="info-wrapper--category">
-                                                Nature
-                                            </p>
-                                            <span class="info-wrapper--separator">/</span>
-                                            <p class="info-wrapper--category">
-                                                Oxygen
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="grid--grid-item grid--grid-item-25 heath nature">
-                            <div class="grid-item--grid-inner slide-animation">
-                                <img src="img/portfolio/mockup-7.jpg" class="img-fluid" alt="">
-                                <a class="grid-inner--description-wrapper" href="blog-blocks.html">
-                                    <div class="description-wrapper--content">
-                                        <h5 class="content--title">Cactus Mockup</h5>
-                                        <div class="content--info-wrapper">
-                                            <p class="info-wrapper--category">
-                                                Nature
-                                            </p>
-                                            <span class="info-wrapper--separator">/</span>
-                                            <p class="info-wrapper--category">
-                                                Green
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="grid--grid-item grid--grid-item-25 nature design">
-                            <div class="grid-item--grid-inner slide-animation">
-                                <img src="img/portfolio/mockup-8.jpg" class="img-fluid" alt="">
-                                <a class="grid-inner--description-wrapper" href="blog-blocks.html">
-                                    <div class="description-wrapper--content">
-                                        <h5 class="content--title">Pineapple Mockup</h5>
-                                        <div class="content--info-wrapper">
-                                            <p class="info-wrapper--category">
-                                                Heath
-                                            </p>
-                                            <span class="info-wrapper--separator">/</span>
-                                            <p class="info-wrapper--category">
-                                                Art
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="features black-section">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="features--images col-xl-3 col-md-12 bg-size-cover bg-position-center"
-                            style="background: url(img/home/feature2.jpg)"></div>
-                        <div class="col-xl-3 col-md-12">
-                            <div class="features--content-wrapper">
-                                <p class="primary-color mb-10">Build perfect websites</p>
-                                <h5 class="white-color mb-10">Pixel perfect design and maintainable clear
-                                    code</h5>
-                                <p class="gray-color mb-20">Lorem ipsum dolor sit amet magni, laborum
-                                    adipisicing. Alias atque,laborum libero magni mollitia nam nisi quae
-                                    adipisicing.</p>
-                                <div class="button-wrapper-type-2">
-                                    <a href="services.html" class="btn-type-2">Core Features</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="features--images col-xl-3 col-md-12 bg-size-cover bg-position-center"
-                            style="background: url(img/home/feature1.jpg)"></div>
-                        <div class="col-xl-3 col-md-12">
-                            <div class="features--content-wrapper">
-                                <p class="primary-color mb-10">Build perfect websites</p>
-                                <h5 class="white-color mb-10">Pixel perfect design and maintainable clear
-                                    code</h5>
-                                <p class="gray-color mb-20">Lorem ipsum dolor sit amet magni, laborum
-                                    adipisicing. Alias atque,laborum libero magni mollitia nam nisi quae
-                                    adipisicing.</p>
-                                <div class="button-wrapper-type-2">
-                                    <a href="services.html" class="btn-type-2">Core Features</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="counters">
-                <div class="container-fluid">
-                    <div class="counters-type-1">
-                        <div class="row counters-wrapper counters-list-wrapper" data-animation-type="fade"
-                            data-animation-duration="2">
-                            <div class="col-lg-3 col-6 counter-box inner-wrapper--counter-wrapper">
-                                <div class="counter-wrapper--counter">
-                                    <p class="title-counter">Project Done</p>
-                                    <span class="counter--value" data-counter-value="934">0</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-6 counter-box inner-wrapper--counter-wrapper">
-                                <div class="counter-wrapper--counter">
-                                    <p class="title-counter">Photos taken</p>
-                                    <span class="counter--value" data-counter-value="657">0</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-6 counter-box inner-wrapper--counter-wrapper">
-                                <div class="counter-wrapper--counter">
-                                    <p class="title-counter">Awards received</p>
-                                    <span class="counter--value" data-counter-value="432">0</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-6 counter-box inner-wrapper--counter-wrapper">
-                                <div class="counter-wrapper--counter">
-                                    <p class="title-counter">People loved</p>
-                                    <span class="counter--value" data-counter-value="523">0</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="testimonials small-section bg-size-cover bg-position-center overlay black-overlay"
-                style="background-image: url('img/home/coworking.jpg')">
-                <div class="testimonials-slider-type-1">
-                    <div class="swiper-wrapper">
-                        <div class="testimonials-slider-type-1--item swiper-slide">
-                            <div class="item--img">
-                                <img src="img/testimonials/testimonial4.jpg" alt="">
-                            </div>
-                            <div class="item--content">
-                                <h6 class="content--name">Maria Gray</h6>
-                                <p class="content--position">Developer</p>
-                                <div class="stars-wrapper">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <p>
-                                    “Thanks for a great session, you were grounded but inspirational. It was really
-                                    impactful and there was a lot of positive feedback from a diverse audience. I really
-                                    felt that we had the tools to enable the teams to
-                                    experiment. … Our innovation champions in the business will reach out to you to
-                                    discuss
-                                    next steps.”</p>
-                            </div>
-                        </div>
-                        <div class="testimonials-slider-type-1--item swiper-slide">
-                            <div class="item--img">
-                                <img src="img/testimonials/testimonial.jpg" alt="">
-                            </div>
-                            <div class="item--content">
-                                <h6 class="name">Anna May</h6>
-                                <p class="content--position">Designer</p>
-                                <div class="stars-wrapper">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <p>
-                                    “Thank you for kicking off the inaugural PA360 in such style! I’m delighted to say
-                                    that
-                                    the day was a resounding success, and we have had some fantastic feedback. Those who
-                                    attended were very impressed with your
-                                    presentation. I look forward to working with you again.”
-                                </p>
-                            </div>
-                        </div>
-                        <div class="testimonials-slider-type-1--item swiper-slide">
-                            <div class="item--img">
-                                <img src="img/testimonials/testimonial2.jpg" alt="">
-                            </div>
-                            <div class="item--content">
-                                <h6 class="name">John Smith</h6>
-                                <p class="content--position">Designer</p>
-                                <div class="stars-wrapper">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half"></i>
-                                </div>
-                                <p>
-                                    “Thanks so much for helping make yesterday be the success it was – your presentation
-                                    content and professional skill in delivering a closing keynote after a long day was
-                                    exceptional- thought provoking engaging with
-                                    great humour too – a true professional!”</p>
-                            </div>
-                        </div>
-                        <div class="testimonials-slider-type-1--item swiper-slide">
-                            <div class="item--img">
-                                <img src="img/testimonials/testimonial3.jpg" alt="">
-                            </div>
-                            <div class="item--content">
-                                <h6 class="name">Lena Licko</h6>
-                                <p class="content--position">Designer</p>
-                                <div class="stars-wrapper">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <p>
-                                    “I attended your session on Strategic Thinking in NJ. I wanted to let you know how
-                                    much
-                                    I thoroughly enjoyed listening to your presentation. It was inspiring, thought
-                                    provoking
-                                    and entertaining all at the same
-                                    time.Thank you for your time.”</p>
-                            </div>
-                        </div>
-                        <div class="testimonials-slider-type-1--pagination"></div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="latest-stories large-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col section-heading">
-                            <div class="section-heading--title">
-                                <h2 class="title--show-title">
-                                    Latest News
-                                </h2>
-                                <h2 class="title--back-title">
-                                    Latest News
-                                </h2>
-                                <p class="title--subtitle">
-                                    Ex mei reformidans ancillae delicata, est amet dolor lobortis id, per no sadipscing
-                                    persequeris sea ludus eirmod usu sint dicunt
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-sm-12">
-                            <div class="tilt-wrapper recent-posts-type-3 recent-posts-wrapper" data-tilt-value="5"
-                                data-tilt-speed="500" data-tilt-scale="1" data-tilt-perspective="1000"
-                                style="background-image: url(img/home/worker-4.jpg)">
-                                <div class="recent-posts-wrapper--content-wrapper">
-                                    <div class="content-wrapper--box-tilt">
-                                        <h5 class="box-tilt--title">I help design my own tennis clothes</h5>
-                                    </div>
-                                    <div class="content-wrapper--box-tilt">
-                                        <p class="box-tilt--content">Quo ei quod alii pertinax, ut solum eleifend nec,
-                                            et
-                                            error epicuri nominav</p>
-                                    </div>
-                                    <a href="blog-post-layout-1-full-width.html" class="content-wrapper--link">
-                                        <p>Read the story</p>
-                                        <i class="fa fa-long-arrow-alt-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-sm-12">
-                            <div class="tilt-wrapper recent-posts-type-3 recent-posts-wrapper" data-tilt-value="5"
-                                data-tilt-speed="500" data-tilt-scale="1" data-tilt-perspective="1000"
-                                style="background-image: url(img/home/team-2.jpg)">
-                                <div class="recent-posts-wrapper--content-wrapper">
-                                    <div class="content-wrapper--box-tilt">
-                                        <h5 class="box-tilt--title">Design is not for philosophy it's for life</h5>
-                                    </div>
-                                    <div class="content-wrapper--box-tilt">
-                                        <p class="box-tilt--content">Quo ei quod alii pertinax, ut solum eleifend nec,
-                                            et
-                                            error epicuri nominav</p>
-                                    </div>
-                                    <a href="blog-post-layout-1-full-width.html" class="content-wrapper--link">
-                                        <p>Read the story</p>
-                                        <i class="fa fa-long-arrow-alt-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-sm-12">
-                            <div class="tilt-wrapper recent-posts-type-3 recent-posts-wrapper" data-tilt-value="5"
-                                data-tilt-speed="500" data-tilt-scale="1" data-tilt-perspective="1000"
-                                style="background-image: url(img/home/worker-1.jpg)">
-                                <div class="recent-posts-wrapper--content-wrapper">
-                                    <div class="content-wrapper--box-tilt">
-                                        <h5 class="box-tilt--title">How to Create Custom Newsletters</h5>
-                                    </div>
-                                    <div class="content-wrapper--box-tilt">
-                                        <p class="box-tilt--content">Quo ei quod alii pertinax, ut solum eleifend nec,
-                                            et
-                                            error epicuri nominav</p>
-                                    </div>
-                                    <a href="blog-post-layout-1-full-width.html" class="content-wrapper--link">
-                                        <p>Read the story</p>
-                                        <i class="fa fa-long-arrow-alt-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <footer class="footer-type-1">
-                <div class="footer-type-1--footer-body">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-3 col-md-6 col-xs-12">
-                                <div class="footer-body--sidebar-widget">
-                                    <h6 class="heading">About Us</h6>
-                                    <p class="sidebar-widget--description">Keito is a team of brand strategists,
-                                        creative designers and developers. Enjoy the Keito's original design, functional
-                                        features, responsive
-                                        layouts.</p>
-                                </div>
+                            <div class="col section-heading-type-3">
+                                <h2 class="section-heading--main-title">
+                                   خدماتنا
+                                </h2>
+                                <ul class="section-heading--angles">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
                             </div>
-                            <div class="col-xl-3 col-md-6 col-xs-12">
-                                <div class="footer-body--sidebar-widget">
-                                    <h6 class="heading">Blog</h6>
-                                    <ul class="sidebar-widget--latest-posts">
-                                        <li class="latest-posts--post">
-                                            <a href="index.html" class="post--post-inner">
-                                                <div class="post-inner--img-wrapper">
-                                                    <img src="img/footer/footer-blog-3.jpg" alt=""
-                                                        class="img-fluid">
-                                                </div>
-                                            </a>
-                                            <div class="post--post-body">
-                                                <h6 class="post-body--post-title"><a href="index.html">Everyday
-                                                        people are not very
-                                                        good designers</a></h6>
-                                                <div class="post-body--description">
-                                                    <p class="date">May 28, 2022</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="latest-posts--post">
-                                            <a href="index.html" class="post--post-inner">
-                                                <div class="post-inner--img-wrapper">
-                                                    <img src="img/footer/footer-blog-5.jpg" alt=""
-                                                        class="img-fluid">
-                                                </div>
-                                            </a>
-                                            <div class="post--post-body">
-                                                <h6 class="post-body--post-title"><a href="index.html">Good Design
-                                                        is a Lot Like
-                                                        Clear Thinking</a></h6>
-                                                <div class="post-body--description">
-                                                    <p class="date">June 14, 2022</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {{-- <section class="black-section">
+                <div class="container-fluid">
+                    <div class="services-slider-type-1">
+                        <div class="swiper-container services-slider-wrapper--inner-wrapper steps-wrapper--swiper">
+                            <div class="swiper-wrapper inner-wrapper--slides">
+                                <div class="swiper-slide slides--slide">
+                                    <div class="slide--content">
+                                        <div class="content--icon">
+                                            <i class="far fa-gem"></i>
+                                        </div>
+                                        <div class="content--title">
+                                            <h5>
+                                                Branding
+                                            </h5>
+                                        </div>
+                                        <div class="content--text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, autem.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6 col-xs-12">
-                                <div class="footer-body--sidebar-widget">
-                                    <h6 class="heading">Dribble</h6>
-                                    <div class="sidebar-widget--social-networks">
-                                        <div class="social-networks--dribble-widget">
-                                            <a href="https://dribbble.com/" class="gallery--image-item">
-                                                <img src="img/footer/footer-widget-1.jpg" alt=""
-                                                    class="img-fluid">
-                                                <i class="fab fa-dribbble"></i>
-                                            </a>
-                                            <a href="https://dribbble.com/" class="gallery--image-item">
-                                                <img src="img/footer/footer-creative-3.jpg" alt=""
-                                                    class="img-fluid">
-                                                <i class="fab fa-dribbble"></i>
-                                            </a>
-                                            <a href="https://dribbble.com/" class="gallery--image-item">
-                                                <img src="img/footer/footer-widget-2.jpg" alt=""
-                                                    class="img-fluid">
-                                                <i class="fab fa-dribbble"></i>
-                                            </a>
-                                            <a href="https://dribbble.com/" class="gallery--image-item">
-                                                <img src="img/footer/footer-widget-4.jpg" alt=""
-                                                    class="img-fluid">
-                                                <i class="fab fa-dribbble"></i>
-                                            </a>
-                                            <a href="https://dribbble.com/" class="gallery--image-item">
-                                                <img src="img/footer/footer-creative-1.jpg" alt=""
-                                                    class="img-fluid">
-                                                <i class="fab fa-dribbble"></i>
-                                            </a>
-                                            <a href="https://dribbble.com/" class="gallery--image-item">
-                                                <img src="img/footer/footer-creative-2.jpg" alt=""
-                                                    class="img-fluid">
-                                                <i class="fab fa-dribbble"></i>
-                                            </a>
+                                <div class="swiper-slide slides--slide">
+                                    <div class="slide--content">
+                                        <div class="content--icon">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                        <div class="content--title">
+                                            <h5>
+                                                UI/UX designs
+                                            </h5>
+                                        </div>
+                                        <div class="content--text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, autem.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slides--slide">
+                                    <div class="slide--content">
+                                        <div class="content--icon">
+                                            <i class="fas fa-globe"></i>
+                                        </div>
+                                        <div class="content--title">
+                                            <h5>
+                                                Resource use
+                                            </h5>
+                                        </div>
+                                        <div class="content--text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, autem.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slides--slide">
+                                    <div class="slide--content">
+                                        <div class="content--icon">
+                                            <i class="fas fa-volume-up"></i>
+                                        </div>
+                                        <div class="content--title">
+                                            <h5>
+                                                Audio Streaming
+                                            </h5>
+                                        </div>
+                                        <div class="content--text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, autem.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slides--slide">
+                                    <div class="slide--content">
+                                        <div class="content--icon">
+                                            <i class="fas fa-briefcase"></i>
+                                        </div>
+                                        <div class="content--title">
+                                            <h5>Product Branding</h5>
+                                        </div>
+                                        <div class="content--text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, autem.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-md-6 col-xs-12">
-                                <div class="footer-body--sidebar-widget">
-                                    <h6 class="heading">Connect</h6>
-                                    <ul class="sidebar-widget--contact-info">
-                                        <li>10 Main Isle Apt. 19485</li>
-                                        <li><a href="index.html" class="animation-link">1-800-222-000</a></li>
-                                        <li>Company name</li>
-                                        <li><a href="index.html" class="animation-link"><span class="__cf_email__"
-                                                    data-cfemail="bdcacacafdcad2cfd9cdcfd8cece93ded2d0">[email&#160;protected]</span></a>
-                                        </li>
-                                    </ul>
+                            <div class="inner-wrapper--navigation">
+                                <div class="navigation--swiper-navigation">
+                                    <div
+                                        class="steps-wrapper--swiper-button-prev swiper-navigation--swiper-button-prev swiper-navigation--swiper-button">
+                                        <i class="fa fa-long-arrow-alt-left"></i>
+                                    </div>
+                                    <div
+                                        class="steps-wrapper--swiper-button-next swiper-navigation--swiper-button-next swiper-navigation--swiper-button">
+                                        <i class="fa fa-long-arrow-alt-right"></i>
+                                    </div>
+                                </div>
+                                <div class="steps-wrapper--swiper-pagination navigation--swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> --}}
+
+            <section class="info-banners border-bottom-simple background-transparent">
+                <div class="info-banners-type-1">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-4 image-wrapper parallax-window bg-size-cover bg-position-center"
+                                data-speed="0.6" data-src="img/home/workspace-2.jpg">
+                            </div>
+                            <div class="col-xl-4 content-wrapper" data-aos="zoom-in" data-aos-delay="100"
+                                data-aos-easing="ease-in-out" data-aos-duration="700">
+                                <div class="content-wrapper--content">
+                                    <div class="content--number-wrapper">
+                                        <p class="mb-10">01</p>
+                                    </div>
+                                    <div class="content--description-wrapper">
+                                        <h5 class="text-center mb-10">امانك على الانترنت</h5>
+                                        <p class="text-center">نحن نعلمك الاستخدام الآمن للإنترنت!</p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-xl-4 image-wrapper parallax-window bg-size-cover bg-position-center"
+                                data-speed="0.6" data-src="img/home/recent-post-2.jpg">
+                            </div>
+                            <div class="col-xl-4 content-wrapper" data-aos="zoom-in" data-aos-delay="100"
+                                data-aos-easing="ease-in-out" data-aos-duration="700">
+                                <div class="content-wrapper--content">
+                                    <div class="content--number-wrapper">
+                                        <p class="mb-10">02</p>
+                                    </div>
+                                    <div class="content--description-wrapper">
+                                        <h5 class="text-center mb-10">تقديم دعم</h5>
+                                        <p class="text-center">الدعم العاطفي
+                                            اتصل بأخصائي ، نصائح!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 image-wrapper parallax-window bg-size-cover bg-position-center"
+                                data-speed="0.6" data-src="img/home/about-us-2.jpg">
+                            </div>
+                            <div class="col-xl-4 content-wrapper" data-aos="zoom-in" data-aos-delay="200"
+                                data-aos-easing="ease-in-out" data-aos-duration="700">
+                                <div class="content-wrapper--content">
+                                    <div class="content--number-wrapper">
+                                        <p class="mb-10">03</p>
+                                    </div>
+                                    <div class="content--description-wrapper">
+                                        <h5 class="text-center mb-10">تقديم شكوى</h5>
+                                        <p class="text-center">قدم شكوى وانتظر حتى يتم القبض على المجرم!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tabs large-section">
+                <div class="container">
+                    <div class="tabs--tabs-wrapper tabs-type-1" data-tabs-animation-type="line-fill">
+                        <div class="tabs-wrapper--header-wrapper">
+                            <ul class="header-wrapper--header">
+                                <li class="header--underline-fill"></li>
+                            </ul>
+                        </div>
+                        <div class="tabs-wrapper--content-wrapper">
+                            <div class="content-wrapper--tab" data-tabs-tab-title="Branding">
+                                <div class="row tab--tab-content">
+                                    <div class="col-lg-6">
+                                        <div class="tab-content--img-wrapper">
+                                            <img src="img/home/teamwork.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="tab-content--content-wrapper">
+                                            <h2>Branding</h2>
+                                            <p class="default-subtitle mb-5">We are delivering beautiful digital
+                                                products for you</p>
+                                            <p class="mb-20">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid
+                                                atque dolorem, doloremque dolores eaque, eius et illo, in libero nihil
+                                                provident quae quam repellat repudiandae voluptatum in libero nihil
+                                                provident.
+                                            </p>
+                                            <div class="button-wrapper-type-5">
+                                                <a href="services.html" class="btn-type-5">
+                                                    Explore Features
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-wrapper--tab" data-tabs-tab-title="Marketing">
+                                <div class="row tab--tab-content">
+                                    <div class="col-lg-6">
+                                        <div class="tab-content--img-wrapper">
+                                            <img src="img/home/worker-2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="tab-content--content-wrapper">
+                                            <h2>Marketing</h2>
+                                            <p class="default-subtitle mb-5">We are delivering beautiful digital
+                                                products for you</p>
+                                            <p class="mb-20">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid
+                                                atque dolorem, doloremque dolores eaque, eius et illo, in libero nihil
+                                                provident quae quam repellat repudiandae voluptatum in libero nihil
+                                                provident.
+                                            </p>
+                                            <div class="button-wrapper-type-5">
+                                                <a href="services.html" class="btn-type-5">
+                                                    Explore Features
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-wrapper--tab" data-tabs-tab-title="Design">
+                                <div class="row tab--tab-content">
+                                    <div class="col-lg-6">
+                                        <div class="tab-content--img-wrapper">
+                                            <img src="img/home/services.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="tab-content--content-wrapper">
+                                            <h2>Design</h2>
+                                            <p class="default-subtitle mb-5">We are delivering beautiful digital
+                                                products for you</p>
+                                            <p class="mb-20">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid
+                                                atque dolorem, doloremque dolores eaque, eius et illo, in libero nihil
+                                                provident quae quam repellat repudiandae voluptatum in libero nihil
+                                                provident.
+                                            </p>
+                                            <div class="button-wrapper-type-5">
+                                                <a href="services.html" class="btn-type-5">
+                                                    Explore Features
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-wrapper--tab" data-tabs-tab-title="Modern">
+                                <div class="row tab--tab-content">
+                                    <div class="col-lg-6">
+                                        <div class="tab-content--img-wrapper">
+                                            <img src="img/home/offer.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="tab-content--content-wrapper">
+                                            <h2>Development</h2>
+                                            <p class="default-subtitle mb-5">We are delivering beautiful digital
+                                                products for you</p>
+                                            <p class="mb-20">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid
+                                                atque dolorem, doloremque dolores eaque, eius et illo, in libero nihil
+                                                provident quae quam repellat repudiandae voluptatum in libero nihil
+                                                provident.
+                                            </p>
+                                            <div class="button-wrapper-type-5">
+                                                <a href="services.html" class="btn-type-5">
+                                                    Explore Features
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-wrapper--tab" data-tabs-tab-title="Art">
+                                <div class="row tab--tab-content">
+                                    <div class="col-lg-6">
+                                        <div class="tab-content--img-wrapper">
+                                            <img src="img/home/teamwork-2.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="tab-content--content-wrapper">
+                                            <h2>Management</h2>
+                                            <p class="default-subtitle mb-5">We are delivering beautiful digital
+                                                products for you</p>
+                                            <p class="mb-20">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid
+                                                atque dolorem, doloremque dolores eaque, eius et illo, in libero nihil
+                                                provident quae quam repellat repudiandae voluptatum in libero nihil
+                                                provident.
+                                            </p>
+                                            <div class="button-wrapper-type-5">
+                                                <a href="services.html" class="btn-type-5">
+                                                    Explore Features
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+         
+
+            <section class="accordions">
+                <div class="accordion-gallery">
+                    <div class="accordion-gallery--inner-wrapper">
+                        <div class="inner-wrapper--items-wrapper">
+                            <div class="items-wrapper--item">
+                                <div class="item--image-wrapper">
+                                    <div class="image-wrapper--image-inner">
+                                        <div class="image-inner--image">
+                                            <div class="image--background  overlay gray-overlay"
+                                                style="background-image: url('img/home/worker-2.jpg')">
+                                            </div>
+                                        </div>
+                                        <div class="image-inner--content-wrapper">
+                                            <div class="content-wrapper--content">
+                                                <h2 class="white-color">
+                                                    كل يوم هو فرصة للنمو والتطور
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-wrapper--item">
+                                <div class="item--image-wrapper">
+                                    <div class="image-wrapper--image-inner">
+                                        <div class="image-inner--image">
+                                            <div class="image--background overlay gray-overlay"
+                                                style="background-image: url('img/home/recent-post-3.jpg')">
+                                            </div>
+                                        </div>
+                                        <div class="image-inner--content-wrapper">
+                                            <div class="content-wrapper--content">
+                                                <h2 class="white-color">
+                                                    الإيجابية هي مفتاح السعادة والنجاح في الحياة
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-wrapper--item">
+                                <div class="item--image-wrapper">
+                                    <div class="image-wrapper--image-inner">
+                                        <div class="image-inner--image">
+                                            <div class="image--background overlay gray-overlay"
+                                                style="background-image: url('img/home/proffesion-1.jpg')">
+                                            </div>
+                                        </div>
+                                        <div class="image-inner--content-wrapper">
+                                            <div class="content-wrapper--content">
+                                                <h2 class="white-color">
+                                                    لديك القدرة على تحقيق أهدافك وتحقيق أحلامك
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-wrapper--item">
+                                <div class="item--image-wrapper">
+                                    <div class="image-wrapper--image-inner">
+                                        <div class="image-inner--image">
+                                            <div class="image--background overlay gray-overlay"
+                                                style="background-image: url('img/home/friends.jpg')">
+                                            </div>
+                                        </div>
+                                        <div class="image-inner--content-wrapper">
+                                            <div class="content-wrapper--content">
+                                                <h2 class="white-color">
+                                                    العالم مليء بالأشخاص الرائعين واللحظات المميزة
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-wrapper--item">
+                                <div class="item--image-wrapper">
+                                    <div class="image-wrapper--image-inner">
+                                        <div class="image-inner--image">
+                                            <div class="image--background overlay gray-overlay"
+                                                style="background-image: url('img/home/team-2.jpg')">
+                                            </div>
+                                        </div>
+                                        <div class="image-inner--content-wrapper">
+                                            <div class="content-wrapper--content">
+                                                <h2 class="white-color">
+                                                    الحياة مليئة بالفرص والإمكانيات الرائعة
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-wrapper--item-sizer"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="progress-bars-circle-type-2-section border-bottom-simple">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class=" progress-bar-circle-type-2">
+                                <div class="progress-bar-circle-type-2--progress-wrapper">
+                                    <div class="progress-bar-circle1 progress-bar-circle" data-progress='0.85'>
+                                        <p class="skill-title">85%</p>
+                                    </div>
+                                    <div class="progress-wrapper--progress-title">
+                                        <p>Concept</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="progress-bar-circle-type-2">
+                                <div class="progress-bar-circle-type-2--progress-wrapper">
+                                    <div class="progress-bar-circle2 progress-bar-circle" data-progress='0.90'>
+                                        <p class="skill-title">90%</p>
+                                    </div>
+                                    <div class="progress-wrapper--progress-title">
+                                        <p>Testing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="progress-bar-circle-type-2">
+                                <div class="progress-bar-circle-type-2--progress-wrapper">
+                                    <div class="progress-bar-circle3 progress-bar-circle" data-progress='0.95'>
+                                        <p class="skill-title">95</p>
+                                    </div>
+                                    <div class="progress-wrapper--progress-title">
+                                        <p>Support</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="progress-bar-circle-type-2 mb-0">
+                                <div class="progress-bar-circle-type-2--progress-wrapper">
+                                    <div class="progress-bar-circle4 progress-bar-circle" data-progress='1'>
+                                        <p class="skill-title">100%</p>
+                                    </div>
+                                    <div class="progress-wrapper--progress-title">
+                                        <p>Idea</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <section class="recent-posts large-section border-top-simple border-bottom-simple">
+                <div class="recent-posts-type-1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col section-heading-type-3">
+                                <h2 class="section-heading--main-title">
+                                    Recent Posts
+                                </h2>
+                                <ul class="section-heading--angles">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-12">
+                                <div class="recent-posts-type-1--post-card-wrapper">
+                                    <div class="post-card-wrapper--card-content tilt-wrapper" data-tilt-value="5"
+                                        data-tilt-speed="800" data-tilt-scale="1" data-tilt-perspective="800">
+                                        <div class="card-content--card-head">
+                                            <div class="card-head--img-wrapper">
+                                                <a href="index.html">
+                                                    <img src="img/home/offer.jpg" alt=""
+                                                        class="img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-content--card-body">
+                                            <a href="index.html">
+                                                <h5 class="default-title">The Great Content Debate</h5>
+                                            </a>
+                                            <p class="border-bottom-simple">Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit. Accusamus blanditiis error explicabo laudantium
+                                                maiores.</p>
+                                            <div class="card-body--card-footer">
+                                                <div class="card-footer--date">
+                                                    <span><i class="fas fa-calendar-alt"></i>5 June, 2022
+                                                    </span>
+                                                </div>
+                                                <div class="card-footer--post-general">
+                                                    <span><i class="fas fa-comment-alt"></i>36</span>
+                                                    <span><i class="fas fa-heart"></i>76</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-12">
+                                <div class="recent-posts-type-1--post-card-wrapper">
+                                    <div class="post-card-wrapper--card-content tilt-wrapper" data-tilt-value="5"
+                                        data-tilt-speed="800" data-tilt-scale="1" data-tilt-perspective="800">
+                                        <div class="card-content--card-head">
+                                            <div class="card-head--img-wrapper">
+                                                <a href="index.html">
+                                                    <img src="img/home/recent-post.jpg" alt=""
+                                                        class="img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-content--card-body">
+                                            <a href="index.html">
+                                                <h5 class="default-title">5 Tips for Your Startup</h5>
+                                            </a>
+                                            <p class="border-bottom-simple">Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit. Accusamus blanditiis error explicabo laudantium
+                                                maiores.</p>
+                                            <div class="card-body--card-footer">
+                                                <div class="card-footer--date">
+                                                    <span><i class="fas fa-calendar-alt"></i>12 May, 2022
+                                                    </span>
+                                                </div>
+                                                <div class="card-footer--post-general">
+                                                    <span><i class="fas fa-comment-alt"></i>26</span>
+                                                    <span><i class="fas fa-heart"></i>61</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-12">
+                                <div class="recent-posts-type-1--post-card-wrapper mb-0">
+                                    <div class="post-card-wrapper--card-content tilt-wrapper" data-tilt-value="5"
+                                        data-tilt-speed="800" data-tilt-scale="1" data-tilt-perspective="800">
+                                        <div class="card-content--card-head">
+                                            <div class="card-head--img-wrapper">
+                                                <a href="index.html">
+                                                    <img src="img/home/recent-post-4.jpg" alt=""
+                                                        class="img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card-content--card-body">
+                                            <a href="index.html">
+                                                <h5 class="default-title">Turn Your Sketch with Keito</h5>
+                                            </a>
+                                            <p class="default-text border-bottom-simple">Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit. Accusamus blanditiis error explicabo
+                                                laudantium maiores.</p>
+                                            <div class="card-body--card-footer">
+                                                <div class="card-footer--date">
+                                                    <span><i class="fas fa-calendar-alt"></i>25 April, 2022
+                                                    </span>
+                                                </div>
+                                                <div class="card-footer--post-general">
+                                                    <span><i class="fas fa-comment-alt"></i>45</span>
+                                                    <span><i class="fas fa-heart"></i>66</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="socials small-section black-overlay overlay bg-position-center bg-size-cover"
+                style="background-image: url('img/home/workspace-1.jpg')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col section-heading-type-2">
+                            <h4 class="section-heading--main-title white-color mb-15">
+                               تابعنا على منصات التواصل الاجتماعي
+                            </h4>
+                            <div class="social-icons-type-2 justify-content-center">
+                                <a href="index.html" class="social-box facebook-h">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="index.html" class="social-box linkedin-h">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="index.html" class="social-box twitter-h">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="index.html" class="social-box instagram-h">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="index.html" class="social-box google-plus-h">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer-type-3 small-section">
+                <div class="footer-type-3--footer-body">
+                    <div class="container">
+                        <div class="footer-body--footer-sidebar">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-6 col-sm-12">
+                                    <div class="footer-sidebar--sidebar-widget text-widget">
+                                        <h6 class="sidebar-widget--sidebar-title">About Us</h6>
+                                        <p>We provide high quality and cost effective services Since our foundation in
+                                            2005 our goal has been to use digital technology to create experiences.</p>
+                                        <h6 class="sidebar-widget--sidebar-title">Subscribe newsletter</h6>
+                                        <form class="sidebar-widget--newsletter-form-widget">
+                                            <input type="email" placeholder="Email*" required>
+                                            <button type="submit"><i class="fa fa-envelope"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-sm-12">
+                                    <div class="footer-sidebar--sidebar-widget latest-posts-widget">
+                                        <h6 class="sidebar-widget--sidebar-title">Latest Posts</h6>
+                                        <ul class="sidebar-widget--post-list">
+                                            <li class="post-list--post">
+                                                <a href="index.html">
+                                                    <div class="post--img-wrapper">
+                                                        <img src="img/footer/footer-creative-1.jpg" alt=""
+                                                            class="img-fluid">
+                                                    </div>
+                                                </a>
+                                                <div class="post--post-body">
+                                                    <h6 class="post-body--post-title">
+                                                        <a href="index.html">Good design is good business</a>
+                                                    </h6>
+                                                    <div class="post-body--description-box">
+                                                        <p class="description-box--date">21 July 2022 | <a
+                                                                href="index.html" class="animation-link">Jay
+                                                                Hart</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="post-list--post"><a href="index.html">
+                                                    <div class="post--img-wrapper">
+                                                        <img src="img/footer/footer-creative-2.jpg" alt=""
+                                                            class="img-fluid">
+                                                    </div>
+                                                </a>
+                                                <div class="post--post-body">
+                                                    <h6 class="post-body--post-title">
+                                                        <a href="index.html">Design is thinking made visual</a>
+                                                    </h6>
+                                                    <div class="post-body--description-box">
+                                                        <p class="description-box--date">18 May 2022 | <a
+                                                                href="index.html" class="animation-link">Mike
+                                                                Snow</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="post-list--post">
+                                                <a href="index.html">
+                                                    <div class="post--img-wrapper">
+                                                        <img src="img/footer/footer-creative-3.jpg" alt=""
+                                                            class="img-fluid">
+                                                    </div>
+                                                </a>
+                                                <div class="post--post-body">
+                                                    <h6 class="post-body--post-title">
+                                                        <a href="index.html">The world’s business leaders</a>
+                                                    </h6>
+                                                    <div class="post-body--description-box">
+                                                        <p class="description-box--date">5 June 2022 | <a
+                                                                href="index.html" class="animation-link">Emily
+                                                                Smith</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-sm-12">
+                                    <div class="footer-sidebar--sidebar-widget contact-info-widget">
+                                        <h6 class="sidebar-widget--sidebar-title">Contact Info</h6>
+                                        <p class="description">We provide high quality and cost effective services
+                                            Since our foundation in 2005 our goal has been to use digital technology to
+                                            create experiences.</p>
+                                        <ul class="sidebar-widget--contact-info">
+                                            <li><i class="fa fa-map-marker"></i>
+                                                <p>Factory, London, W2 5JU.</p>
+                                            </li>
+                                            <li><i class="fa fa-envelope"></i><a href="index.html"
+                                                    class="animation-link"><span class="__cf_email__"
+                                                        data-cfemail="83e6fbe2eef3efe6c3e7eceee2eaedade0ecee">[email&#160;protected]</span></a>
+                                            </li>
+                                            <li><i class="fa fa-phone"></i><a href="index.html"
+                                                    class="animation-link">1-123-222-567</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-sm-12">
+                                    <div class="footer-sidebar--sidebar-widget contact-info-widget">
+                                        <h6 class="sidebar-widget--sidebar-title">Tag Cloud</h6>
+                                        <div class="tag-cloud">
+                                            <a href="index.html" class="tag-cloud--tag">Solution</a>
+                                            <a href="index.html" class="tag-cloud--tag">Design</a>
+                                            <a href="index.html" class="tag-cloud--tag">Visual</a>
+                                            <a href="index.html" class="tag-cloud--tag">Gallery</a>
+                                            <a href="index.html" class="tag-cloud--tag">Scss</a>
+                                            <a href="index.html" class="tag-cloud--tag">Creative</a>
+                                            <a href="index.html" class="tag-cloud--tag">Famous</a>
+                                            <a href="index.html" class="tag-cloud--tag">People</a>
+                                            <a href="index.html" class="tag-cloud--tag">Food</a>
+                                            <a href="index.html" class="tag-cloud--tag">Science</a>
+                                            <a href="index.html" class="tag-cloud--tag">HTML</a> <a
+                                                href="index.html" class="tag-cloud--tag">Photo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-body--copyright-wrapper">
+                            <p class="copyright-wrapper--copyright">
+                                <i class="fa fa-copyright"></i>2022 Keito. All rights reserved.
+                            </p>
                         </div>
                     </div>
                 </div>
