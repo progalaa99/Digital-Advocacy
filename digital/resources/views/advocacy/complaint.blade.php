@@ -45,7 +45,7 @@
                 
                   </div>
               
-              </form>
+            </form>
         </div>
         <div class="bg-darkalaa p-4 w-1/2 flex flex-col items-center pt-20">
             <svg  class="h-64 w-64 transform rotate-90 pt-10 fill-none " id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 67.72"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>hand-shake</title>
