@@ -48,10 +48,10 @@
 
         <nav class="navigation-menu navigation-menu-desktop navigation-menu--fullscreen-menu">
             <div class="fullscreen-menu--inner-wrapper">
-                <div class="fullscreen-menu--logo-wrapper">
-                    <a href="index.html">
-                        <img src="img/logo/logo.png" alt="">
-                    </a>
+                <div class="">
+                    
+                        <img class="fill-current h-16 w-16 mr-2" src="/icon/mainicon.svg" alt="شعار الموقع">
+
                 </div>
                 <div class="inner-wrapper--buttons-wrapper">
                     <div class="buttons-wrapper--toggle-wrapper" data-toggle-bar-width="22">
@@ -64,11 +64,11 @@
                     </div>
 
                     <div class="buttons-wrapper--search-form-wrapper">
-                        <div class="search-form-wrapper--search-toggle">
+                        {{-- <div class="search-form-wrapper--search-toggle">
                             <i class="fa fa-search show-icon"></i>
                             <i class="fa fa-times hidden-icon"></i>
-                        </div>
-                        <div class="search-form-wrapper--search-form-window">
+                        </div> --}}
+                        {{-- <div class="search-form-wrapper--search-form-window">
                             <div class="search-panel--search-wrapper">
                                 <form class="search-wrapper--form">
                                     <input type="text" placeholder="Input some keywords...">
@@ -77,7 +77,7 @@
                                     </button>
                                 </form>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -85,294 +85,38 @@
                 <div class="fullscreen-window--inner-wrapper">
                     <div class="inner-wrapper--menu-wrapper">
                         <ul class="menu-wrapper--menu-list active-window">
+                            <li class="menu-item ">
+                                <a href="{{ route('dashboard') }}" :active="request() - > routeIs('dashboard')">
+                                    {{ __('الصفحة الرئيسية ') }}</a>
+                                    </li> 
+                                    <li class="menu-item ">
+                                <a href="{{ route('complaint') }}" :active="request() - > routeIs('dashboard')">
+                                    {{ __('تقديم مشكلة') }}</a>
+                                 </li>
+                                    <li class="menu-item ">
+                                <a class="menu-item menu-item-has-children" href="{{ route('reports') }}"
+                                    :active="request() - > routeIs('dashboard')">
+                                    {{ __('تقرير') }}
+                                </a>
+                            </li>
                             <li class="menu-item menu-item-has-children">
-                                <a href="#">Homepages</a>
+                                <a href="#">مقالات</a>
                                 <ul class="sub-menu">
-                                    <li class="menu-item"><a href="index.html">Home Classic</a></li>
-                                    <li class="menu-item"><a href="home-digital.html">Home Digital</a></li>
-                                    <li class="menu-item"><a href="home-creative.html">Home Creative</a></li>
-                                    <li class="menu-item"><a href="home-presentation.html">Home Presentation</a></li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Home Single</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="single-glitch-links.html">Glitch Links</a>
-                                            </li>
-                                            <li class="menu-item"><a href="single-slideshow.html">SlideshowMin</a></li>
-                                            <li class="menu-item"><a href="single-hover-grid.html">Hover Grid</a></li>
-                                            <li class="menu-item"><a href="single-html-video.html">HTML Video</a></li>
-                                            <li class="menu-item"><a href="single-vimeo-video.html">Vimeo Video</a></li>
-                                            <li class="menu-item"><a href="single-youtube-video.html">Youtube Video</a>
-                                            </li>
-                                        </ul>
+    
+                                    <li class="menu-item">
+                                        <a href="{{ route('blogedu.technical-edu') }}"
+                                            :active="request() - > routeIs('dashboard')">
+                                            {{ __('التعلم التكنلوجي') }}</a>
+                                        </li>
+                                            <li class="menu-item">
+                                        <a href="{{ route('blogsupport.support') }}"
+                                            :active="request() - > routeIs('dashboard')">
+                                            {{ __('الدعم النفسي') }}</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu-item menu-item-has-children">
-                                <a href="#">Portfolio</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Porfolio Scale</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="porfolio-scale-two-columns.html">Porfolio
-                                                    Scale 2
-                                                    Columns</a></li>
-                                            <li class="menu-item"><a href="porfolio-scale-three-columns.html">Porfolio
-                                                    Scale 3
-                                                    Columns</a></li>
-                                            <li class="menu-item"><a href="porfolio-scale-four-columns.html">Porfolio
-                                                    Scale 4
-                                                    Columns</a></li>
-                                            <li class="menu-item"><a href="porfolio-scale-metro.html">Porfolio Scale
-                                                    Metro</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Porfolio Fade</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="porfolio-fade-two-columns.html">Porfolio
-                                                    Fade 2
-                                                    Columns</a></li>
-                                            <li class="menu-item"><a href="porfolio-fade-three-columns.html">Porfolio
-                                                    Fade 3
-                                                    Columns</a></li>
-                                            <li class="menu-item"><a href="porfolio-fade-four-columns.html">Porfolio
-                                                    Fade 4
-                                                    Columns</a></li>
-                                            <li class="menu-item"><a href="porfolio-fade-metro.html">Porfolio Fade
-                                                    Metro</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Porfolio Slide</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="porfolio-slide-two-columns.html">Porfolio
-                                                    Slide 2
-                                                    Columns</a></li>
-                                            <li class="menu-item"><a href="porfolio-slide-three-columns.html">Porfolio
-                                                    Slide 3
-                                                    Columns</a></li>
-                                            <li class="menu-item"><a href="porfolio-slide-four-columns.html">Porfolio
-                                                    Slide 4
-                                                    Columns</a></li>
-                                            <li class="menu-item"><a href="porfolio-slide-metro.html">Porfolio Slide
-                                                    Metro</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Single Project</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="single-project-1.html">Single Project 1</a>
-                                            </li>
-                                            <li class="menu-item"><a href="single-project-2.html">Single Project 2</a>
-                                            </li>
-                                            <li class="menu-item"><a href="single-project-3.html">Single Project 3</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Gallery</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="gallery-two-columns.html">Gallery 2
-                                                    Columns</a></li>
-                                            <li class="menu-item"><a href="gallery-three-columns.html">Gallery 3
-                                                    Columns</a>
-                                            </li>
-                                            <li class="menu-item"><a href="gallery-four-columns.html">Gallery 4
-                                                    Columns</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-has-children">
-                                <a href="#">Pages</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item"><a href="about-us.html">About Us</a></li>
-                                    <li class="menu-item"><a href="services.html">Services</a></li>
-                                    <li class="menu-item"><a href="team.html">Team</a></li>
-                                    <li class="menu-item"><a href="contact.html">Contact</a></li>
-                                    <li class="menu-item"><a href="pricing.html">Pricing</a></li>
-                                    <li class="menu-item"><a href="clients.html">Clients</a></li>
-                                    <li class="menu-item"><a href="faq.html">FAQ</a></li>
-                                    <li class="menu-item"><a href="error-page.html">Error Page</a></li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Coming Soon</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="coming-soon-creative.html">Coming Soon
-                                                    Creative</a>
-                                            </li>
-                                            <li class="menu-item"><a href="coming-soon-simple.html">Coming Soon
-                                                    Simple</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-has-children">
-                                <a href="#">Blog</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item"><a href="blog-list.html">Blog List</a></li>
-                                    <li class="menu-item"><a href="blog-blocks.html">Blog Blocks</a></li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Blog Grid</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="blog-grid-full-width.html">Full Width</a>
-                                            </li>
-                                            <li class="menu-item"><a href="blog-grid-sidebar-layout.html">Sidebar
-                                                    Layout</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Blog Boxed</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="blog-boxed-full-width.html">Full Width</a>
-                                            </li>
-                                            <li class="menu-item"><a href="blog-boxed-sidebar-layout.html">Sidebar
-                                                    Layout</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Blog Images</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="blog-images-full-width.html">Full Width</a>
-                                            </li>
-                                            <li class="menu-item"><a href="blog-images-sidebar-layout.html">Sidebar
-                                                    Layout</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Blog Only Text</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="blog-only-text-full-width.html">Full
-                                                    Width</a></li>
-                                            <li class="menu-item"><a href="blog-only-text-sidebar-layout.html">Sidebar
-                                                    Layout</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Blog Post Layout 1</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="blog-post-layout-1-full-width.html">Full
-                                                    Width</a>
-                                            </li>
-                                            <li class="menu-item"><a
-                                                    href="blog-post-layout-1-sidebar-layout.html">Sidebar
-                                                    Layout</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Blog Post Layout 2</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="blog-post-layout-2-full-width.html">Full
-                                                    Width</a>
-                                            </li>
-                                            <li class="menu-item"><a
-                                                    href="blog-post-layout-2-sidebar-layout.html">Sidebar
-                                                    Layout</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-has-children">
-                                <a href="#">Shortcodes</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Interactive Elements</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="elements-testimonials-slider.html"><i
-                                                        class="fas fa-sliders-h"></i>Testimonials Slider</a></li>
-                                            <li class="menu-item"><a href="elements-background-slider.html"><i
-                                                        class="fas fa-images"></i>Background Slider</a></li>
-                                            <li class="menu-item"><a href="elements-video-toggles.html"><i
-                                                        class="fas fa-video"></i>Video Toggles</a></li>
-                                            <li class="menu-item"><a href="elements-contact-form.html"><i
-                                                        class="fas fa-envelope"></i>Contact Form</a></li>
-                                            <li class="menu-item"><a href="elements-recent-posts.html"><i
-                                                        class="fas fa-comment-alt"></i>Recent Posts</a></li>
-                                            <li class="menu-item"><a href="elements-hover-boxes.html"><i
-                                                        class="fas fa-image"></i>Hover Boxes</a></li>
-                                            <li class="menu-item"><a href="elements-google-maps.html"><i
-                                                        class="fas fa-map"></i>Google
-                                                    Map</a></li>
-                                            <li class="menu-item"><a href="elements-services.html"><i
-                                                        class="fas fa-users"></i>Services</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">General Elements</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="elements-accordion-gallery.html"><i
-                                                        class="fas fa-images"></i>Accordion Gallery</a></li>
-                                            <li class="menu-item"><a href="elements-call-to-action.html"><i
-                                                        class="fas fa-exclamation-triangle"></i>Call To Action</a></li>
-                                            <li class="menu-item"><a href="elements-clients-slider.html"><i
-                                                        class="fas fa-sliders-h"></i>Clients Slider</a></li>
-                                            <li class="menu-item"><a href="elements-team-slider.html"><i
-                                                        class="fas fa-sliders-h"></i>Team Slider</a></li>
-                                            <li class="menu-item"><a href="elements-accordions.html"><i
-                                                        class="fas fa-list-alt"></i>Accordions</a></li>
-                                            <li class="menu-item"><a href="elements-subscribe.html"><i
-                                                        class="fas fa-at"></i>Subscribe</a>
-                                            </li>
-                                            <li class="menu-item"><a href="elements-buttons.html"><i
-                                                        class="fas fa-toggle-on"></i>Buttons</a></li>
-                                            <li class="menu-item"><a href="elements-clients.html"><i
-                                                        class="fas fa-address-card"></i>Clients</a></li>
-                                            <li class="menu-item"><a href="elements-team.html"><i
-                                                        class="fas fa-user-plus"></i>Team</a>
-                                            </li>
-                                            <li class="menu-item"><a href="elements-tabs.html"><i
-                                                        class="fas fa-columns"></i>Tabs</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Text & Containers</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="elements-pricing-tables.html"><i
-                                                        class="fas fa-money-bill-alt"></i>Pricing Tables</a></li>
-                                            <li class="menu-item"><a href="elements-info-banners.html"><i
-                                                        class="fas fa-info-circle"></i>Info Banners</a></li>
-                                            <li class="menu-item"><a href="elements-social-icons.html"><i
-                                                        class="fab fa-facebook"></i>Social Icons</a></li>
-                                            <li class="menu-item"><a href="elements-blockquote.html"><i
-                                                        class="fas fa-quote-right"></i>Blockquote</a></li>
-                                            <li class="menu-item"><a href="elements-lists.html"><i
-                                                        class="fas fa-list-ul"></i>Lists</a>
-                                            </li>
-                                            <li class="menu-item"><a href="elements-headings.html"><i
-                                                        class="fas fa-heading"></i>Headings</a>
-                                            </li>
-                                            <li class="menu-item"><a href="elements-columns.html"><i
-                                                        class="fas fa-columns"></i>Columns</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="index.html">Infographics</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="elements-services-slider.html"><i
-                                                        class="fas fa-sliders-h"></i>Services Slider</a></li>
-                                            <li class="menu-item"><a href="elements-progress-bars.html"><i
-                                                        class="fas fa-stopwatch"></i>Progress bars</a></li>
-                                            <li class="menu-item"><a href="elements-steps-slider.html"><i
-                                                        class="fas fa-sliders-h"></i>Steps Slider</a></li>
-                                            <li class="menu-item"><a href="elements-countdown.html"><i
-                                                        class="fas fa-hourglass"></i>Countdown</a></li>
-                                            <li class="menu-item"><a href="elements-counters.html"><i
-                                                        class="fas fa-clock"></i>Counters</a>
-                                            </li>
-                                            <li class="menu-item"><a href="elements-process-steps.html"><i
-                                                        class="fas fa-sort-numeric-down"></i>Steps</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
+                           
+                           
                         </ul>
                     </div>
                 </div>
@@ -398,288 +142,38 @@
             <div class="mobile-menu--inner-wrapper">
                 <div class="inner-wrapper--menu-wrapper">
                     <ul class="menu-wrapper--menu-list active-window">
+
+                        <li class="menu-item ">
+                            <a href="{{ route('dashboard') }}" :active="request() - > routeIs('dashboard')">
+                                {{ __('الصفحة الرئيسية ') }}</a>
+                                </li> 
+                                <li class="menu-item ">
+                            <a href="{{ route('complaint') }}" :active="request() - > routeIs('dashboard')">
+                                {{ __('تقديم مشكلة') }}</a>
+                             </li>
+                                <li class="menu-item ">
+                            <a class="menu-item menu-item-has-children" href="{{ route('reports') }}"
+                                :active="request() - > routeIs('dashboard')">
+                                {{ __('تقرير') }}
+                            </a>
+                        </li>
                         <li class="menu-item menu-item-has-children">
-                            <a href="#">Homepages</a>
+                            <a href="#">مقالات</a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="index.html">Home Classic</a></li>
-                                <li class="menu-item"><a href="home-digital.html">Home Digital</a></li>
-                                <li class="menu-item"><a href="home-creative.html">Home Creative</a></li>
-                                <li class="menu-item"><a href="home-presentation.html">Home Presentation</a></li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Home Single</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="single-glitch-links.html">Glitch Links</a></li>
-                                        <li class="menu-item"><a href="single-slideshow.html">SlideshowMin</a></li>
-                                        <li class="menu-item"><a href="single-hover-grid.html">Hover Grid</a></li>
-                                        <li class="menu-item"><a href="single-html-video.html">HTML Video</a></li>
-                                        <li class="menu-item"><a href="single-vimeo-video.html">Vimeo Video</a></li>
-                                        <li class="menu-item"><a href="single-youtube-video.html">Youtube Video</a>
-                                        </li>
-                                    </ul>
+
+                                <li class="menu-item">
+                                    <a href="{{ route('blogedu.technical-edu') }}"
+                                        :active="request() - > routeIs('dashboard')">
+                                        {{ __('التعلم التكنلوجي') }}</a>
+                                    </li>
+                                        <li class="menu-item">
+                                    <a href="{{ route('blogsupport.support') }}"
+                                        :active="request() - > routeIs('dashboard')">
+                                        {{ __('الدعم النفسي') }}</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Portfolio</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Porfolio Scale</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="porfolio-scale-two-columns.html">Porfolio Scale
-                                                2
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-scale-three-columns.html">Porfolio
-                                                Scale 3
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-scale-four-columns.html">Porfolio
-                                                Scale 4
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-scale-metro.html">Porfolio Scale
-                                                Metro</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Porfolio Fade</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="porfolio-fade-two-columns.html">Porfolio Fade 2
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-fade-three-columns.html">Porfolio Fade
-                                                3
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-fade-four-columns.html">Porfolio Fade
-                                                4
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-fade-metro.html">Porfolio Fade
-                                                Metro</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Porfolio Slide</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="porfolio-slide-two-columns.html">Porfolio Slide
-                                                2
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-slide-three-columns.html">Porfolio
-                                                Slide 3
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-slide-four-columns.html">Porfolio
-                                                Slide 4
-                                                Columns</a></li>
-                                        <li class="menu-item"><a href="porfolio-slide-metro.html">Porfolio Slide
-                                                Metro</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Single Project</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="single-project-1.html">Single Project 1</a>
-                                        </li>
-                                        <li class="menu-item"><a href="single-project-2.html">Single Project 2</a>
-                                        </li>
-                                        <li class="menu-item"><a href="single-project-3.html">Single Project 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Gallery</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="gallery-two-columns.html">Gallery 2 Columns</a>
-                                        </li>
-                                        <li class="menu-item"><a href="gallery-three-columns.html">Gallery 3
-                                                Columns</a>
-                                        </li>
-                                        <li class="menu-item"><a href="gallery-four-columns.html">Gallery 4
-                                                Columns</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="about-us.html">About Us</a></li>
-                                <li class="menu-item"><a href="services.html">Services</a></li>
-                                <li class="menu-item"><a href="team.html">Team</a></li>
-                                <li class="menu-item"><a href="contact.html">Contact</a></li>
-                                <li class="menu-item"><a href="pricing.html">Pricing</a></li>
-                                <li class="menu-item"><a href="clients.html">Clients</a></li>
-                                <li class="menu-item"><a href="faq.html">FAQ</a></li>
-                                <li class="menu-item"><a href="error-page.html">Error Page</a></li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Coming Soon</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="coming-soon-creative.html">Coming Soon
-                                                Creative</a>
-                                        </li>
-                                        <li class="menu-item"><a href="coming-soon-simple.html">Coming Soon Simple</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Blog</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="blog-list.html">Blog List</a></li>
-                                <li class="menu-item"><a href="blog-blocks.html">Blog Blocks</a></li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Blog Grid</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="blog-grid-full-width.html">Full Width</a></li>
-                                        <li class="menu-item"><a href="blog-grid-sidebar-layout.html">Sidebar
-                                                Layout</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Blog Boxed</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="blog-boxed-full-width.html">Full Width</a></li>
-                                        <li class="menu-item"><a href="blog-boxed-sidebar-layout.html">Sidebar
-                                                Layout</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Blog Images</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="blog-images-full-width.html">Full Width</a>
-                                        </li>
-                                        <li class="menu-item"><a href="blog-images-sidebar-layout.html">Sidebar
-                                                Layout</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Blog Only Text</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="blog-only-text-full-width.html">Full Width</a>
-                                        </li>
-                                        <li class="menu-item"><a href="blog-only-text-sidebar-layout.html">Sidebar
-                                                Layout</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Blog Post Layout 1</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="blog-post-layout-1-full-width.html">Full
-                                                Width</a>
-                                        </li>
-                                        <li class="menu-item"><a href="blog-post-layout-1-sidebar-layout.html">Sidebar
-                                                Layout</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Blog Post Layout 2</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="blog-post-layout-2-full-width.html">Full
-                                                Width</a>
-                                        </li>
-                                        <li class="menu-item"><a href="blog-post-layout-2-sidebar-layout.html">Sidebar
-                                                Layout</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#">Shortcodes</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Interactive Elements</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="elements-testimonials-slider.html"><i
-                                                    class="fas fa-sliders-h"></i>Testimonials Slider</a></li>
-                                        <li class="menu-item"><a href="elements-background-slider.html"><i
-                                                    class="fas fa-images"></i>Background Slider</a></li>
-                                        <li class="menu-item"><a href="elements-video-toggles.html"><i
-                                                    class="fas fa-video"></i>Video Toggles</a></li>
-                                        <li class="menu-item"><a href="elements-contact-form.html"><i
-                                                    class="fas fa-envelope"></i>Contact Form</a></li>
-                                        <li class="menu-item"><a href="elements-recent-posts.html"><i
-                                                    class="fas fa-comment-alt"></i>Recent Posts</a></li>
-                                        <li class="menu-item"><a href="elements-hover-boxes.html"><i
-                                                    class="fas fa-image"></i>Hover Boxes</a></li>
-                                        <li class="menu-item"><a href="elements-google-maps.html"><i
-                                                    class="fas fa-map"></i>Google
-                                                Map</a></li>
-                                        <li class="menu-item"><a href="elements-services.html"><i
-                                                    class="fas fa-users"></i>Services</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">General Elements</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="elements-accordion-gallery.html"><i
-                                                    class="fas fa-images"></i>Accordion Gallery</a></li>
-                                        <li class="menu-item"><a href="elements-call-to-action.html"><i
-                                                    class="fas fa-exclamation-triangle"></i>Call To Action</a></li>
-                                        <li class="menu-item"><a href="elements-clients-slider.html"><i
-                                                    class="fas fa-sliders-h"></i>Clients Slider</a></li>
-                                        <li class="menu-item"><a href="elements-team-slider.html"><i
-                                                    class="fas fa-sliders-h"></i>Team Slider</a></li>
-                                        <li class="menu-item"><a href="elements-accordions.html"><i
-                                                    class="fas fa-list-alt"></i>Accordions</a></li>
-                                        <li class="menu-item"><a href="elements-subscribe.html"><i
-                                                    class="fas fa-at"></i>Subscribe</a>
-                                        </li>
-                                        <li class="menu-item"><a href="elements-buttons.html"><i
-                                                    class="fas fa-toggle-on"></i>Buttons</a></li>
-                                        <li class="menu-item"><a href="elements-clients.html"><i
-                                                    class="fas fa-address-card"></i>Clients</a></li>
-                                        <li class="menu-item"><a href="elements-team.html"><i
-                                                    class="fas fa-user-plus"></i>Team</a>
-                                        </li>
-                                        <li class="menu-item"><a href="elements-tabs.html"><i
-                                                    class="fas fa-columns"></i>Tabs</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Text & Containers</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="elements-pricing-tables.html"><i
-                                                    class="fas fa-money-bill-alt"></i>Pricing Tables</a></li>
-                                        <li class="menu-item"><a href="elements-info-banners.html"><i
-                                                    class="fas fa-info-circle"></i>Info Banners</a></li>
-                                        <li class="menu-item"><a href="elements-social-icons.html"><i
-                                                    class="fab fa-facebook"></i>Social Icons</a></li>
-                                        <li class="menu-item"><a href="elements-blockquote.html"><i
-                                                    class="fas fa-quote-right"></i>Blockquote</a></li>
-                                        <li class="menu-item"><a href="elements-lists.html"><i
-                                                    class="fas fa-list-ul"></i>Lists</a>
-                                        </li>
-                                        <li class="menu-item"><a href="elements-headings.html"><i
-                                                    class="fas fa-heading"></i>Headings</a>
-                                        </li>
-                                        <li class="menu-item"><a href="elements-columns.html"><i
-                                                    class="fas fa-columns"></i>Columns</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="index.html">Infographics</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item"><a href="elements-services-slider.html"><i
-                                                    class="fas fa-sliders-h"></i>Services Slider</a></li>
-                                        <li class="menu-item"><a href="elements-progress-bars.html"><i
-                                                    class="fas fa-stopwatch"></i>Progress bars</a></li>
-                                        <li class="menu-item"><a href="elements-steps-slider.html"><i
-                                                    class="fas fa-sliders-h"></i>Steps Slider</a></li>
-                                        <li class="menu-item"><a href="elements-countdown.html"><i
-                                                    class="fas fa-hourglass"></i>Countdown</a></li>
-                                        <li class="menu-item"><a href="elements-counters.html"><i
-                                                    class="fas fa-clock"></i>Counters</a>
-                                        </li>
-                                        <li class="menu-item"><a href="elements-process-steps.html"><i
-                                                    class="fas fa-sort-numeric-down"></i>Steps</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                       
                     </ul>
                 </div>
             </div>
@@ -717,16 +211,18 @@
                 <div class="blog-boxed--blog-wrapper">
                     <div class="container">
                         @if (auth()->user()->roleId === 1)
-                        <div class="flex justify-center items-center" >
-                          <a href="{{route('blogedu.create')}}" class="bg-buttonalaa  p-1 mr-2  w-20 h-30 border-none   rounded ">Add Blog</a>
-                        </div> @endif
+                            <div class="flex justify-center items-center">
+                                <a href="{{ route('blogedu.create') }}"
+                                    class="bg-buttonalaa  p-1 mr-2  w-20 h-30 border-none   rounded ">Add Blog</a>
+                            </div>
+                        @endif
                         <article class="blog-wrapper--blog-post">
                             <div class="blog-post--post-wrapper">
                                 <div class="post-wrapper--title">
                                     @foreach ($blogedus as $blogedu)
-                                    <a href="{{route('blogedu.show',['id'=>$blogedu->id])}} ">
-                                        <h5>{{$blogedu->title}}</h5>
-                                    </a>
+                                        <a href="{{ route('blogedu.show', ['id' => $blogedu->id]) }} ">
+                                            <h5>{{ $blogedu->title }}</h5>
+                                        </a>
                                 </div>
                                 <div class="post-wrapper--content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque
@@ -758,25 +254,28 @@
                                             <span><i class="fas fa-comment-alt"></i>21</span>
                                             <span><i class="fas fa-heart"></i>36</span>
                                         </div> --}}
-                                    </div> 
+                                    </div>
                                     @if (auth()->user()->roleId === 1)
-    <div >
-      <br>
-      <a href="{{route('blogedu.edit',['id'=>$blogedu->id])}}" class="bg-buttonalaa  p-1 mr-2  w-20 h-30 border-none   rounded">Edit</a>
-      <a href="{{route('blogedu.destroy',['id'=>$blogedu->id])}}" class="bg-red-900  p-1 mr-2  w-20 h-30 border-none   rounded">Delete</a>
-    </div> 
-     @endif 
-                                </div> @endforeach
+                                        <div>
+                                            <br>
+                                            <a href="{{ route('blogedu.edit', ['id' => $blogedu->id]) }}"
+                                                class="bg-buttonalaa  p-1 mr-2  w-20 h-30 border-none   rounded">Edit</a>
+                                            <a href="{{ route('blogedu.destroy', ['id' => $blogedu->id]) }}"
+                                                class="bg-red-900  p-1 mr-2  w-20 h-30 border-none   rounded">Delete</a>
+                                        </div>
+                                    @endif
+                                </div>
+                                @endforeach
                             </div>
                         </article>
-                       
+
                         <div class="pagination-links flex w-1/2 mx-auto justify-center items-center pt-10 text-withe">
                             {{ $blogedus->links() }}
-                          </div>
+                        </div>
                     </div>
                 </div>
             </section>
-
+            
             <footer class="footer-type-3 small-section">
                 <div class="footer-type-3--footer-body">
                     <div class="container">

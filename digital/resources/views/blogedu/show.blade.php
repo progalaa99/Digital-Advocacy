@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="{{asset('css/swiper.min.css')}}">
 
     <link rel="stylesheet" href="css/magnific-popup.min.css">
 

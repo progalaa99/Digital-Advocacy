@@ -5,7 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @vite('resources/css/app.css')
         <title>welcome</title>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent">
+        <meta name="format-detection" content="telephone=no">
+        <title>Keito</title>
+    
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+        <link rel="stylesheet" href="css/swiper.min.css">
+    
+        <link rel="stylesheet" href="css/magnific-popup.min.css">
+    
+        <link rel="stylesheet" href="css/plyr.min.css">
+    
+        <link rel="stylesheet" href="css/aos.min.css">
+    
+        <link rel="stylesheet" href="css/main.css">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
@@ -16,7 +35,179 @@
         </style>
     </head>
 <body class="  antialiased ">
-    <footer class="bg-darkalaa border-t border-fillsvg">
+
+
+    <footer class="footer-type-3 small-section">
+        <div class="footer-type-3--footer-body">
+            <div class="container">
+                <div class="footer-body--footer-sidebar">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-sm-12">
+                            <div class="footer-sidebar--sidebar-widget text-widget">
+                                <h6 class="sidebar-widget--sidebar-title">About Us</h6>
+                                <p>We provide high quality and cost effective services Since our foundation in
+                                    2005 our goal has been to use digital technology to create experiences.</p>
+                                <h6 class="sidebar-widget--sidebar-title">Subscribe newsletter</h6>
+                                <form class="sidebar-widget--newsletter-form-widget">
+                                    <input type="email" placeholder="Email*" required>
+                                    <button type="submit"><i class="fa fa-envelope"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-sm-12">
+                            <div class="footer-sidebar--sidebar-widget latest-posts-widget">
+                                <h6 class="sidebar-widget--sidebar-title">Latest Posts</h6>
+                                <ul class="sidebar-widget--post-list">
+                                    <li class="post-list--post">
+                                        <a href="index.html">
+                                            <div class="post--img-wrapper">
+                                                <img src="img/footer/footer-creative-1.jpg" alt=""
+                                                    class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <div class="post--post-body">
+                                            <h6 class="post-body--post-title">
+                                                <a href="index.html">Good design is good business</a>
+                                            </h6>
+                                            <div class="post-body--description-box">
+                                                <p class="description-box--date">21 July 2022 | <a
+                                                        href="index.html" class="animation-link">Jay Hart</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="post-list--post"><a href="index.html">
+                                            <div class="post--img-wrapper">
+                                                <img src="img/footer/footer-creative-2.jpg" alt=""
+                                                    class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <div class="post--post-body">
+                                            <h6 class="post-body--post-title">
+                                                <a href="index.html">Design is thinking made visual</a>
+                                            </h6>
+                                            <div class="post-body--description-box">
+                                                <p class="description-box--date">18 May 2022 | <a
+                                                        href="index.html" class="animation-link">Mike Snow</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="post-list--post">
+                                        <a href="index.html">
+                                            <div class="post--img-wrapper">
+                                                <img src="img/footer/footer-creative-3.jpg" alt=""
+                                                    class="img-fluid">
+                                            </div>
+                                        </a>
+                                        <div class="post--post-body">
+                                            <h6 class="post-body--post-title">
+                                                <a href="index.html">The world’s business leaders</a>
+                                            </h6>
+                                            <div class="post-body--description-box">
+                                                <p class="description-box--date">5 June 2022 | <a
+                                                        href="index.html" class="animation-link">Emily
+                                                        Smith</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-sm-12">
+                            <div class="footer-sidebar--sidebar-widget contact-info-widget">
+                                <h6 class="sidebar-widget--sidebar-title">Contact Info</h6>
+                                <p class="description">We provide high quality and cost effective services
+                                    Since our foundation in 2005 our goal has been to use digital technology to
+                                    create experiences.</p>
+                                <ul class="sidebar-widget--contact-info">
+                                    <li><i class="fa fa-map-marker"></i>
+                                        <p>Factory, London, W2 5JU.</p>
+                                    </li>
+                                    <li><i class="fa fa-envelope"></i><a href="index.html"
+                                            class="animation-link"><span class="__cf_email__"
+                                                data-cfemail="4f2a372e223f232a0f2b20222e2621612c2022">[email&#160;protected]</span></a>
+                                    </li>
+                                    <li><i class="fa fa-phone"></i><a href="index.html"
+                                            class="animation-link">1-123-222-567</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-sm-12">
+                            <div class="footer-sidebar--sidebar-widget contact-info-widget">
+                                <h6 class="sidebar-widget--sidebar-title">Tag Cloud</h6>
+                                <div class="tag-cloud">
+                                    <a href="index.html" class="tag-cloud--tag">Solution</a>
+                                    <a href="index.html" class="tag-cloud--tag">Design</a>
+                                    <a href="index.html" class="tag-cloud--tag">Visual</a>
+                                    <a href="index.html" class="tag-cloud--tag">Gallery</a>
+                                    <a href="index.html" class="tag-cloud--tag">Scss</a>
+                                    <a href="index.html" class="tag-cloud--tag">Creative</a>
+                                    <a href="index.html" class="tag-cloud--tag">Famous</a>
+                                    <a href="index.html" class="tag-cloud--tag">People</a>
+                                    <a href="index.html" class="tag-cloud--tag">Food</a>
+                                    <a href="index.html" class="tag-cloud--tag">Science</a>
+                                    <a href="index.html" class="tag-cloud--tag">HTML</a> <a href="index.html"
+                                        class="tag-cloud--tag">Photo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-body--copyright-wrapper">
+                    <p class="copyright-wrapper--copyright">
+                        <i class="fa fa-copyright"></i>2022 Keito. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script src="js/TweenMax.min.js"></script>
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+
+    <script src="js/parallax-master.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+
+    <script src="js/progressbar.min.js"></script>
+
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/three.min.js"></script>
+
+    <script src="js/projector.min.js"></script>
+
+    <script src="js/canvas-renderer.min.js"></script>
+
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <script src="js/packery.pkgd.min.js"></script>
+
+    <script src="js/particles.min.js"></script>
+
+    <script src="js/plyr.min.js"></script>
+
+    <script src="js/tilt.jquery.min.js"></script>
+
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <script src="js/aos.min.js"></script>
+
+    <script src="js/glitch-links.min.js"></script>
+
+    <script src="js/slideshow.min.js"></script>
+
+    <script src="js/sticky-sidebar.min.js"></script>
+
+    <script src="js/swiper.min.js"></script>
+
+    <script src="js/main.js"></script>
+    {{-- <footer class="bg-darkalaa border-t border-fillsvg">
         <div class="flex w-1/2 mx-auto justify-center items-center">
             <div class="w-1/3 bg-darkalaa p-4 m-2 rounded-md">
                 <img class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 fill-svgfill " fill="svgfill"
@@ -43,7 +234,7 @@
             
              
         </div>
-    </footer>
+    </footer> --}}
     
 @yield('content')
 
