@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -29,6 +30,7 @@
 <body>
 
     <main class="page-wrapper">
+     
 
         <div class="page-loader">
             <div class="preloader-wrapper">
@@ -125,7 +127,7 @@
                         <li class="menu-item menu-item-has-children">
                             <a href="#">مقالات</a>
                             <ul class="sub-menu">
-                               
+
                                 <li class="menu-item"><a href="{{ route('blogedu.technical-edu') }}"
                                         :active="request() - > routeIs('dashboard')">
                                         {{ __('التعلم التكنلوجي') }}</a>
@@ -187,7 +189,7 @@
                         <li class="menu-item menu-item-has-children">
                             <a href="#">مقالات</a>
                             <ul class="sub-menu">
-                               
+
                                 <li class="menu-item"><a href="{{ route('blogedu.technical-edu') }}"
                                         :active="request() - > routeIs('dashboard')">
                                         {{ __('التعلم التكنلوجي') }}</a>
@@ -197,7 +199,7 @@
                                 </li>
                             </ul>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
@@ -205,6 +207,7 @@
         <div class="content-page-wrapper content-page-wrapper--side-menu">
 
             <header class="hero-header-parallax">
+               
                 <div class="parallax-scene hero-header--inner-wrapper">
                     <div class="inner-wrapper--image-wrapper" data-depth="0.1">
                         <div class="image-wrapper--image" style="background-image: url(img/home/coworking-2.jpg)">
@@ -221,6 +224,7 @@
                     <div class="canvas-wrapper-particles" id="particles-wrapper" data-depth="0.1">
                     </div>
                 </div>
+                
             </header>
 
             <section class="about-us large-section">
@@ -228,7 +232,7 @@
                     <div class="row">
                         <div class="col section-heading-type-3">
                             <h2 class="section-heading--main-title">
-                               نبذة عنا 
+                                نبذة عنا
                             </h2>
                             <ul class="section-heading--angles">
                                 <li></li>
@@ -256,22 +260,32 @@
                     <div class="row about-us--inner-wrapper border-top-simple">
                         <div class="col-lg-4 inner-wrapper--column-wrapper">
                             <h5 class="mb-10">المقالات والموارد التعليمية</h5>
-                            <p class="pr-50">يحتوي الموقع على مجموعة من المقالات والموارد التعليمية التي توفر معلومات ونصائح حول الأمان السيبراني وكيفية حماية البيانات الشخصية على الإنترنت. تتناول هذه الموارد مواضيع مثل كلمات المرور القوية، والتحقق بخطوتين، والتعرف على البريد الإلكتروني المزيف، والتصيد الاحتيالي، والتشفير، وغيرها من المفاهيم الأساسية في مجال الأمن السيبراني.</p>
+                            <p class="pr-50">يحتوي الموقع على مجموعة من المقالات والموارد التعليمية التي توفر معلومات
+                                ونصائح حول الأمان السيبراني وكيفية حماية البيانات الشخصية على الإنترنت. تتناول هذه
+                                الموارد مواضيع مثل كلمات المرور القوية، والتحقق بخطوتين، والتعرف على البريد الإلكتروني
+                                المزيف، والتصيد الاحتيالي، والتشفير، وغيرها من المفاهيم الأساسية في مجال الأمن
+                                السيبراني.</p>
                         </div>
                         <div class="col-lg-4 inner-wrapper--column-wrapper">
                             <h5 class="mb-10">المجتمع والمنتدى</h5>
                             <p class="pr-50">
-                                يوفر الموقع مجتمعًا نشطًا للمستخدمين يمكنهم مناقشة وتبادل المعلومات والأفكار حول الأمن السيبراني. يمكن للمستخدمين طرح الأسئلة ومشاركة التحديات وتقديم النصائح والحلول لبعضهم البعض. يعمل المجتمع على تعزيز التوعية والتفاعل وتعزيز الثقافة الأمنية في العالم الرقمي.</p>
+                                يوفر الموقع مجتمعًا نشطًا للمستخدمين يمكنهم مناقشة وتبادل المعلومات والأفكار حول الأمن
+                                السيبراني. يمكن للمستخدمين طرح الأسئلة ومشاركة التحديات وتقديم النصائح والحلول لبعضهم
+                                البعض. يعمل المجتمع على تعزيز التوعية والتفاعل وتعزيز الثقافة الأمنية في العالم الرقمي.
+                            </p>
                         </div>
                         <div class="col-lg-4 inner-wrapper--column-wrapper">
-                            <h5 class="inner-wrapper--column-wrapper--title">باختصار، يهدف موقع المناصرة الرقمية إلى تمكين الأفراد وتوفير المعلومات والأدوات اللازمة للحفاظ على الأمان السيبراني وحماية المعلومات الشخصية على الإنترنت. يسعى الموقع لتعزيز التوعية وبناء مجتمع قوي من المهتمين بالأمن السيبراني.</h5>
+                            <h5 class="inner-wrapper--column-wrapper--title">باختصار، يهدف موقع المناصرة الرقمية إلى
+                                تمكين الأفراد وتوفير المعلومات والأدوات اللازمة للحفاظ على الأمان السيبراني وحماية
+                                المعلومات الشخصية على الإنترنت. يسعى الموقع لتعزيز التوعية وبناء مجتمع قوي من المهتمين
+                                بالأمن السيبراني.</h5>
                         </div>
                     </div>
                     <div class="container">
                         <div class="row">
                             <div class="col section-heading-type-3">
                                 <h2 class="section-heading--main-title">
-                                   خدماتنا
+                                    خدماتنا
                                 </h2>
                                 <ul class="section-heading--angles">
                                     <li></li>
@@ -597,7 +611,7 @@
                 </div>
             </section>
 
-         
+
 
             <section class="accordions">
                 <div class="accordion-gallery">
@@ -754,7 +768,7 @@
                 </div>
             </section>
 
-            
+
 
             <section class="recent-posts large-section border-top-simple border-bottom-simple">
                 <div class="recent-posts-type-1">
@@ -783,8 +797,7 @@
                                         <div class="card-content--card-head">
                                             <div class="card-head--img-wrapper">
                                                 <a href="index.html">
-                                                    <img src="img/home/offer.jpg" alt=""
-                                                        class="img-fluid">
+                                                    <img src="img/home/offer.jpg" alt="" class="img-fluid">
                                                 </a>
                                             </div>
                                         </div>
@@ -886,7 +899,7 @@
                     <div class="row">
                         <div class="col section-heading-type-2">
                             <h4 class="section-heading--main-title white-color mb-15">
-                               تابعنا على منصات التواصل الاجتماعي
+                                تابعنا على منصات التواصل الاجتماعي
                             </h4>
                             <div class="social-icons-type-2 justify-content-center">
                                 <a href="index.html" class="social-box facebook-h">
@@ -1023,8 +1036,8 @@
                                             <a href="index.html" class="tag-cloud--tag">People</a>
                                             <a href="index.html" class="tag-cloud--tag">Food</a>
                                             <a href="index.html" class="tag-cloud--tag">Science</a>
-                                            <a href="index.html" class="tag-cloud--tag">HTML</a> <a
-                                                href="index.html" class="tag-cloud--tag">Photo</a>
+                                            <a href="index.html" class="tag-cloud--tag">HTML</a> <a href="index.html"
+                                                class="tag-cloud--tag">Photo</a>
                                         </div>
                                     </div>
                                 </div>
