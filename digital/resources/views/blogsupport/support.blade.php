@@ -218,8 +218,9 @@
                         @endif
                         <article class="blog-wrapper--blog-post">
                             <div class="blog-post--post-wrapper">
+                                @foreach ($blogsupports as $blogsupport)
                                 <div class="post-wrapper--title">
-                                    @foreach ($blogsupports as $blogsupport)
+                                    
                                         <a href="{{ route('blogsupport.show', ['id' => $blogsupport->id]) }} ">
                                             <h5>{{ $blogsupport->title }}</h5>
                                         </a>
