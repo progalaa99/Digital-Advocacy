@@ -10,7 +10,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent">
     <meta name="format-detection" content="telephone=no">
-    <title>Keito</title>
+    <title>التعليم التكنلوجي</title>
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -99,6 +99,10 @@
                                     {{ __('تقرير') }}
                                 </a>
                             </li>
+                            <li class="menu-item ">
+                                <a href="{{ route('profile.show') }}" :active="request() - > routeIs('dashboard')">
+                                    {{ __('الملف الشخصي') }}</a>
+                                 </li>
                             <li class="menu-item menu-item-has-children">
                                 <a href="#">مقالات</a>
                                 <ul class="sub-menu">
@@ -157,6 +161,10 @@
                                 {{ __('تقرير') }}
                             </a>
                         </li>
+                        <li class="menu-item ">
+                            <a href="{{ route('profile.show') }}" :active="request() - > routeIs('dashboard')">
+                                {{ __('الملف الشخصي') }}</a>
+                             </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">مقالات</a>
                             <ul class="sub-menu">

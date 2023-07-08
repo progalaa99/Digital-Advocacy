@@ -124,6 +124,10 @@
                                 {{ __('تقرير') }}
                             </a>
                         </li>
+                        <li class="menu-item ">
+                            <a href="{{ route('profile.show') }}" :active="request() - > routeIs('dashboard')">
+                                {{ __('الملف الشخصي') }}</a>
+                             </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">مقالات</a>
                             <ul class="sub-menu">
@@ -186,6 +190,10 @@
                                 {{ __('تقرير') }}
                             </a>
                         </li>
+                        <li class="menu-item ">
+                            <a href="{{ route('profile.show') }}" :active="request() - > routeIs('dashboard')">
+                                {{ __('الملف الشخصي') }}</a>
+                             </li>
                         <li class="menu-item menu-item-has-children">
                             <a href="#">مقالات</a>
                             <ul class="sub-menu">
