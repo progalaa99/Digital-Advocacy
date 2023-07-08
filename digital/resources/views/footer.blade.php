@@ -12,7 +12,7 @@
     
 
     <footer class="bg-darkalaa border-t border-fillsvg">
-        <div class="flex w-1/2 mx-auto justify-center items-center">
+        <div class="flex w-1/2 mx-auto justify-center items-center h-auto max-h-full">
             <div class="w-1/3 bg-darkalaa p-4 m-2 rounded-md">
                 <img class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 fill-svgfill " fill="svgfill"
                 src="/icon/code for iraq logo SVG.svg" alt="head-idea-icon">
