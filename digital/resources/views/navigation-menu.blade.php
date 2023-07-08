@@ -130,12 +130,12 @@
 
                         <x-slot name="content">
                             <!-- Account Management -->
-                            <div class="block px-4 py-2 text-xs text-gray-400 bg-darkalaa">
-                                {{ __('Manage Account') }}
+                            <div class="block px-4 py-2 text-xs text-black bg-gray-400">
+                                {{ __('ادارة الحساب') }}
                             </div>
 
                             <x-dropdown-link href="{{ route('profile.show') }}">
-                                {{ __('Profile') }}
+                                {{ __('الملف الشخصي') }}
                             </x-dropdown-link>
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
@@ -152,7 +152,7 @@
 
                                 <x-dropdown-link href="{{ route('logout') }}"
                                          @click.prevent="$root.submit();">
-                                    {{ __('Log Out') }}
+                                    {{ __('تسجيل الخروج') }}
                                 </x-dropdown-link>
                             </form>
                         </x-slot>
