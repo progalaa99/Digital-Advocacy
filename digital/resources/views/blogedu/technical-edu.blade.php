@@ -50,7 +50,7 @@
             <div class="fullscreen-menu--inner-wrapper">
                 <div class="">
                     
-                        <img class="fill-current h-16 w-16 mr-2" src="/icon/mainicon.svg" alt="شعار الموقع">
+                        <img class="fill-current h-16 w-16 mr-2 fixed-top" src="/icon/mainicon.svg" alt="شعار الموقع">
 
                 </div>
                 <div class="inner-wrapper--buttons-wrapper">
@@ -221,7 +221,7 @@
                         @if (auth()->user()->roleId === 1)
                             <div class="flex justify-center items-center">
                                 <a href="{{ route('blogedu.create') }}"
-                                    class="bg-buttonalaa  p-1 mr-2  w-20 h-30 border-none   rounded ">Add Blog</a>
+                                    class="bg-buttonalaa  p-1  w-20 h-30 border-none   rounded btn btn-primary mr-2">اضافة مقالة</a>
                             </div>
                         @endif
                         <article class="blog-wrapper--blog-post">
@@ -233,13 +233,13 @@
                                             <h5>{{ $blogedu->title }}</h5>
                                         </a>
                                 </div>
-                                <div class="post-wrapper--content">
+                                {{-- <div class="post-wrapper--content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque
                                         cupiditate deleniti dolore, doloribus explicabo hic illo impedit in iure
                                         consectetur iusto minus molestias nobis quis quisquam rem
                                         rerum suscipit
                                         temporibus velit vitae. Asperiores beatae itaque maiores.</p>
-                                </div>
+                                </div> --}}
                                 <div class="post-wrapper--author border-bottom-simple">
                                     <div class="wrapper">
                                         <a href="index.html">
@@ -265,13 +265,11 @@
                                         </div> --}}
                                     </div>
                                     @if (auth()->user()->roleId === 1)
-                                        <div>
-                                            <br>
-                                            <a href="{{ route('blogedu.edit', ['id' => $blogedu->id]) }}"
-                                                class="bg-buttonalaa  p-1 mr-2  w-20 h-30 border-none   rounded">Edit</a>
-                                            <a href="{{ route('blogedu.destroy', ['id' => $blogedu->id]) }}"
-                                                class="bg-red-900  p-1 mr-2  w-20 h-30 border-none   rounded">Delete</a>
-                                        </div>
+                                    <div class="mt-3">
+                                        <a href="{{ route('blogedu.edit', ['id' => $blogedu->id]) }}" class="btn btn-primary mr-2">تعديل</a>
+                                        <a href="{{ route('blogedu.destroy', ['id' => $blogedu->id]) }}" class="btn btn-danger">حذف</a>
+                                    </div>
+                                    
                                     @endif
                                 </div>
                                 @endforeach
