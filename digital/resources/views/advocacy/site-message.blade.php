@@ -1,17 +1,15 @@
 <x-app-layout>
-    <div class="flex antialiased top-1/2 left-1/2">
-        <div class="bg-darkalaa p-48 mr-48 top-1/2 left-1/2">
-            <h2 class="text-2xl text-white  text-center">We are really sorry for the problem you encountered! Don't worry dear, we are all exposed to 
-                different problems and so is life, but the most important thing is to learn from mistakes.
-                There is a saying by Andre Gide that I would like to mention to you
-                <blockquote class="font-bold"> " Life is a very unfair teacher. First it tests us, then it teaches "</blockquote>
-                We direct you to the psychological support page, so you can contact a specialist if you need that.
-                You can also see the instructions on how to deal with your feelings in such moments</h2>
+    <div class="flex items-center justify-center bg-white py-16">
+        <div class="bg-white p-8 text-black max-w-xl text-center">
+            <h2 class="text-2xl font-bold mb-6">نحن حقا آسفون للمشكلة التي واجهتها</h2>
+            <p class="mb-6">لا تقلق عزيزي ، فنحن جميعًا نتعرض لمشاكل مختلفة  ، ولكن أهم شيء هو التعلم من الأخطاء.</p>
+            <p class="mb-6">هناك قول مأثور لأندريه جيد أود أن أذكره لك:</p>
+            <blockquote class="text-lg font-bold mb-6">"الحياة معلم غير عادل للغاية. أولاً تختبرنا ، ثم تعلمنا."</blockquote>
+            <p class="mb-6">نوجهك إلى صفحة الدعم النفسي ، حتى تتمكن من الاتصال بأخصائي إذا احتجت إلى ذلك. يمكنك أيضًا الاطلاع على الإرشادات حول كيفية التعامل مع مشاعرك في مثل هذه اللحظات.</p>
         </div>
-    </div>{{--      --}}
-    <div class="flex-shrink-0 w-1/2 p-1 mr-2 h-10 w-60 bg-buttonalaa absolute top-1/2 left-1/2 transform -translate-x-2/3 -translate-y-1/2  border-none   rounded text-center items-center ">
-        <a href="{{route('blogsupport.support')}}" class="font-semibold text-white py-12 text-2xl ">View Support Page</a>
+    </div>
+    <div class="flex justify-center mt-6">
+        <a href="{{ route('blogsupport.support') }}" class="bg-buttonalaa px-8 py-4 text-white font-semibold rounded text-xl">View Support Page</a>
     </div>
     @extends('footer')
-   
 </x-app-layout>

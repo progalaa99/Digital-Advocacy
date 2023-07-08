@@ -670,7 +670,7 @@
 
 
 
-            <section class="recent-posts large-section border-top-simple border-bottom-simple">
+            {{-- <section class="recent-posts large-section border-top-simple border-bottom-simple">
                 <div class="recent-posts-type-1">
                     <div class="container">
                         <div class="row">
@@ -791,7 +791,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> --}}
 
             <section class="socials small-section black-overlay overlay bg-position-center bg-size-cover"
                 style="background-image: url('img/home/workspace-1.jpg')">
