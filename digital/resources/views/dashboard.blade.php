@@ -267,23 +267,23 @@
                     </div>
                     <div class="row about-us--inner-wrapper border-top-simple">
                         <div class="col-lg-4 inner-wrapper--column-wrapper">
-                            <h5 class="mb-10">المقالات والموارد التعليمية</h5>
-                            <p class="pr-50">يحتوي الموقع على مجموعة من المقالات والموارد التعليمية التي توفر معلومات
+                            <h5 class="mb-10 text-center">المقالات والموارد التعليمية</h5>
+                            <p class="pr-50 text-center">يحتوي الموقع على مجموعة من المقالات والموارد التعليمية التي توفر معلومات
                                 ونصائح حول الأمان السيبراني وكيفية حماية البيانات الشخصية على الإنترنت. تتناول هذه
                                 الموارد مواضيع مثل كلمات المرور القوية، والتحقق بخطوتين، والتعرف على البريد الإلكتروني
                                 المزيف، والتصيد الاحتيالي، والتشفير، وغيرها من المفاهيم الأساسية في مجال الأمن
                                 السيبراني.</p>
                         </div>
                         <div class="col-lg-4 inner-wrapper--column-wrapper">
-                            <h5 class="mb-10">المجتمع والمنتدى</h5>
-                            <p class="pr-50">
+                            <h5 class="mb-10 text-center">المجتمع والمنتدى</h5>
+                            <p class="pr-50 text-center " >
                                 يوفر الموقع مجتمعًا نشطًا للمستخدمين يمكنهم مناقشة وتبادل المعلومات والأفكار حول الأمن
                                 السيبراني. يمكن للمستخدمين طرح الأسئلة ومشاركة التحديات وتقديم النصائح والحلول لبعضهم
                                 البعض. يعمل المجتمع على تعزيز التوعية والتفاعل وتعزيز الثقافة الأمنية في العالم الرقمي.
                             </p>
                         </div>
                         <div class="col-lg-4 inner-wrapper--column-wrapper">
-                            <h5 class="inner-wrapper--column-wrapper--title">باختصار، يهدف موقع المناصرة الرقمية إلى
+                            <h5 class="inner-wrapper--column-wrapper--title text-center">باختصار، يهدف موقع المناصرة الرقمية إلى
                                 تمكين الأفراد وتوفير المعلومات والأدوات اللازمة للحفاظ على الأمان السيبراني وحماية
                                 المعلومات الشخصية على الإنترنت. يسعى الموقع لتعزيز التوعية وبناء مجتمع قوي من المهتمين
                                 بالأمن السيبراني.</h5>
@@ -322,7 +322,7 @@
                                     </div>
                                     <div class="content--description-wrapper">
                                         <h5 class="text-center mb-10">امانك على الانترنت</h5>
-                                        <p class="text-center">نحن نعلمك الاستخدام الآمن للإنترنت!</p>
+                                        <p class="text-center " style="color: black;">نحن نعلمك الاستخدام الآمن للإنترنت!</p>
                                     </div>
                                 </div>
                             </div>
@@ -337,7 +337,7 @@
                                     </div>
                                     <div class="content--description-wrapper">
                                         <h5 class="text-center mb-10">تقديم دعم</h5>
-                                        <p class="text-center">الدعم العاطفي
+                                        <p class="text-center" style="color: black;">الدعم العاطفي
                                             اتصل بأخصائي ، نصائح!</p>
                                     </div>
                                 </div>
@@ -353,7 +353,7 @@
                                     </div>
                                     <div class="content--description-wrapper">
                                         <h5 class="text-center mb-10">تقديم شكوى</h5>
-                                        <p class="text-center">قدم شكوى وانتظر حتى يتم القبض على المجرم!</p>
+                                        <p class="text-center" style="color: black;">قدم شكوى وانتظر حتى يتم القبض على المجرم!</p>
                                     </div>
                                 </div>
                             </div>
