@@ -269,7 +269,7 @@
                         <div class="col-lg-4 inner-wrapper--column-wrapper">
                             <h5 class="mb-10 text-center">المقالات والموارد التعليمية</h5>
                             <p class="pr-50 text-center">يحتوي الموقع على مجموعة من المقالات والموارد التعليمية التي توفر معلومات
-                                ونصائح حول الأمان السيبراني وكيفية حماية البيانات الشخصية على الإنترنت. تتناول هذه
+                                ونصائح حول الأمن السيبراني وكيفية حماية البيانات الشخصية على الإنترنت. تتناول هذه
                                 الموارد مواضيع مثل كلمات المرور القوية، والتحقق بخطوتين، والتعرف على البريد الإلكتروني
                                 المزيف، والتصيد الاحتيالي، والتشفير، وغيرها من المفاهيم الأساسية في مجال الأمن
                                 السيبراني.</p>
@@ -371,7 +371,7 @@
                             </ul>
                         </div>
                         <div class="tabs-wrapper--content-wrapper">
-                            <div class="content-wrapper--tab" data-tabs-tab-title="Branding">
+                            <div class="content-wrapper--tab text-center" data-tabs-tab-title="تقديم مشكلة">
                                 <div class="row tab--tab-content">
                                     <div class="col-lg-6">
                                         <div class="tab-content--img-wrapper">
@@ -380,25 +380,21 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="tab-content--content-wrapper">
-                                            <h2>Branding</h2>
-                                            <p class="default-subtitle mb-5">We are delivering beautiful digital
-                                                products for you</p>
-                                            <p class="mb-20">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid
-                                                atque dolorem, doloremque dolores eaque, eius et illo, in libero nihil
-                                                provident quae quam repellat repudiandae voluptatum in libero nihil
-                                                provident.
+                                            <h2>تقديم مشكلة </h2>
+                                            <p class="default-subtitle mb-5 text-center">من خلال هذه الصفحة يمكنك الدخول وارسال المشكلة التي تعرضت لها نتيجة 
+                                                الابتزاز وسيكون هنالك كادر خاص بحل المشكلة
                                             </p>
+                                            
                                             <div class="button-wrapper-type-5">
-                                                <a href="services.html" class="btn-type-5">
-                                                    Explore Features
+                                                <a href="services.html" class="btn-type-5" style="color:black">
+                                                   تقديم المشكلة
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-wrapper--tab" data-tabs-tab-title="Marketing">
+                            <div class="content-wrapper--tab " data-tabs-tab-title="التعلم التكنلوجي">
                                 <div class="row tab--tab-content">
                                     <div class="col-lg-6">
                                         <div class="tab-content--img-wrapper">
@@ -406,26 +402,22 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="tab-content--content-wrapper">
-                                            <h2>Marketing</h2>
-                                            <p class="default-subtitle mb-5">We are delivering beautiful digital
-                                                products for you</p>
-                                            <p class="mb-20">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid
-                                                atque dolorem, doloremque dolores eaque, eius et illo, in libero nihil
-                                                provident quae quam repellat repudiandae voluptatum in libero nihil
-                                                provident.
+                                        <div class="tab-content--content-wrapper text-center">
+                                            <h2>التعلم التكنلوجي</h2>
+                                            <p class="default-subtitle mb-5 text-center">نقوم بتقديم افضل المقالات التي تساعدك على فهم موقعك على الانترنت 
+                                                وحماية نفسك 
                                             </p>
+                                           
                                             <div class="button-wrapper-type-5">
                                                 <a href="services.html" class="btn-type-5">
-                                                    Explore Features
+                                                   التعليم التكنولجي
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-wrapper--tab" data-tabs-tab-title="Design">
+                            <div class="content-wrapper--tab" data-tabs-tab-title="الدعم النفسي">
                                 <div class="row tab--tab-content">
                                     <div class="col-lg-6">
                                         <div class="tab-content--img-wrapper">
@@ -433,26 +425,20 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="tab-content--content-wrapper">
-                                            <h2>Design</h2>
-                                            <p class="default-subtitle mb-5">We are delivering beautiful digital
-                                                products for you</p>
-                                            <p class="mb-20">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid
-                                                atque dolorem, doloremque dolores eaque, eius et illo, in libero nihil
-                                                provident quae quam repellat repudiandae voluptatum in libero nihil
-                                                provident.
-                                            </p>
+                                        <div class="tab-content--content-wrapper text-center">
+                                            <h2>الدعم النفسي</h2>
+                                            <p class="default-subtitle mb-5 text-center">صفحة خاصة بتقديم مقالات تهتم بصحتك النفسية يمكنك الوصول لها والاطلاع لمساعدة نفسك واصدقائك</p>
+                                            
                                             <div class="button-wrapper-type-5">
                                                 <a href="services.html" class="btn-type-5">
-                                                    Explore Features
+                                                   الدعم النفسي
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-wrapper--tab" data-tabs-tab-title="Modern">
+                            <div class="content-wrapper--tab" data-tabs-tab-title="تقرير" >
                                 <div class="row tab--tab-content">
                                     <div class="col-lg-6">
                                         <div class="tab-content--img-wrapper">
@@ -460,26 +446,22 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="tab-content--content-wrapper">
-                                            <h2>Development</h2>
-                                            <p class="default-subtitle mb-5">We are delivering beautiful digital
-                                                products for you</p>
-                                            <p class="mb-20">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid
-                                                atque dolorem, doloremque dolores eaque, eius et illo, in libero nihil
-                                                provident quae quam repellat repudiandae voluptatum in libero nihil
-                                                provident.
+                                        <div class="tab-content--content-wrapper text-center">
+                                            <h2>تقرير </h2>
+                                            <p class="default-subtitle mb-5 text-center">صفحة خاصة بتقديم احصائية للموقع تتضمن عدد المسجلين ونسبة تعرض الفئات الى 
+                                                الابتزاز الالكتروني والكثير 
                                             </p>
+                                           
                                             <div class="button-wrapper-type-5">
                                                 <a href="services.html" class="btn-type-5">
-                                                    Explore Features
+                                                    تقرير
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="content-wrapper--tab" data-tabs-tab-title="Art">
+                            {{-- <div class="content-wrapper--tab" data-tabs-tab-title="Art">
                                 <div class="row tab--tab-content">
                                     <div class="col-lg-6">
                                         <div class="tab-content--img-wrapper">
@@ -505,7 +487,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -622,8 +604,8 @@
                                     <div class="progress-bar-circle1 progress-bar-circle" data-progress='0.85'>
                                         <p class="skill-title">85%</p>
                                     </div>
-                                    <div class="progress-wrapper--progress-title">
-                                        <p>Concept</p>
+                                    <div class="progress-wrapper--progress-title" style="font-size: 50%">
+                                        <p>الوعي الرقمي</p>
                                     </div>
                                 </div>
                             </div>
@@ -635,7 +617,7 @@
                                         <p class="skill-title">90%</p>
                                     </div>
                                     <div class="progress-wrapper--progress-title">
-                                        <p>Testing</p>
+                                        <p>التوعية الأمنية</p>
                                     </div>
                                 </div>
                             </div>
@@ -647,7 +629,7 @@
                                         <p class="skill-title">95</p>
                                     </div>
                                     <div class="progress-wrapper--progress-title">
-                                        <p>Support</p>
+                                        <p>الخصوصية الرقمية</p>
                                     </div>
                                 </div>
                             </div>
@@ -659,7 +641,7 @@
                                         <p class="skill-title">100%</p>
                                     </div>
                                     <div class="progress-wrapper--progress-title">
-                                        <p>Idea</p>
+                                        <p>الحماية الإلكترونية</p>
                                     </div>
                                 </div>
                             </div>

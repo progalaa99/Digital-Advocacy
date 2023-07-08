@@ -19,11 +19,11 @@
             <div class="w-full md:w-1/3 px-4">
                 <div class="flex flex-col">
                     <span class="text-3xl text-white font-bold mb-4">تصفح الموقع</span>
-                    <a href="#" class="text-xl text-white font-bold mb-2">الصفحة الرئيسية</a>
-                    <a href="#" class="text-xl text-white font-bold mb-2">تقديم مشكلة</a>
-                    <a href="#" class="text-xl text-white font-bold mb-2">الدعم النفسي</a>
-                    <a href="#" class="text-xl text-white font-bold mb-2">التعليم التكنولوجي</a>
-                    <a href="#" class="text-xl text-white font-bold mb-2">تقرير</a>
+                    <a href="{{ route('dashboard') }}" class="text-xl text-white font-bold mb-2">الصفحة الرئيسية</a>
+                    <a href="{{ route('complaint') }}" class="text-xl text-white font-bold mb-2">تقديم مشكلة</a>
+                    <a href="{{ route('blogsupport.support') }}" class="text-xl text-white font-bold mb-2">الدعم النفسي</a>
+                    <a href="{{ route('blogedu.technical-edu') }}" class="text-xl text-white font-bold mb-2">التعليم التكنولوجي</a>
+                    <a href="{{ route('reports') }}" class="text-xl text-white font-bold mb-2">تقرير</a>
                 </div>
             </div>
             <div class="w-full md:w-1/3 px-4">
