@@ -15,7 +15,27 @@
 
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="flex justify-center">
+                    <div class="hidden sm:flex sm:items-center sm:space-x-8">
+                        <x-nav-link href="{{ route('reports') }}" :active="request()->routeIs('dashboard')">
+                            {{ __('تقرير') }}
+                        </x-nav-link>
+                        <x-nav-link href="{{ route('blogedu.technical-edu') }}" :active="request()->routeIs('dashboard')">
+                            {{ __('التعليم التكنولجي') }}
+                        </x-nav-link>
+                        <x-nav-link href="{{ route('blogsupport.support') }}" :active="request()->routeIs('dashboard')">
+                            {{ __('الدعم النفسي') }}
+                        </x-nav-link>
+                        <x-nav-link href="{{ route('complaint') }}" :active="request()->routeIs('dashboard')">
+                            {{ __('تقديم مشكلة') }}
+                        </x-nav-link>
+                        <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                            {{ __('الصفحة الرئيسية ') }}
+                        </x-nav-link>
+                    </div>
+                </div>
+                
+                {{-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link href="{{ route('reports') }}" :active="request()->routeIs('dashboard')">
                         {{ __('تقرير') }}
                     </x-nav-link>
@@ -31,7 +51,7 @@
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('الصفحة الرئيسية ') }}
                     </x-nav-link>
-                </div>
+                </div> --}}
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">

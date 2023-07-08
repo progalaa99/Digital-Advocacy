@@ -22,13 +22,13 @@
                     </h2>
                 </div>
                 <div class="bg-white p-4">
-                    <h1 class="text-xl font-bold">معدل تعرض الذكور:</h1>
+                    <h1 class="text-xl font-bold">معدل تعرض الذكور</h1>
                     <h2 class="font-bold">{{$malePercentage}}%</h2>
-                    <h1 class="text-xl font-bold">معدل تعرض الإناث:</h1>
+                    <h1 class="text-xl font-bold">معدل تعرض الإناث</h1>
                     <h2 class="font-bold">{{$femalePercentage}}%</h2>
                 </div>
                 <div class="bg-white p-4">
-                    <h1 class="text-xl font-bold">الفئة الأكثر عرضة للابتزاز:</h1>
+                    <h1 class="text-xl font-bold">الفئة الأكثر عرضة للابتزاز</h1>
                     <h2 class="font-bold">
                         @foreach ($genderCounts as $genderCount)
                             {{$genderCount->gender}}

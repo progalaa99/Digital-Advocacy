@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-  
-<body class="  antialiased ">
-
-
-    
-
-    
-
-    
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="your-styles.css">
+</head>
+<body class="antialiased">
 
     <footer class="bg-darkalaa border-t border-fillsvg">
-        <div class="flex w-1/2 mx-auto justify-center items-center h-auto max-h-full">
-            <div class="w-1/3 bg-darkalaa p-4 m-2 rounded-md">
-                <img class="w-32 h-32 pt-10  transform -translate-x-1/9 -translate-y-1/11 fill-svgfill " fill="svgfill"
-                src="/icon/code for iraq logo SVG.svg" alt="head-idea-icon">
-                <span class="text-2xl font-bold text-white">Code For Iraq</span>
+        <div class="container mx-auto flex flex-wrap justify-center items-center py-8">
+            <div class="w-full md:w-1/3 px-4">
+                <div class="flex items-center">
+                    <img class="w-32 h-32" src="/icon/code for iraq logo SVG.svg" alt="Code For Iraq Logo">
+                    <span class="text-2xl font-bold text-white ml-4">البرمجة من أجل العراق</span>
+                </div>
             </div>
-            <div class="w-1/3 bg-darkalaa p-4 m-2 rounded-md flex flex-col">
-               <span class="text-3xl text-white font-bold">Other Page</span>  
-               <a href="" class="text-1xl text-white font-bold">Home</a>
-               <a href="" class="text-1xl text-white font-bold">complaint</a>
-               <a href="" class="text-1xl text-white font-bold">support</a>
-               <a href="" class="text-1xl text-white font-bold">Technical Education</a>
-               <a href="" class="text-1xl text-white font-bold"> Report</a>  
+            <div class="w-full md:w-1/3 px-4">
+                <div class="flex flex-col">
+                    <span class="text-3xl text-white font-bold mb-4">تصفح الموقع</span>
+                    <a href="#" class="text-xl text-white font-bold mb-2">الصفحة الرئيسية</a>
+                    <a href="#" class="text-xl text-white font-bold mb-2">تقديم مشكلة</a>
+                    <a href="#" class="text-xl text-white font-bold mb-2">الدعم النفسي</a>
+                    <a href="#" class="text-xl text-white font-bold mb-2">التعليم التكنولوجي</a>
+                    <a href="#" class="text-xl text-white font-bold mb-2">تقرير</a>
+                </div>
             </div>
-            <div class="w-1/3 bg-darkalaa p-4 m-1 rounded-md  ">
-                <span class="text-3xl text-white font-bold ">Contact Us</span>  
-                <span class="text-1xl text-white font-bold">We@gmail.com</span>  
+            <div class="w-full md:w-1/3 px-4">
+                <div class="flex flex-col">
+                    <span class="text-3xl text-white font-bold mb-4">تواصل معنا</span>
+                    <span class="text-xl text-white font-bold mb-2">We@gmail.com</span>
+                </div>
             </div>
-          </div>
-        <div class="flex w-1/2 mx-auto justify-center items-center text-white">
-             <p class="text-1xl font-bold">Copyright © 2023
-                <span class="text-sm mr-1">( Made With Love ❤)</span>
-             </p>
-            
-             
+        </div>
+        <div class="container mx-auto py-4 text-center text-white">
+            <p class="text-xl font-bold">حقوق النشر © 2023
+                <span class="text-sm">(صنع بالكثير من الحب ❤)</span>
+            </p>
         </div>
     </footer>
-    
-@yield('content')
 
-   
+    @yield('content')
+
 </body>
 </html>

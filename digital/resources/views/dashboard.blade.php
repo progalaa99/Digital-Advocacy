@@ -307,114 +307,6 @@
                     </div>
                 </div>
             </section>
-
-            {{-- <section class="black-section">
-                <div class="container-fluid">
-                    <div class="services-slider-type-1">
-                        <div class="swiper-container services-slider-wrapper--inner-wrapper steps-wrapper--swiper">
-                            <div class="swiper-wrapper inner-wrapper--slides">
-                                <div class="swiper-slide slides--slide">
-                                    <div class="slide--content">
-                                        <div class="content--icon">
-                                            <i class="far fa-gem"></i>
-                                        </div>
-                                        <div class="content--title">
-                                            <h5>
-                                                Branding
-                                            </h5>
-                                        </div>
-                                        <div class="content--text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, autem.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide slides--slide">
-                                    <div class="slide--content">
-                                        <div class="content--icon">
-                                            <i class="fas fa-code"></i>
-                                        </div>
-                                        <div class="content--title">
-                                            <h5>
-                                                UI/UX designs
-                                            </h5>
-                                        </div>
-                                        <div class="content--text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, autem.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide slides--slide">
-                                    <div class="slide--content">
-                                        <div class="content--icon">
-                                            <i class="fas fa-globe"></i>
-                                        </div>
-                                        <div class="content--title">
-                                            <h5>
-                                                Resource use
-                                            </h5>
-                                        </div>
-                                        <div class="content--text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, autem.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide slides--slide">
-                                    <div class="slide--content">
-                                        <div class="content--icon">
-                                            <i class="fas fa-volume-up"></i>
-                                        </div>
-                                        <div class="content--title">
-                                            <h5>
-                                                Audio Streaming
-                                            </h5>
-                                        </div>
-                                        <div class="content--text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, autem.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide slides--slide">
-                                    <div class="slide--content">
-                                        <div class="content--icon">
-                                            <i class="fas fa-briefcase"></i>
-                                        </div>
-                                        <div class="content--title">
-                                            <h5>Product Branding</h5>
-                                        </div>
-                                        <div class="content--text">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, autem.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="inner-wrapper--navigation">
-                                <div class="navigation--swiper-navigation">
-                                    <div
-                                        class="steps-wrapper--swiper-button-prev swiper-navigation--swiper-button-prev swiper-navigation--swiper-button">
-                                        <i class="fa fa-long-arrow-alt-left"></i>
-                                    </div>
-                                    <div
-                                        class="steps-wrapper--swiper-button-next swiper-navigation--swiper-button-next swiper-navigation--swiper-button">
-                                        <i class="fa fa-long-arrow-alt-right"></i>
-                                    </div>
-                                </div>
-                                <div class="steps-wrapper--swiper-pagination navigation--swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> --}}
-
             <section class="info-banners border-bottom-simple background-transparent">
                 <div class="info-banners-type-1">
                     <div class="container-fluid">
@@ -932,132 +824,38 @@
             </section>
 
             <footer class="footer-type-3 small-section">
-                <div class="footer-type-3--footer-body">
-                    <div class="container">
-                        <div class="footer-body--footer-sidebar">
-                            <div class="row">
-                                <div class="col-xl-3 col-lg-6 col-sm-12">
-                                    <div class="footer-sidebar--sidebar-widget text-widget">
-                                        <h6 class="sidebar-widget--sidebar-title">About Us</h6>
-                                        <p>We provide high quality and cost effective services Since our foundation in
-                                            2005 our goal has been to use digital technology to create experiences.</p>
-                                        <h6 class="sidebar-widget--sidebar-title">Subscribe newsletter</h6>
-                                        <form class="sidebar-widget--newsletter-form-widget">
-                                            <input type="email" placeholder="Email*" required>
-                                            <button type="submit"><i class="fa fa-envelope"></i></button>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-6 col-sm-12">
-                                    <div class="footer-sidebar--sidebar-widget latest-posts-widget">
-                                        <h6 class="sidebar-widget--sidebar-title">Latest Posts</h6>
-                                        <ul class="sidebar-widget--post-list">
-                                            <li class="post-list--post">
-                                                <a href="index.html">
-                                                    <div class="post--img-wrapper">
-                                                        <img src="img/footer/footer-creative-1.jpg" alt=""
-                                                            class="img-fluid">
-                                                    </div>
-                                                </a>
-                                                <div class="post--post-body">
-                                                    <h6 class="post-body--post-title">
-                                                        <a href="index.html">Good design is good business</a>
-                                                    </h6>
-                                                    <div class="post-body--description-box">
-                                                        <p class="description-box--date">21 July 2022 | <a
-                                                                href="index.html" class="animation-link">Jay
-                                                                Hart</a>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="post-list--post"><a href="index.html">
-                                                    <div class="post--img-wrapper">
-                                                        <img src="img/footer/footer-creative-2.jpg" alt=""
-                                                            class="img-fluid">
-                                                    </div>
-                                                </a>
-                                                <div class="post--post-body">
-                                                    <h6 class="post-body--post-title">
-                                                        <a href="index.html">Design is thinking made visual</a>
-                                                    </h6>
-                                                    <div class="post-body--description-box">
-                                                        <p class="description-box--date">18 May 2022 | <a
-                                                                href="index.html" class="animation-link">Mike
-                                                                Snow</a>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="post-list--post">
-                                                <a href="index.html">
-                                                    <div class="post--img-wrapper">
-                                                        <img src="img/footer/footer-creative-3.jpg" alt=""
-                                                            class="img-fluid">
-                                                    </div>
-                                                </a>
-                                                <div class="post--post-body">
-                                                    <h6 class="post-body--post-title">
-                                                        <a href="index.html">The world’s business leaders</a>
-                                                    </h6>
-                                                    <div class="post-body--description-box">
-                                                        <p class="description-box--date">5 June 2022 | <a
-                                                                href="index.html" class="animation-link">Emily
-                                                                Smith</a>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-6 col-sm-12">
-                                    <div class="footer-sidebar--sidebar-widget contact-info-widget">
-                                        <h6 class="sidebar-widget--sidebar-title">Contact Info</h6>
-                                        <p class="description">We provide high quality and cost effective services
-                                            Since our foundation in 2005 our goal has been to use digital technology to
-                                            create experiences.</p>
-                                        <ul class="sidebar-widget--contact-info">
-                                            <li><i class="fa fa-map-marker"></i>
-                                                <p>Factory, London, W2 5JU.</p>
-                                            </li>
-                                            <li><i class="fa fa-envelope"></i><a href="index.html"
-                                                    class="animation-link"><span class="__cf_email__"
-                                                        data-cfemail="83e6fbe2eef3efe6c3e7eceee2eaedade0ecee">[email&#160;protected]</span></a>
-                                            </li>
-                                            <li><i class="fa fa-phone"></i><a href="index.html"
-                                                    class="animation-link">1-123-222-567</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-6 col-sm-12">
-                                    <div class="footer-sidebar--sidebar-widget contact-info-widget">
-                                        <h6 class="sidebar-widget--sidebar-title">Tag Cloud</h6>
-                                        <div class="tag-cloud">
-                                            <a href="index.html" class="tag-cloud--tag">Solution</a>
-                                            <a href="index.html" class="tag-cloud--tag">Design</a>
-                                            <a href="index.html" class="tag-cloud--tag">Visual</a>
-                                            <a href="index.html" class="tag-cloud--tag">Gallery</a>
-                                            <a href="index.html" class="tag-cloud--tag">Scss</a>
-                                            <a href="index.html" class="tag-cloud--tag">Creative</a>
-                                            <a href="index.html" class="tag-cloud--tag">Famous</a>
-                                            <a href="index.html" class="tag-cloud--tag">People</a>
-                                            <a href="index.html" class="tag-cloud--tag">Food</a>
-                                            <a href="index.html" class="tag-cloud--tag">Science</a>
-                                            <a href="index.html" class="tag-cloud--tag">HTML</a> <a href="index.html"
-                                                class="tag-cloud--tag">Photo</a>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="container mx-auto py-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center">
+                                <img class="w-32 h-32" src="/icon/code for iraq logo SVG.svg" alt="Code For Iraq Logo">
+                                <span class="text-2xl font-bold text-white ml-4">البرمجة من أجل العراق</span>
                             </div>
                         </div>
-                        <div class="footer-body--copyright-wrapper">
-                            <p class="copyright-wrapper--copyright">
-                                <i class="fa fa-copyright"></i>2022 Keito. All rights reserved.
-                            </p>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <h1 class="text-3xl text-white font-bold mb-4">تصفح الموقع</h1>
+                                <a href="#" class="text-xl text-white font-bold d-block mb-2">الصفحة الرئيسية</a>
+                                <a href="#" class="text-xl text-white font-bold d-block mb-2">تقديم مشكلة</a>
+                                <a href="#" class="text-xl text-white font-bold d-block mb-2">الدعم النفسي</a>
+                                <a href="#" class="text-xl text-white font-bold d-block mb-2">التعليم التكنولوجي</a>
+                                <a href="#" class="text-xl text-white font-bold d-block mb-2">تقرير</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center">
+                                <h1 class="text-3xl text-white font-bold mb-4">تواصل معنا</h1>
+                                <span class="text-xl text-white font-bold d-block mb-2">We@gmail.com</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="container mx-auto py-4 text-center text-white">
+                    <p class="text-xl font-bold">حقوق النشر © 2023
+                        <span class="text-sm">(صنع بالكثير من الحب ❤)</span>
+                    </p>
+                </div>
+                
             </footer>
         </div>
     </main>
