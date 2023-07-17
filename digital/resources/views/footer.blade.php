@@ -6,7 +6,7 @@
     <title></title>
     <link rel="stylesheet" href="your-styles.css">
 </head>
-<body class="antialiased">
+<body class="antialiased" style="direction: rtl;">
 
     <footer class="bg-darkalaa border-t border-fillsvg">
         <div class="container mx-auto flex flex-wrap justify-center items-center py-8">

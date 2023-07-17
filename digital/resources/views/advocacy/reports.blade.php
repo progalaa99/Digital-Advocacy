@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="flex justify-center items-center">
+    <div class="flex justify-center items-center" style="direction: rtl;">
         <div class="bg-white w-96 h-auto p-10">
             {!! $chart->container() !!}
         </div>

@@ -10,6 +10,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent">
     <meta name="format-detection" content="telephone=no">
+    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
     <title>التعليم التكنلوجي</title>
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -269,7 +270,7 @@
                                         <a href="{{ route('blogedu.edit', ['id' => $blogedu->id]) }}" class="btn btn-primary mr-2">تعديل</a>
                                         <a href="{{ route('blogedu.destroy', ['id' => $blogedu->id]) }}" class="btn btn-danger">حذف</a>
                                     </div>
-                                    
+                                    <hr>
                                     @endif
                                 </div>
                                 @endforeach
@@ -283,8 +284,8 @@
                 </div>
             </section>
             
-            <footer class="footer-type-3 small-section">
-                <div class="container mx-auto py-8">
+            <footer class="footer-type-3 small-section"  >
+                <div class="container mx-auto py-8" style="direction: rtl;" >
                     <div class="row">
                         <div class="col-md-4">
                             <div class="d-flex align-items-center">

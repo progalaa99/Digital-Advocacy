@@ -10,6 +10,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent">
     <meta name="format-detection" content="telephone=no">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>الدعم النفسي</title>
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -284,7 +285,7 @@
                 </div>
             </section>
             
-            <footer class="footer-type-3 small-section">
+            <footer class="footer-type-3 small-section" style="direction: rtl;">
                 <div class="container mx-auto py-8">
                     <div class="row">
                         <div class="col-md-4">
