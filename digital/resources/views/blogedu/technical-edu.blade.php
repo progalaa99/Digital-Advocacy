@@ -10,7 +10,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent">
     <meta name="format-detection" content="telephone=no">
-    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
+    
     <title>التعليم التكنلوجي</title>
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/aos.min.css">
 
     <link rel="stylesheet" href="css/main.css">
-
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -193,7 +193,7 @@
             <header class="breadcrumbs-type-1 overlay bg-position-center bg-size-cover parallax-window gray-overlay"
                 data-src="img/home/workspace-2.jpg" data-speed="0.3">
                 <div class="container breadcrumbs--breadcrumbs-inner">
-                    <h1 class="breadcrumbs-inner--page-title white-color">
+                    <h1 class="breadcrumbs-inner--page-title white-color text-8xl font-bold">
                         التعليم التكنلوجي
                     </h1>
                     {{-- <ul class="breadcrumbs-inner--breadcrumbs-list">
@@ -225,7 +225,7 @@
                                     class="bg-buttonalaa  p-1  w-20 h-30 border-none   rounded btn btn-primary mr-2">اضافة مقالة</a>
                             </div>
                         @endif
-                        <article class="blog-wrapper--blog-post">
+                        {{-- <article class="blog-wrapper--blog-post">
                             <div class="blog-post--post-wrapper">
                                 @foreach ($blogedus as $blogedu)
                                 <div class="post-wrapper--title">
@@ -234,13 +234,7 @@
                                             <h5>{{ $blogedu->title }}</h5>
                                         </a>
                                 </div>
-                                {{-- <div class="post-wrapper--content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque
-                                        cupiditate deleniti dolore, doloribus explicabo hic illo impedit in iure
-                                        consectetur iusto minus molestias nobis quis quisquam rem
-                                        rerum suscipit
-                                        temporibus velit vitae. Asperiores beatae itaque maiores.</p>
-                                </div> --}}
+                                
                                 <div class="post-wrapper--author border-bottom-simple">
                                     <div class="wrapper">
                                         <a href="index.html">
@@ -260,26 +254,71 @@
                                             <i class="fa fa-clock"></i>
                                             June 28, 2022
                                         </div>
-                                        {{-- <div class="date--post-details">
-                                            <span><i class="fas fa-comment-alt"></i>21</span>
-                                            <span><i class="fas fa-heart"></i>36</span>
-                                        </div> --}}
+                                        
                                     </div>
                                     @if (auth()->user()->roleId === 1)
                                     <div class="mt-3">
                                         <a href="{{ route('blogedu.edit', ['id' => $blogedu->id]) }}" class="btn btn-primary mr-2">تعديل</a>
                                         <a href="{{ route('blogedu.destroy', ['id' => $blogedu->id]) }}" class="btn btn-danger">حذف</a>
                                     </div>
-                                    <hr>
+                                    
                                     @endif
                                 </div>
                                 @endforeach
                             </div>
-                        </article>
+                        </article> --}}
+                        <div class="row">
+                            @foreach ($blogedus as $blogedu)
+                            <div class="col-md-4">
+                                <article class="blog-wrapper--blog-post">
+                                    <div class="blog-post--post-wrapper">
+                                        <div class="post-wrapper--title text-2xl font-bold">
+                                            <a href="{{ route('blogedu.show', ['id' => $blogedu->id]) }}">
+                                                <h5>{{ $blogedu->title }}</h5>
+                                            </a>
+                                        </div>
+                                        <div class="post-wrapper--author border-bottom-simple">
+                                            <div class="wrapper">
+                                                <a href="index.html">
+                                                    <div class="author--img-wrapper">
+                                                        <img src="img/testimonials/testimonial5.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="author--author-name">
+                                                        <span>by John Doe</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="post-wrapper--data-wrapper">
+                                            <div class="data-wrapper--date">
+                                                <div class="date--post-details">
+                                                    <i class="fa fa-clock"></i>
+                                                    June 28, 2022
+                                                </div>
+                                            </div>
+                                            @if (auth()->user()->roleId === 1)
+                                            <div class="mt-3">
+                                                <a href="{{ route('blogedu.edit', ['id' => $blogedu->id]) }}" class="btn btn-primary mr-2">تعديل</a>
+                                                <a href="{{ route('blogedu.destroy', ['id' => $blogedu->id]) }}" class="btn btn-danger">حذف</a>
+                                            </div>
+                                            @endif
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            @endforeach
+                        </div>
+                        
 
+                        {{-- <div class="pagination-links flex w-1/2 mx-auto justify-center items-center pt-10 text-withe">
+                            {{ $blogedus->links() }}
+                        </div> --}}
+                        
                         <div class="pagination-links flex w-1/2 mx-auto justify-center items-center pt-10 text-withe">
                             {{ $blogedus->links() }}
                         </div>
+                        
+                        
                     </div>
                 </div>
             </section>
@@ -322,7 +361,7 @@
     </main>
 
 
-
+    
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
 

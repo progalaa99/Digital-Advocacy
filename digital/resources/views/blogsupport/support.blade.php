@@ -193,7 +193,7 @@
             <header class="breadcrumbs-type-1 overlay bg-position-center bg-size-cover parallax-window gray-overlay"
                 data-src="img/home/workspace-2.jpg" data-speed="0.3">
                 <div class="container breadcrumbs--breadcrumbs-inner">
-                    <h1 class="breadcrumbs-inner--page-title white-color">
+                    <h1 class="breadcrumbs-inner--page-title white-color text-8xl font-bold">
                         الدعم النفسي
                     </h1>
                     {{-- <ul class="breadcrumbs-inner--breadcrumbs-list">
@@ -223,12 +223,15 @@
                             <div class="flex justify-center items-center">
                                 <a href="{{ route('blogsupport.create') }}"
                                     class="bg-buttonalaa  p-1 mr-2  w-20 h-30 border-none   rounded btn btn-primary mr-2 ">اضافة مقالة</a>
-                            </div>
-                        @endif
+                            </div> 
+                        @endif <hr>
+                        <div class="row pt-5">
+                            @foreach ($blogsupports as $blogsupport)
+                            <div class="col-md-4">
+
                         <article class="blog-wrapper--blog-post">
                             <div class="blog-post--post-wrapper">
-                                @foreach ($blogsupports as $blogsupport)
-                                <div class="post-wrapper--title">
+                                <div class="post-wrapper--title text-2xl font-bold">
                                     
                                         <a href="{{ route('blogsupport.show', ['id' => $blogsupport->id]) }} ">
                                             <h5>{{ $blogsupport->title }}</h5>
@@ -274,10 +277,12 @@
                                     </div>
                                     @endif
                                 </div>
-                                @endforeach
+                                
                             </div>
                         </article>
-
+                            </div>
+                            @endforeach
+                        </div>
                         <div class="pagination-links flex w-1/2 mx-auto justify-center items-center pt-10 text-withe">
                             {{ $blogsupports->links() }}
                         </div>
