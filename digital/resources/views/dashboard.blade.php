@@ -226,8 +226,8 @@
                         <div class="content-wrapper--content">
                             <div class="hero-content--video-wrapper">
                             </div>
-                            <p class="hero-subtitle white-color text-center mb-10"> مرحبا بك في</p>
-                            <h1 class="hero-heading text-center white-color">موقع المناصرة الرقمية </h1>
+                            <p class="hero-subtitle white-color text-center mb-10 text-6xl"> مرحبا بك في</p>
+                            <h1 class="hero-heading text-center white-color text-6xl">موقع المناصرة الرقمية </h1>
                         </div>
                     </div>
                     <div class="canvas-wrapper-particles" id="particles-wrapper" data-depth="0.1">
@@ -240,7 +240,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col section-heading-type-3">
-                            <h2 class="section-heading--main-title">
+                            <h2 class="section-heading--main-title text-2xl font-bold">
                                 نبذة عنا
                             </h2>
                             <ul class="section-heading--angles">
@@ -268,7 +268,7 @@
                     </div>
                     <div class="row about-us--inner-wrapper border-top-simple">
                         <div class="col-lg-4 inner-wrapper--column-wrapper">
-                            <h5 class="mb-10 text-center">المقالات والموارد التعليمية</h5>
+                            <h5 class="mb-10 text-center text-3xl font-bold">المقالات والموارد التعليمية</h5>
                             <p class="pr-50 text-center">يحتوي الموقع على مجموعة من المقالات والموارد التعليمية التي توفر معلومات
                                 ونصائح حول الأمن السيبراني وكيفية حماية البيانات الشخصية على الإنترنت. تتناول هذه
                                 الموارد مواضيع مثل كلمات المرور القوية، والتحقق بخطوتين، والتعرف على البريد الإلكتروني
@@ -276,7 +276,7 @@
                                 السيبراني.</p>
                         </div>
                         <div class="col-lg-4 inner-wrapper--column-wrapper">
-                            <h5 class="mb-10 text-center">المجتمع والمنتدى</h5>
+                            <h5 class="mb-10 text-center text-3xl font-bold">المجتمع والمنتدى</h5>
                             <p class="pr-50 text-center " >
                                 يوفر الموقع مجتمعًا نشطًا للمستخدمين يمكنهم مناقشة وتبادل المعلومات والأفكار حول الأمن
                                 السيبراني. يمكن للمستخدمين طرح الأسئلة ومشاركة التحديات وتقديم النصائح والحلول لبعضهم
@@ -284,7 +284,7 @@
                             </p>
                         </div>
                         <div class="col-lg-4 inner-wrapper--column-wrapper">
-                            <h5 class="inner-wrapper--column-wrapper--title text-center">باختصار، يهدف موقع المناصرة الرقمية إلى
+                            <h5 class="inner-wrapper--column-wrapper--title text-center text-2xl">باختصار، يهدف موقع المناصرة الرقمية إلى
                                 تمكين الأفراد وتوفير المعلومات والأدوات اللازمة للحفاظ على الأمان السيبراني وحماية
                                 المعلومات الشخصية على الإنترنت. يسعى الموقع لتعزيز التوعية وبناء مجتمع قوي من المهتمين
                                 بالأمن السيبراني.</h5>
@@ -293,7 +293,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col section-heading-type-3">
-                                <h2 class="section-heading--main-title">
+                                <h2 class="section-heading--main-title text-2xl font-bold">
                                     خدماتنا
                                 </h2>
                                 <ul class="section-heading--angles">
@@ -322,7 +322,7 @@
                                         <p class="mb-10">01</p>
                                     </div>
                                     <div class="content--description-wrapper">
-                                        <h5 class="text-center mb-10">امانك على الانترنت</h5>
+                                        <h5 class="text-center mb-10 text-2xl font-bold">امانك على الانترنت</h5>
                                         <p class="text-center " style="color: black;">نحن نعلمك الاستخدام الآمن للإنترنت!</p>
                                     </div>
                                 </div>
@@ -337,7 +337,7 @@
                                         <p class="mb-10">02</p>
                                     </div>
                                     <div class="content--description-wrapper">
-                                        <h5 class="text-center mb-10">تقديم دعم</h5>
+                                        <h5 class="text-center mb-10 text-2xl font-bold" >تقديم دعم</h5>
                                         <p class="text-center" style="color: black;">الدعم العاطفي
                                             اتصل بأخصائي ، نصائح!</p>
                                     </div>
@@ -353,7 +353,7 @@
                                         <p class="mb-10">03</p>
                                     </div>
                                     <div class="content--description-wrapper">
-                                        <h5 class="text-center mb-10">تقديم شكوى</h5>
+                                        <h5 class="text-center mb-10 text-2xl font-bold">تقديم شكوى</h5>
                                         <p class="text-center" style="color: black;">قدم شكوى وانتظر حتى يتم القبض على المجرم!</p>
                                     </div>
                                 </div>
@@ -380,13 +380,13 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="tab-content--content-wrapper">
+                                        <div class="tab-content--content-wrapper text-2xl font-bold">
                                             <h2>تقديم مشكلة </h2>
                                             <p class="default-subtitle mb-5 text-center">من خلال هذه الصفحة يمكنك الدخول وارسال المشكلة التي تعرضت لها نتيجة 
                                                 الابتزاز وسيكون هنالك كادر خاص بحل المشكلة
                                             </p>
                                             
-                                            <div class="button-wrapper-type-5">
+                                            <div class="button-wrapper-type-5 text-2xl font-bold">
                                                 <a href="services.html" class="btn-type-5" style="color:black">
                                                    تقديم المشكلة
                                                 </a>
@@ -403,7 +403,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="tab-content--content-wrapper text-center">
+                                        <div class="tab-content--content-wrapper text-center text-2xl font-bold">
                                             <h2>التعلم التكنلوجي</h2>
                                             <p class="default-subtitle mb-5 text-center">نقوم بتقديم افضل المقالات التي تساعدك على فهم موقعك على الانترنت 
                                                 وحماية نفسك 
@@ -426,7 +426,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="tab-content--content-wrapper text-center">
+                                        <div class="tab-content--content-wrapper text-center text-2xl font-bold">
                                             <h2>الدعم النفسي</h2>
                                             <p class="default-subtitle mb-5 text-center">صفحة خاصة بتقديم مقالات تهتم بصحتك النفسية يمكنك الوصول لها والاطلاع لمساعدة نفسك واصدقائك</p>
                                             
@@ -447,7 +447,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="tab-content--content-wrapper text-center">
+                                        <div class="tab-content--content-wrapper text-center text-2xl font-bold">
                                             <h2>تقرير </h2>
                                             <p class="default-subtitle mb-5 text-center">صفحة خاصة بتقديم احصائية للموقع تتضمن عدد المسجلين ونسبة تعرض الفئات الى 
                                                 الابتزاز الالكتروني والكثير 
@@ -510,7 +510,7 @@
                                         </div>
                                         <div class="image-inner--content-wrapper">
                                             <div class="content-wrapper--content">
-                                                <h2 class="white-color">
+                                                <h2 class="white-color text-4xl font-bold">
                                                     كل يوم هو فرصة للنمو والتطور
                                                 </h2>
                                             </div>
@@ -528,7 +528,7 @@
                                         </div>
                                         <div class="image-inner--content-wrapper">
                                             <div class="content-wrapper--content">
-                                                <h2 class="white-color">
+                                                <h2 class="white-color text-4xl font-bold">
                                                     الإيجابية هي مفتاح السعادة والنجاح في الحياة
                                                 </h2>
                                             </div>
@@ -546,7 +546,7 @@
                                         </div>
                                         <div class="image-inner--content-wrapper">
                                             <div class="content-wrapper--content">
-                                                <h2 class="white-color">
+                                                <h2 class="white-color text-4xl font-bold">
                                                     لديك القدرة على تحقيق أهدافك وتحقيق أحلامك
                                                 </h2>
                                             </div>
@@ -564,7 +564,7 @@
                                         </div>
                                         <div class="image-inner--content-wrapper">
                                             <div class="content-wrapper--content">
-                                                <h2 class="white-color">
+                                                <h2 class="white-color text-4xl font-bold ">
                                                     العالم مليء بالأشخاص الرائعين واللحظات المميزة
                                                 </h2>
                                             </div>
@@ -582,7 +582,7 @@
                                         </div>
                                         <div class="image-inner--content-wrapper">
                                             <div class="content-wrapper--content">
-                                                <h2 class="white-color">
+                                                <h2 class="white-color text-4xl font-bold">
                                                     الحياة مليئة بالفرص والإمكانيات الرائعة
                                                 </h2>
                                             </div>
@@ -605,7 +605,7 @@
                                     <div class="progress-bar-circle1 progress-bar-circle" data-progress='0.85'>
                                         <p class="skill-title">85%</p>
                                     </div>
-                                    <div class="progress-wrapper--progress-title" style="font-size: 50%">
+                                    <div class="progress-wrapper--progress-title " style="font-size: 50%">
                                         <p>الوعي الرقمي</p>
                                     </div>
                                 </div>
@@ -781,7 +781,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col section-heading-type-2">
-                            <h4 class="section-heading--main-title white-color mb-15">
+                            <h4 class="section-heading--main-title white-color mb-15 text-4xl font-bold">
                                 تابعنا على منصات التواصل الاجتماعي
                             </h4>
                             <div class="social-icons-type-2 justify-content-center">
@@ -806,8 +806,8 @@
                 </div>
             </section>
 
-            <footer class="footer-type-3 small-section" style="direction: rtl;">
-                <div class="container mx-auto py-8">
+            <footer class="footer-type-3 small-section" >
+                <div class="container mx-auto py-8 " style="direction: rtl;">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="d-flex align-items-center">
@@ -816,7 +816,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="text-center">
+                            <div class="text-right">
                                 <h1 class="text-3xl text-white font-bold mb-4">تصفح الموقع</h1>
                                 <a href="#" class="text-xl text-white font-bold d-block mb-2">الصفحة الرئيسية</a>
                                 <a href="#" class="text-xl text-white font-bold d-block mb-2">تقديم مشكلة</a>
@@ -825,6 +825,16 @@
                                 <a href="#" class="text-xl text-white font-bold d-block mb-2">تقرير</a>
                             </div>
                         </div>
+                        {{-- <div class="w-full md:w-1/3 px-4 rtl">
+                            <div class="flex flex-col">
+                                <span class="text-3xl text-white font-bold mb-4">تصفح الموقع</span>
+                                <a href="{{ route('dashboard') }}" class="text-xl text-white font-bold mb-2">الصفحة الرئيسية</a>
+                                <a href="{{ route('complaint') }}" class="text-xl text-white font-bold mb-2">تقديم مشكلة</a>
+                                <a href="{{ route('blogsupport.support') }}" class="text-xl text-white font-bold mb-2">الدعم النفسي</a>
+                                <a href="{{ route('blogedu.technical-edu') }}" class="text-xl text-white font-bold mb-2">التعليم التكنولوجي</a>
+                                <a href="{{ route('reports') }}" class="text-xl text-white font-bold mb-2">تقرير</a>
+                            </div>
+                        </div> --}}
                         <div class="col-md-4">
                             <div class="text-center">
                                 <h1 class="text-3xl text-white font-bold mb-4">تواصل معنا</h1>
